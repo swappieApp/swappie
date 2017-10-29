@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/design_password_eye.xml",
+        "source": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/ic_menu_gallery.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/ic_menu_manage.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-v21/ic_menu_manage.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/ic_menu_camera.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-v21/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/ic_menu_slideshow.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/avd_hide_password.xml",
+        "source": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/ic_menu_share.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-v21/ic_menu_share.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/home/maialen/.android/build-cache/b8f9c0544bfdea13c9a67a9e08ac76bf301427b0/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/avd_show_password.xml",
+        "source": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/ic_menu_send.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-v21/ic_menu_send.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

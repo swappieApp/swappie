@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/menu/navigation_drawer.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/menu/navigation_drawer.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/menu/popup_menu.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/menu/popup_menu.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/menu/usuario_registrado.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/menu/usuario_registrado.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/menu/activity_usuario_registrado_drawer.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/menu/activity_usuario_registrado_drawer.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/menu/activity_navigation_drawer_drawer.xml",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/menu/activity_navigation_drawer_drawer.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/menu/crop_image_menu.xml",
+        "source": "/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/res/menu/crop_image_menu.xml"
+    }
+]

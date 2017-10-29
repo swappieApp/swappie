@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/containers.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/containers.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/swipebn.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/swipebn.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/cross.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/cross.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/chatbn.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/chatbn.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/cloud.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/cloud.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/background_2423825_640.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/background_2423825_640.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/networking.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/networking.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/upload.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/upload.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/chat.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/chat.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/swappie.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/swappie.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/help_us.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/help_us.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/contact.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/contact.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/swipe.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/swipe.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/logout.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/logout.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxhdpi/menu.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxhdpi/menu.png"
+    }
+]

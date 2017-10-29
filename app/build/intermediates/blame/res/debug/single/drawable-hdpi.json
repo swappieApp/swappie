@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/cross.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/cross.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/help_us.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/help_us.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/contact.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/contact.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/swipebn.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/swipebn.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/networking.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/networking.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/chat.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/chat.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/logout.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/logout.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/containers.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/containers.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/swappie.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/swappie.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/cloud.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/cloud.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/upload.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/upload.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/menu.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/menu.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/background_2423825_640.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/background_2423825_640.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/swipe.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/swipe.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-hdpi/chatbn.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-hdpi/chatbn.png"
+    }
+]

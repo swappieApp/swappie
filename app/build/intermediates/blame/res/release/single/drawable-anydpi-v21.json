@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    }
+]

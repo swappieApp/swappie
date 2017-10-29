@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/upload.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/upload.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/background_2423825_640.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/background_2423825_640.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/containers.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/containers.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/contact.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/contact.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/cloud.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/cloud.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/swipe.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/swipe.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/swipebn.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/swipebn.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/chat.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/chat.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/help_us.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/help_us.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/networking.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/networking.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/chatbn.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/chatbn.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/logout.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/logout.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/swappie.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/swappie.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/menu.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/menu.png"
+    },
+    {
+        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/release/drawable-xxxhdpi/cross.png",
+        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/cross.png"
+    }
+]

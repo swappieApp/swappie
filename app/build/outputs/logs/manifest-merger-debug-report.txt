@@ -1,0 +1,414 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:2:1-78:12
+	package
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:8:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:10:22-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:14:22-78
+uses-feature#android.hardware.camera
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:15:5-16:35
+	android:required
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:16:9-32
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:15:19-57
+application
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:18:5-76:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/maialen/.android/build-cache/d8446a7e5d66ec9af757c6d164780c93004a6789/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] /home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/maialen/.android/build-cache/08b7e5723ba1f440e103fc1600fcc791fb01c43a/output/AndroidManifest.xml:26:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:28:5-38:19
+MERGED from [com.android.support:customtabs:23.4.0] /home/maialen/.android/build-cache/5b793276df1eb7a07c1fa9f5cdbcafda8a0b2af5/output/AndroidManifest.xml:22:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/maialen/.android/build-cache/6150b948ce69c984e00d69f18f8c46cf58cb9018/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/maialen/.android/build-cache/7924ccaf9c29a2b8688cb66c42e8bf1e1cfe24fd/output/AndroidManifest.xml:26:5-20
+MERGED from [link.fls:swipestack:0.3.0] /home/maialen/.android/build-cache/447598987728f74ffd6440d0ad9cb67c55cafdeb/output/AndroidManifest.xml:11:5-14:38
+MERGED from [com.google.firebase:firebase-core:10.2.0] /home/maialen/.android/build-cache/938be1d6ead1b4626576afe82ab61d8dfae1d62b/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/maialen/.android/build-cache/f3db209aa21edc7f9686bda2df51bd992c044e0a/output/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/maialen/.android/build-cache/aa4ea20bcb70aaeef507b68a81298e0337611880/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/maialen/.android/build-cache/2948a93035e8bb39b8f4cfbc6dd2ccfd5dc4d29b/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/maialen/.android/build-cache/cb823c016eb614780e146ba2f14c52f787ba74bb/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/maialen/.android/build-cache/06941960bc1592dc7a17747bc164a5fe1df55fc8/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/maialen/.android/build-cache/1f6d56bc9e178e9328ef90f3dc6524901fa76530/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/maialen/.android/build-cache/321b3fc67a450f750170b969e7d5807633a736c5/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/maialen/.android/build-cache/6df57111dc59119894abab7b1380ddafd3ccd4c2/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/maialen/.android/build-cache/e1dfc611b1a55cf1f79d3d29afb72dfe9791639f/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/maialen/.android/build-cache/380c9a25023975987ef6f145c0b1ebe331fd117c/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/maialen/.android/build-cache/b8f9c0544bfdea13c9a67a9e08ac76bf301427b0/output/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.android.support:exifinterface:26.1.0] /home/maialen/.android/build-cache/8471b3cd70a896be5bc5438e2a9a06f168801314/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.volley:volley:1.0.0] /home/maialen/.android/build-cache/6c411b5a28f469b94787a9ef1fc7095f2cc4e649/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:22:9-41
+	android:supportsRtl
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:24:9-35
+	android:roundIcon
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:23:9-54
+	android:allowBackup
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:20:9-35
+	android:icon
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:21:9-43
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:25:9-40
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:19:9-34
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:26:9-28:55
+	android:value
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:28:13-52
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:27:13-58
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:30:9-102
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:30:19-99
+activity#es.unavarra.tlm.prueba.Welcome
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:31:9-39:20
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:33:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:32:13-36
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:37:27-74
+activity#es.unavarra.tlm.prueba.MainActivity
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:40:9-42:59
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:42:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:41:13-41
+activity#es.unavarra.tlm.prueba.Invitado
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:43:9-46
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:43:19-43
+activity#es.unavarra.tlm.prueba.Tutorial
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:44:9-46:59
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:45:13-37
+activity#es.unavarra.tlm.prueba.PreferenceManager
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:47:9-55
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:47:19-52
+activity#es.unavarra.tlm.prueba.Navigation_drawer
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:48:9-51:59
+	android:label
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:50:13-69
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:49:13-46
+activity#es.unavarra.tlm.prueba.UsuarioRegistrado
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:52:9-55:59
+	android:label
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:54:13-70
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:53:13-46
+activity#es.unavarra.tlm.prueba.Registrarse
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:56:9-57:68
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:57:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:56:19-46
+activity#es.unavarra.tlm.prueba.Camara
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:58:9-59:61
+	android:configChanges
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:59:13-59
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:58:19-41
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:60:9-61:58
+	android:theme
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:61:13-56
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:60:19-82
+provider#android.support.v4.content.FileProvider
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:65:5-73:16
+	android:authorities
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:67:9-63
+	android:grantUriPermissions
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:69:9-43
+	android:exported
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:68:9-33
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:66:9-63
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:70:9-72:60
+	android:resource
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:72:13-47
+	android:name
+		ADDED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml:71:13-63
+uses-sdk
+INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/maialen/.android/build-cache/d8446a7e5d66ec9af757c6d164780c93004a6789/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] /home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/maialen/.android/build-cache/0ff7a18b5f3398722934bff9f9be0408089c4c45/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/maialen/.android/build-cache/08b7e5723ba1f440e103fc1600fcc791fb01c43a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:customtabs:23.4.0] /home/maialen/.android/build-cache/5b793276df1eb7a07c1fa9f5cdbcafda8a0b2af5/output/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/maialen/.android/build-cache/6150b948ce69c984e00d69f18f8c46cf58cb9018/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/maialen/.android/build-cache/7924ccaf9c29a2b8688cb66c42e8bf1e1cfe24fd/output/AndroidManifest.xml:20:5-43
+MERGED from [link.fls:swipestack:0.3.0] /home/maialen/.android/build-cache/447598987728f74ffd6440d0ad9cb67c55cafdeb/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:10.2.0] /home/maialen/.android/build-cache/938be1d6ead1b4626576afe82ab61d8dfae1d62b/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/maialen/.android/build-cache/f3db209aa21edc7f9686bda2df51bd992c044e0a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] /home/maialen/.android/build-cache/5d4000b8f7fde83c97143551a0e6b6bd20eb7d4f/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/maialen/.android/build-cache/aa4ea20bcb70aaeef507b68a81298e0337611880/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/maialen/.android/build-cache/2948a93035e8bb39b8f4cfbc6dd2ccfd5dc4d29b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.1.0] /home/maialen/.android/build-cache/cb823c016eb614780e146ba2f14c52f787ba74bb/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/maialen/.android/build-cache/06941960bc1592dc7a17747bc164a5fe1df55fc8/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /home/maialen/.android/build-cache/1f6d56bc9e178e9328ef90f3dc6524901fa76530/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/maialen/.android/build-cache/321b3fc67a450f750170b969e7d5807633a736c5/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/maialen/.android/build-cache/6df57111dc59119894abab7b1380ddafd3ccd4c2/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/maialen/.android/build-cache/e1dfc611b1a55cf1f79d3d29afb72dfe9791639f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/maialen/.android/build-cache/380c9a25023975987ef6f145c0b1ebe331fd117c/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/maialen/.android/build-cache/b8f9c0544bfdea13c9a67a9e08ac76bf301427b0/output/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:exifinterface:26.1.0] /home/maialen/.android/build-cache/8471b3cd70a896be5bc5438e2a9a06f168801314/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.0.0] /home/maialen/.android/build-cache/6c411b5a28f469b94787a9ef1fc7095f2cc4e649/output/AndroidManifest.xml:7:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/maialen/.android/build-cache/0ff7a18b5f3398722934bff9f9be0408089c4c45/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/maialen/.android/build-cache/08b7e5723ba1f440e103fc1600fcc791fb01c43a/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/maialen/.android/build-cache/7924ccaf9c29a2b8688cb66c42e8bf1e1cfe24fd/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:26.1.0] /home/maialen/.android/build-cache/cb823c016eb614780e146ba2f14c52f787ba74bb/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/maialen/.android/build-cache/06941960bc1592dc7a17747bc164a5fe1df55fc8/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/maialen/.android/build-cache/1f6d56bc9e178e9328ef90f3dc6524901fa76530/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/maialen/.android/build-cache/321b3fc67a450f750170b969e7d5807633a736c5/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/maialen/.android/build-cache/6df57111dc59119894abab7b1380ddafd3ccd4c2/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/maialen/.android/build-cache/e1dfc611b1a55cf1f79d3d29afb72dfe9791639f/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/maialen/.android/build-cache/380c9a25023975987ef6f145c0b1ebe331fd117c/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/maialen/.android/build-cache/b8f9c0544bfdea13c9a67a9e08ac76bf301427b0/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:exifinterface:26.1.0] /home/maialen/.android/build-cache/8471b3cd70a896be5bc5438e2a9a06f168801314/output/AndroidManifest.xml:23:9-25:38
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/AndroidManifest.xml:26:9-47
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:29:9-32:75
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:33:9-36:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:34:13-58
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:37:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/AndroidManifest.xml:37:19-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/maialen/.android/build-cache/e46634589c8b5955adebe3b671f7b9f14c23788b/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/maialen/.android/build-cache/3f4d5b5f5f7daa02c0e6fbbe8ec48341664adbf2/output/AndroidManifest.xml:32:16-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/maialen/.android/build-cache/820d685e51acfb64d9f9b35126b5f5e4728487b5/output/AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/maialen/.android/build-cache/104cce3a9987ef90c58de6dcaa477e001c2a2d8c/output/AndroidManifest.xml:6:79-143
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/maialen/.android/build-cache/4f5b68a205b3f2d4db7a057fa6883a7cd214fca1/output/AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.0] /home/maialen/.android/build-cache/2948a93035e8bb39b8f4cfbc6dd2ccfd5dc4d29b/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.0] /home/maialen/.android/build-cache/2948a93035e8bb39b8f4cfbc6dd2ccfd5dc4d29b/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.0] /home/maialen/.android/build-cache/2948a93035e8bb39b8f4cfbc6dd2ccfd5dc4d29b/output/AndroidManifest.xml:20:20-65
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/AndroidManifest.xml:26:13-58

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e3fd8ced1f52c7574af952e2e6da0df8df08eb82">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpcore-4.4.6_d7d9549d4040589dec7fd8a063bdb371dd812686/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/321b3fc67a450f750170b969e7d5807633a736c5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_05cf34382b4c816529d936dd186aae7188ba80e0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c743a2fd48eaf8ea5eac0bdfa23c654ca4d0fd74">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_23bcf496d7c8394d382703f40e4d75ea781ae655/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/380c9a25023975987ef6f145c0b1ebe331fd117c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_ea38802979ad5aa97cd67c12f2b38e3aaecce4f0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_a4a1dc55cfa6b2ec66b1293fbf975b6e835483cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e3fd8ced1f52c7574af952e2e6da0df8df08eb82">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/httpcore-4.4.6_d7d9549d4040589dec7fd8a063bdb371dd812686.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6d4dcafbb0e01c8f0fbe5ef76c267ab445f614b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c743a2fd48eaf8ea5eac0bdfa23c654ca4d0fd74">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_23bcf496d7c8394d382703f40e4d75ea781ae655.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/321b3fc67a450f750170b969e7d5807633a736c5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05cf34382b4c816529d936dd186aae7188ba80e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/380c9a25023975987ef6f145c0b1ebe331fd117c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea38802979ad5aa97cd67c12f2b38e3aaecce4f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/common-1.0.0_4c1b9e7a1c45c6cc073c2460ad851f19e7151df2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d1577ae15f01ef5438c5afc62162457c00a34713">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpclient-4.5.3_5b0dc317a284efb55614cb84dc526ad0c56f41d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="920a83e8a3259c4fe02cfcd8cac9016300933052">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a053df8b6acb15cb166513fb02f61720af218785/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d1577ae15f01ef5438c5afc62162457c00a34713">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/httpclient-4.5.3_5b0dc317a284efb55614cb84dc526ad0c56f41d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/06941960bc1592dc7a17747bc164a5fe1df55fc8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_3a02af3516abcb7c92734f6016e5eb0a9a6eef96.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/06941960bc1592dc7a17747bc164a5fe1df55fc8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a02af3516abcb7c92734f6016e5eb0a9a6eef96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/httpcomponents-client-4.5.3/lib/httpmime-4.5.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="889fd6d061bb63b99dd5c6aba35a555ae863de52">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.5.3_e586e2802591e8bc7bde04a1c7dfdc78fd0d59bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/b8f9c0544bfdea13c9a67a9e08ac76bf301427b0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5a901bae6577a744f19711a124b7d8a64fd4369a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/b8f9c0544bfdea13c9a67a9e08ac76bf301427b0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_5a901bae6577a744f19711a124b7d8a64fd4369a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_863c3779965817775b23688905958720491aea26/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_688e13745f46eacfdabece2820a8e7363bc91119.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/e1dfc611b1a55cf1f79d3d29afb72dfe9791639f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e67aed3771c4c30afd9e73b4781cf0332b319d34/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/support-annotations-26.1.0_863c3779965817775b23688905958720491aea26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/e1dfc611b1a55cf1f79d3d29afb72dfe9791639f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_e67aed3771c4c30afd9e73b4781cf0332b319d34.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_290c9fdb37c9c692fc5a1232c0bbf6bbee255605/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/6df57111dc59119894abab7b1380ddafd3ccd4c2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_557d2ec74d6baf5211b347dfeff926897986f598.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/httpcomponents-client-4.5.3/lib/httpmime-4.5.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="889fd6d061bb63b99dd5c6aba35a555ae863de52">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/httpmime-4.5.3_e586e2802591e8bc7bde04a1c7dfdc78fd0d59bd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/2/gradle-wrapper_a3894a8532c6b2847843dd849f7279d90be0a869/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_688e13745f46eacfdabece2820a8e7363bc91119/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/6df57111dc59119894abab7b1380ddafd3ccd4c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_557d2ec74d6baf5211b347dfeff926897986f598/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/gradle-wrapper_a3894a8532c6b2847843dd849f7279d90be0a869.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/8471b3cd70a896be5bc5438e2a9a06f168801314/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1a10332e561dbad9fd003560979e6202383d0d2c">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5592ced958601b8acd9f05e449aa626aabe4ea69/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/1f6d56bc9e178e9328ef90f3dc6524901fa76530/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_85bb6d6ae5258075f38dc916a7ff5421b690fa50.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/cb823c016eb614780e146ba2f14c52f787ba74bb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2093cedfd1ef9b6767bfe171d2bddf1845f0622f/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/8471b3cd70a896be5bc5438e2a9a06f168801314/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1a10332e561dbad9fd003560979e6202383d0d2c">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_5592ced958601b8acd9f05e449aa626aabe4ea69.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_4c1b9e7a1c45c6cc073c2460ad851f19e7151df2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/.android/build-cache/1f6d56bc9e178e9328ef90f3dc6524901fa76530/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_85bb6d6ae5258075f38dc916a7ff5421b690fa50/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/apache-mime4j-0.7.2/lib/apache-mime4j-core-0.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/apache-mime4j-core-0.7.2_117cf349e5503f259a8987d004a256c8c68aaf82.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maialen/Android/AndroidStudioProjects/Prueba/app/libs/apache-mime4j-0.7.2/lib/apache-mime4j-core-0.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/transforms/dex/debug/folders/1000/2/apache-mime4j-core-0.7.2_117cf349e5503f259a8987d004a256c8c68aaf82/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/cb823c016eb614780e146ba2f14c52f787ba74bb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_2093cedfd1ef9b6767bfe171d2bddf1845f0622f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.android/build-cache/dd4dd599c8503e189898959637fa0f2a87533cdd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/classes_6d4dcafbb0e01c8f0fbe5ef76c267ab445f614b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/maialen/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/pre-dexed/release/common-1.0.0_a4a1dc55cfa6b2ec66b1293fbf975b6e835483cd.jar" />
+    </item>
+
+</items>
