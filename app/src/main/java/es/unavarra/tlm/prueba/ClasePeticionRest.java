@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.os.SystemClock;
 import android.util.JsonReader;
 import android.util.Log;
 import android.widget.Toast;
@@ -35,7 +36,9 @@ public class ClasePeticionRest {
 
     public static ArrayList<KeyValue> peticionRest(final ArrayList<KeyValue> parametros, final String funcionAPI, final String metodo){
 
-        ArrayList<KeyValue> respuesta = new ArrayList<>();
+        final ArrayList<KeyValue> respuesta = new ArrayList<>();
+        final int[] responseCode = {-1};
+
         try {
 
             respuesta.clear();
@@ -51,7 +54,7 @@ public class ClasePeticionRest {
             //Log.d("etiqueta", String.valueOf(url));
 
 
-            HttpURLConnection myConnection = (HttpURLConnection) url.openConnection();
+            final HttpURLConnection myConnection = (HttpURLConnection) url.openConnection();
             myConnection.setInstanceFollowRedirects(false);
 
             if (metodo.equals("post")){
@@ -61,9 +64,27 @@ public class ClasePeticionRest {
                 myConnection.setRequestProperty(parametros.get(x).getKey(), parametros.get(x).getValue());
             }
 
-            if (myConnection.getResponseCode() == 200) {
+
+           AsyncTask.execute(new Runnable() {
+
+                public void run() {
+                    try {
+                        responseCode[0] = myConnection.getResponseCode();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            });
+
+            SystemClock.sleep(1500);
+
+           
+
+            if (responseCode[0] == 200) {
 
 
+                Log.d("probando1", "entro al if");
                 InputStream responseBody = myConnection.getInputStream();
                 InputStreamReader responseBodyReader = new InputStreamReader(responseBody, "UTF-8");
                 JsonReader jsonReader = new JsonReader(responseBodyReader);
@@ -72,21 +93,29 @@ public class ClasePeticionRest {
                 while (jsonReader.hasNext()) { // Loop through all keys
                     String key = jsonReader.nextName(); // Fetch the next key
                     String value = jsonReader.nextString();
+
                     respuesta.add(new KeyValue(key, value));
                 }
                 jsonReader.close();
+
 
             } else {
 
                 respuesta.add(new KeyValue("ok", "false"));
                 respuesta.add(new KeyValue("error", "error en la peticion"));
             }
+
+
             myConnection.disconnect();
+
+
+
 
         } catch (Exception e) {
             e.printStackTrace();
 
         }
+
         return respuesta;
 
     }
@@ -214,9 +243,11 @@ public class ClasePeticionRest {
 
         @Override
         protected Integer doInBackground(String... strings) {
-            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+
+            final  ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
 
             int idUsuario = 0;
+
             if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
                 if (respuesta.get(1).getKey().equals("id_usuario")){
                     idUsuario = Integer.parseInt(respuesta.get(1).getValue());
@@ -636,5 +667,7 @@ public class ClasePeticionRest {
         }
 
     }
+
+
 
 }

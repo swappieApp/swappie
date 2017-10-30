@@ -166,6 +166,32 @@ public class UsuarioRegistrado extends AppCompatActivity
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+        }else if (metodo.equals("email")){
+
+            boolean sesion = settings.getBoolean("sesion", false);
+            String name = settings.getString("nombre", "");
+            String apellidos = settings.getString("apellidos","");
+            String email = settings.getString("email","");
+
+            View headerView = navigationView.getHeaderView(0);
+            txt = (TextView) headerView.findViewById(R.id.nameUser);
+            txt.setText(name + " " + apellidos);
+
+            txt = (TextView) headerView.findViewById(R.id.emailUser);
+            txt.setText(email);
+
+            img = (CircleImageView) headerView.findViewById(R.id.imageUser);
+            try {
+                imageUrl = new URL("https://www.viawater.nl/files/default-user.png");
+                Bitmap bmp = BitmapFactory.decodeStream(imageUrl.openConnection().getInputStream());
+                img.setImageBitmap(bmp);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
 
         //SEGUNDA PARTE
@@ -266,6 +292,16 @@ public class UsuarioRegistrado extends AppCompatActivity
 
             } else if (metodo.equals("facebook")) {
                 LoginManager.getInstance().logOut();
+                SharedPreferences info = getSharedPreferences("Config", 0);
+                SharedPreferences.Editor editor = info.edit();
+                editor.putBoolean("sesion", false);
+                editor.commit();
+                Intent intent = new Intent(this, Navigation_drawer.class);
+                startActivity(intent);
+                finish();
+
+            } else if (metodo.equals("email")){
+
                 SharedPreferences info = getSharedPreferences("Config", 0);
                 SharedPreferences.Editor editor = info.edit();
                 editor.putBoolean("sesion", false);
