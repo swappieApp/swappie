@@ -304,6 +304,7 @@ public class UsuarioRegistrado extends AppCompatActivity
 
                 SharedPreferences info = getSharedPreferences("Config", 0);
                 SharedPreferences.Editor editor = info.edit();
+                editor.clear();
                 editor.putBoolean("sesion", false);
                 editor.commit();
                 Intent intent = new Intent(this, Navigation_drawer.class);

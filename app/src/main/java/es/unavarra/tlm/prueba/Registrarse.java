@@ -1,5 +1,6 @@
 package es.unavarra.tlm.prueba;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -29,6 +30,10 @@ public class Registrarse extends AppCompatActivity {
 
     public void clickRegistrarse(View view){
 
+        ProgressDialog dialog = new ProgressDialog(Registrarse.this);
+        dialog.setMessage("Please wait");
+        dialog.show();
+
         EditText edit = (EditText)findViewById(R.id.editText);
         EditText edit2 = (EditText)findViewById(R.id.editText2);
         EditText edit3 = (EditText)findViewById(R.id.editText3);
@@ -40,6 +45,7 @@ public class Registrarse extends AppCompatActivity {
         String pass = edit4.getText().toString();
         String ubicacion = "Pamplona";
         String metodo="email";
+
 
         Integer result = new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).doInBackground();
         new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);

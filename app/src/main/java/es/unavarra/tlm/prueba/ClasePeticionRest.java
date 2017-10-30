@@ -1,6 +1,7 @@
 package es.unavarra.tlm.prueba;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -38,6 +39,7 @@ public class ClasePeticionRest {
 
         final ArrayList<KeyValue> respuesta = new ArrayList<>();
         final int[] responseCode = {-1};
+
 
         try {
 
@@ -77,9 +79,10 @@ public class ClasePeticionRest {
 
             });
 
-            SystemClock.sleep(1500);
 
-           
+            SystemClock.sleep(3000);
+
+
 
             if (responseCode[0] == 200) {
 
@@ -100,7 +103,7 @@ public class ClasePeticionRest {
 
 
             } else {
-
+                Log.d("probando1", "entro al else");
                 respuesta.add(new KeyValue("ok", "false"));
                 respuesta.add(new KeyValue("error", "error en la peticion"));
             }
@@ -228,6 +231,7 @@ public class ClasePeticionRest {
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
 
+
         public GuardarUsuario(Context context, String nombre, String apellidos, String email, String password, String ubicacion, String metodoLogin) {
             parametros.add(new KeyValue("nombre", nombre));
             parametros.add(new KeyValue("apellidos", apellidos));
@@ -239,10 +243,14 @@ public class ClasePeticionRest {
             parametros.add(new KeyValue("ubicacion", ubicacion));
             this.context = context;
 
+
         }
+
+
 
         @Override
         protected Integer doInBackground(String... strings) {
+
 
             final  ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
 
