@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+        "outputFile": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 121
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 192
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 262
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 332
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 400
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 468
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

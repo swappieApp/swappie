@@ -1,62 +1,62 @@
 [
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/cross.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/cross.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/networking.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/networking.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/networking.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/networking.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/swappie.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/swappie.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/help_us.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/help_us.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/background_2423825_640.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/background_2423825_640.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/contact.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/contact.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/contact.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/contact.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/chat.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/chat.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/cloud.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/cloud.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/menu.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/menu.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/chatbn.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/chatbn.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/background_2423825_640.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/background_2423825_640.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/swipebn.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/swipebn.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/logout.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/logout.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/containers.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/containers.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/containers.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/containers.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/help_us.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/help_us.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/cloud.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/cloud.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/cross.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/cross.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/swipebn.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/swipebn.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/upload.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/upload.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/swipe.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/swipe.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/menu.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/menu.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/upload.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/upload.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/logout.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/logout.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/chatbn.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/chatbn.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/chat.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/chat.png"
     },
     {
-        "merged": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/swappie.png",
-        "source": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/src/main/res/drawable-xxxhdpi/swappie.png"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/swipe.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxxhdpi/swipe.png"
     }
 ]

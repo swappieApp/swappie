@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+        "outputFile": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 120
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-land/values-land.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-land/values-land.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-land/values-land.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-land/values-land.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 255
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-land/values-land.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-land/values-land.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 323
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-land/values-land.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-land/values-land.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -88,7 +88,7 @@
                     "endOffset": 505
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/79dc8a4c9e1a45ac864457b7fe3a30482012ae84/output/res/values-land/values-land.xml",
+                    "file": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/values-land/values-land.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

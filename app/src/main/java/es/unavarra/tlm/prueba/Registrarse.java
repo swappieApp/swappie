@@ -43,18 +43,18 @@ public class Registrarse extends AppCompatActivity {
         String apellidos = edit2.getText().toString();
         String email = edit3.getText().toString();
         String pass = edit4.getText().toString();
-        String ubicacion = "Pamplona";
-        String metodo="email";
+        String ubicacion = "42.798617, -1.634627";
+        String metodo = "email";
 
 
-        Integer result = new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).doInBackground();
-        new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);
+        new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        //new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);
 
-        Log.d("resultado", String.valueOf(result));
+        //Log.d("resultado", String.valueOf(result));
 
 
-        //Añadimos a SharedPreferences
-        SharedPreferences info = getSharedPreferences("Config", 0);
+        //Añadimos a SharedPreferences -> SE HACE EN LA CLASE REST
+        /*SharedPreferences info = getSharedPreferences("Config", 0);
         SharedPreferences.Editor editor = info.edit();
         editor.putString("metodo",metodo);
         editor.putBoolean("sesion", true);
@@ -62,12 +62,12 @@ public class Registrarse extends AppCompatActivity {
         editor.putString("apellidos",apellidos);
         editor.putString("email",email);
 
-        editor.commit();
+        editor.commit();*/
 
-        //Iniciamos la sesion
-        Intent intent = new Intent(this, UsuarioRegistrado.class);
+        //Iniciamos la sesion -> SE HACE EN LA CLASE REST
+        /*Intent intent = new Intent(this, UsuarioRegistrado.class);
         startActivity(intent);
-        finish();
+        finish();*/
 
     }
 }

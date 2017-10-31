@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
+        "outputFile": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 204
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 312
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 435
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 535
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 641
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 726
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 829
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 947
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1023
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1100
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1181
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1288
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1391
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1488
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1596
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1698
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1800
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1917
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2015
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 2174
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -392,7 +392,7 @@
                     "endOffset": 2294
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -412,7 +412,7 @@
                     "endOffset": 2419
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -431,7 +431,7 @@
                     "endOffset": 2513
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -450,7 +450,7 @@
                     "endOffset": 2580
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -469,7 +469,7 @@
                     "endOffset": 2651
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -488,7 +488,7 @@
                     "endOffset": 2713
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -507,7 +507,7 @@
                     "endOffset": 2789
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -526,7 +526,7 @@
                     "endOffset": 2863
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -545,7 +545,7 @@
                     "endOffset": 2955
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -564,7 +564,7 @@
                     "endOffset": 3029
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -583,7 +583,7 @@
                     "endOffset": 3103
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -602,7 +602,7 @@
                     "endOffset": 3186
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -621,7 +621,7 @@
                     "endOffset": 3285
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -640,7 +640,7 @@
                     "endOffset": 3349
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -659,7 +659,7 @@
                     "endOffset": 3413
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -678,7 +678,7 @@
                     "endOffset": 3545
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -697,7 +697,7 @@
                     "endOffset": 3654
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -716,7 +716,7 @@
                     "endOffset": 3842
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -735,7 +735,7 @@
                     "endOffset": 3970
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -754,7 +754,7 @@
                     "endOffset": 4082
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -773,7 +773,7 @@
                     "endOffset": 4291
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -792,7 +792,7 @@
                     "endOffset": 4415
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -811,7 +811,7 @@
                     "endOffset": 4546
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -830,7 +830,7 @@
                     "endOffset": 4748
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/2948a93035e8bb39b8f4cfbc6dd2ccfd5dc4d29b/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/e72647660b41ce596e9b6e2f777127418f513252/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -849,7 +849,7 @@
                     "endOffset": 4973
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -868,7 +868,7 @@
                     "endOffset": 5083
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -887,7 +887,7 @@
                     "endOffset": 5271
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -906,7 +906,7 @@
                     "endOffset": 5400
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -925,7 +925,7 @@
                     "endOffset": 5598
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -944,7 +944,7 @@
                     "endOffset": 5782
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -963,7 +963,7 @@
                     "endOffset": 5878
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -982,7 +982,7 @@
                     "endOffset": 5971
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -1001,7 +1001,7 @@
                     "endOffset": 6079
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/f17ba4ebdec42129d1e402c466bab9da31db638d/output/res/values-af/values.xml",
+                    "file": "/home/ibai/.android/build-cache/99b08fd4346e204f770cf1c75d999794f9df77b9/output/res/values-af/values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -1020,7 +1020,7 @@
                     "endOffset": 6140
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/71bf54588ad522913d049f2f3f581341cfe7c12d/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1039,7 +1039,7 @@
                     "endOffset": 6220
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1058,7 +1058,7 @@
                     "endOffset": 6321
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/b570ec433377fcc20f6bdad8c6ad55cfbdda509f/output/res/values-af/values-af.xml",
+                    "file": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/values-af/values-af.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

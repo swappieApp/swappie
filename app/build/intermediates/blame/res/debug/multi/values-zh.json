@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/maialen/Android/AndroidStudioProjects/Prueba/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+        "outputFile": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 102
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/res/values-zh/values-zh.xml",
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/res/values-zh/values-zh.xml",
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 227
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/res/values-zh/values-zh.xml",
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 292
                 },
                 "from": {
-                    "file": "/home/maialen/.android/build-cache/28a91a1ab63857d6930cbd27dc18abad494d7b26/output/res/values-zh/values-zh.xml",
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,

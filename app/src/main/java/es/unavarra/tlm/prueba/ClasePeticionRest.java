@@ -3,6 +3,7 @@ package es.unavarra.tlm.prueba;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.SystemClock;
@@ -38,7 +39,7 @@ public class ClasePeticionRest {
     public static ArrayList<KeyValue> peticionRest(final ArrayList<KeyValue> parametros, final String funcionAPI, final String metodo){
 
         final ArrayList<KeyValue> respuesta = new ArrayList<>();
-        final int[] responseCode = {-1};
+        //final int[] responseCode = {-1};
 
 
         try {
@@ -67,7 +68,7 @@ public class ClasePeticionRest {
             }
 
 
-           AsyncTask.execute(new Runnable() {
+           /*AsyncTask.execute(new Runnable() {
 
                 public void run() {
                     try {
@@ -85,7 +86,10 @@ public class ClasePeticionRest {
 
 
             if (responseCode[0] == 200) {
+            */
 
+
+            if (myConnection.getResponseCode() == 200){
 
                 Log.d("probando1", "entro al if");
                 InputStream responseBody = myConnection.getInputStream();
@@ -227,12 +231,19 @@ public class ClasePeticionRest {
 
 
         String funcionAPI = "guardar_usuario";
+        String nombre, apellidos, email, metodoLogin;
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
 
 
         public GuardarUsuario(Context context, String nombre, String apellidos, String email, String password, String ubicacion, String metodoLogin) {
+            this.context = context;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.email = email;
+            this.metodoLogin = metodoLogin;
+
             parametros.add(new KeyValue("nombre", nombre));
             parametros.add(new KeyValue("apellidos", apellidos));
             parametros.add(new KeyValue("metodo_login", metodoLogin));
@@ -241,8 +252,6 @@ public class ClasePeticionRest {
                 parametros.add(new KeyValue("password", password));
             }
             parametros.add(new KeyValue("ubicacion", ubicacion));
-            this.context = context;
-
 
         }
 
@@ -277,8 +286,16 @@ public class ClasePeticionRest {
             SharedPreferences.Editor editor = settings.edit();
 
             editor.putInt("user", id);
+            editor.putString("metodo", metodoLogin);
+            editor.putBoolean("sesion", true);
+            editor.putString("nombre",nombre);
+            editor.putString("apellidos",apellidos);
+            editor.putString("email",email);
 
             editor.commit();
+
+            Intent intent = new Intent(context, UsuarioRegistrado.class);
+            context.startActivity(intent);
 
         }
 
