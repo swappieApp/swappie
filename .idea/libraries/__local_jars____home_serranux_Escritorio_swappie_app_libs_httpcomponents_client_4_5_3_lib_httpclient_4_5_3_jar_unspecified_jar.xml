@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="__local_jars__:/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

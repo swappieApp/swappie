@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/serranux/Escritorio/swappie/app/libs/apache-mime4j-0.7.2/lib/apache-mime4j-core-0.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
+        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/apache-mime4j-core-0.7.2_63347f2624dc7d750e07162bd25ac4f3baa2effb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serranux/Escritorio/swappie/app/libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
+        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/gradle-wrapper_2efd778b7f34f545a14bda83903f4a731296a129.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e3fd8ced1f52c7574af952e2e6da0df8df08eb82">
+        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/httpcore-4.4.6_695526354cad051e063b4a73345cd93555219e13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d1577ae15f01ef5438c5afc62162457c00a34713">
+        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/httpclient-4.5.3_fa4babf95af5c9eb24add6d0657ff721bf543a9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpmime-4.5.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="889fd6d061bb63b99dd5c6aba35a555ae863de52">
+        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/httpmime-4.5.3_993f4be9924aa04aa891bf1aa11382cfcff646d1.jar" />
+    </item>
+
+</items>
