@@ -3,10 +3,24 @@
 buildscript {
     repositories {
         jcenter()
+<<<<<<< HEAD
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io'
+        }
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.google.gms:google-services:3.0.0'
+=======
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
 
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -15,6 +29,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+<<<<<<< HEAD
+        mavenCentral()
+=======
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476
     }
 }
 
