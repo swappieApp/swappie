@@ -1,15 +1,10 @@
 package es.unavarra.tlm.prueba;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +21,9 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
-import es.unavarra.tlm.prueba.model.Producto;
+import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
+import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
+import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto;
 
 import java.util.ArrayList;
 

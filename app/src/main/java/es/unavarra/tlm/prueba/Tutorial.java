@@ -22,6 +22,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
+
 /**
  * Created by maialen on 19/10/17.
  */

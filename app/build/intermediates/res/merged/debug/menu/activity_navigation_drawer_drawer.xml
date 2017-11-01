@@ -7,15 +7,7 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/tutorial" />
     </group>
-      <!--  <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
 
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" /> -->
     <group android:checkableBehavior="single">
         <item android:title="SOBRE NOSOTROS">
             <menu>
@@ -35,7 +27,6 @@
                     android:title="Envíanos tus comentarios"
                     />
             </menu>
-
         </item>
     </group>
 

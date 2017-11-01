@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
         "source": "/home/ibai/.android/build-cache/a191a7cf72f65b6465fe719d2564f961a1e98be6/output/res/layout-v16/notification_template_custom_big.xml"
     }

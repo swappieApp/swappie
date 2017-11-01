@@ -1,12 +1,9 @@
 package es.unavarra.tlm.prueba;
 
-import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.os.SystemClock;
 import android.util.JsonReader;
 import android.util.Log;
 import android.widget.Toast;
@@ -23,6 +20,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+
+import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 
 /**
  * Created by ibai on 10/20/17.

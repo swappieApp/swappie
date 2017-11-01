@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="es.unavarra.tlm.prueba.UsuarioRegistrado"
+    tools:context="es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado"
     tools:showIn="@layout/app_bar_usuario_registrado">
 
+    <!--
     <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="56dp"
@@ -18,10 +19,13 @@
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="8dp" />
 
+        -->
+
     <FrameLayout android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
+
         <link.fls.swipestack.SwipeStack
             android:id="@+id/pila_cartas"
             android:layout_width="match_parent"

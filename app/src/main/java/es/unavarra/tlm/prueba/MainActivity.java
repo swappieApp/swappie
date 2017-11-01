@@ -1,23 +1,16 @@
 package es.unavarra.tlm.prueba;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -44,9 +37,9 @@ import com.google.firebase.auth.GoogleAuthProvider;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
+
+import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 
 public class MainActivity extends AppCompatActivity {
 

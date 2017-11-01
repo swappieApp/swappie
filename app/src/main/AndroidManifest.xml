@@ -50,7 +50,7 @@
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".UsuarioRegistrado"
+            android:name=".PantallaPrincipal.UsuarioRegistrado"
             android:label="@string/title_activity_usuario_registrado"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Registrarse"

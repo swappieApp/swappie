@@ -76,7 +76,7 @@
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="es.unavarra.tlm.prueba.UsuarioRegistrado"
+            android:name="es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado"
             android:label="@string/title_activity_usuario_registrado"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

@@ -8,6 +8,14 @@
         "source": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/menu/crop_image_menu.xml"
     },
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/menu/activity_usuario_registrado_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/menu/activity_usuario_registrado_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/menu/crop_image_menu.xml",
+        "source": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/menu/crop_image_menu.xml"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/menu/popup_menu.xml",
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/menu/popup_menu.xml"
     },
@@ -18,6 +26,22 @@
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/menu/activity_usuario_registrado_drawer.xml",
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/menu/activity_usuario_registrado_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/menu/popup_menu.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/menu/popup_menu.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/menu/activity_navigation_drawer_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/menu/activity_navigation_drawer_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/menu/navigation_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/menu/navigation_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/menu/usuario_registrado.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/menu/usuario_registrado.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/menu/navigation_drawer.xml",

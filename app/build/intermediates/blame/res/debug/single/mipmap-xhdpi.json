@@ -1,7 +1,15 @@
 [
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",

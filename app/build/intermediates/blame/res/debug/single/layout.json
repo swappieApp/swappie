@@ -12,8 +12,8 @@
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
@@ -28,24 +28,28 @@
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
         "source": "/home/ibai/.android/build-cache/a191a7cf72f65b6465fe719d2564f961a1e98be6/output/res/layout/notification_action_tombstone.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_layout_snackbar_include.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
         "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
@@ -58,6 +62,14 @@
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_registrarse.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_registrarse.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
@@ -76,14 +88,6 @@
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
-        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_white_round.xml"
-    },
-    {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_media.xml"
-    },
-    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/app_bar_usuario_registrado.xml",
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/app_bar_usuario_registrado.xml"
     },
@@ -96,16 +100,8 @@
         "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/com_facebook_login_fragment.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
-        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_white_large.xml"
-    },
-    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
@@ -114,6 +110,322 @@
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/crop_image_view.xml",
+        "source": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/layout/crop_image_view.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_invitado.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_invitado.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/slide_screen3.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/slide_screen3.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/crop_image_view.xml",
+        "source": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/layout/crop_image_view.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
+        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/nav_header_navigation_drawer.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/nav_header_navigation_drawer.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/content_usuario_registrado.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/content_usuario_registrado.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_navigation_drawer.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_camara.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_camara.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_usuario_registrado.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_usuario_registrado.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/popup.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/popup.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_camara.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_camara.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_navigation_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_invitado.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_invitado.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/home/ibai/.android/build-cache/a191a7cf72f65b6465fe719d2564f961a1e98be6/output/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_welcome.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/crop_image_activity.xml",
+        "source": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/layout/crop_image_activity.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/slide_screen2.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/slide_screen2.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/stack_item_product.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/stack_item_product.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/slide_screen3.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/slide_screen3.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
@@ -128,12 +440,8 @@
         "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/com_facebook_activity_layout.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_lines_media.xml"
-    },
-    {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/crop_image_view.xml",
-        "source": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/layout/crop_image_view.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_registrarse.xml",
@@ -148,48 +456,60 @@
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/content_usuario_registrado.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/slide_screen3.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/slide_screen3.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_navigation_item_subheader.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_preference_manager.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_preference_manager.xml"
-    },
-    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_screen_simple.xml"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_preference_manager.xml",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_preference_manager.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_bar_title_item.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/nav_header_navigation_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/nav_header_navigation_drawer.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
-        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_blue_round.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/slide_screen1.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/slide_screen1.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/app_bar_usuario_registrado.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/app_bar_usuario_registrado.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
         "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/messenger_button_send_white_round.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
-        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_big_media_custom.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/popup.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/popup.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
@@ -200,6 +520,10 @@
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/content_navigation_drawer.xml"
     },
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
         "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_menu_item.xml"
     },
@@ -208,48 +532,56 @@
         "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_item.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_alert_dialog_title_material.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/crop_image_activity.xml",
+        "source": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/layout/crop_image_activity.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/messenger_button_send_blue_round.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/app_bar_navigation_drawer.xml",
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/app_bar_navigation_drawer.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_item_header.xml"
-    },
-    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
         "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_layout_snackbar.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/nav_header_navigation_drawer.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/nav_header_navigation_drawer.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/tooltip.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/tooltip.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_navigation_item_subheader.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_text_input_password_icon.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
         "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_big_media.xml"
-    },
-    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
-        "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_text_input_password_icon.xml"
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/home/ibai/.android/build-cache/a191a7cf72f65b6465fe719d2564f961a1e98be6/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_usuario_registrado.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_usuario_registrado.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/nav_header_usuario_registrado.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/nav_header_usuario_registrado.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/stack_item_product.xml",
@@ -260,12 +592,16 @@
         "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_welcome.xml"
     },
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_big_media.xml"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
@@ -276,44 +612,64 @@
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_navigation_drawer.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_navigation_drawer.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/app_bar_navigation_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/app_bar_navigation_drawer.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/ibai/.android/build-cache/158d2abc539299233611fd88ec51e4518eea2eec/output/res/layout/notification_media_action.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_activity_chooser_view.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/res/layout/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_usuario_registrado.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_usuario_registrado.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/content_navigation_drawer.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/content_navigation_drawer.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
-        "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/activity_preference_manager.xml",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/layout/activity_preference_manager.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/popup.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/popup.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/res/layout/notification_template_icon_group.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_camara.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_camara.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
@@ -328,10 +684,6 @@
         "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_blue_small.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/activity_invitado.xml",
-        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/layout/activity_invitado.xml"
-    },
-    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
         "source": "/home/ibai/.android/build-cache/dc1980cf12929d828bc1fb03f3864e11acd24f00/output/res/layout/design_bottom_navigation_item.xml"
     },
@@ -344,23 +696,35 @@
         "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/messenger_button_send_white_small.xml"
     },
     {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/res/layout/notification_action_tombstone.xml"
+    },
+    {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/tooltip.xml",
         "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/tooltip.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/home/ibai/.android/build-cache/cbf9d8e8e3bb57b489d4be09f7342b82aa3c2ef2/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/home/ibai/.android/build-cache/a191a7cf72f65b6465fe719d2564f961a1e98be6/output/res/layout/notification_template_icon_group.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/messenger_button_send_blue_large.xml"
     },
     {
         "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
         "source": "/home/ibai/.android/build-cache/408de30a927f1e5d31b9273744c4913f8257f40c/output/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/layout/crop_image_activity.xml",
-        "source": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/layout/crop_image_activity.xml"
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/res/layout/messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     }
 ]

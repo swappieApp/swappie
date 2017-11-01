@@ -3,15 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_slider_screen3">
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="50dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,11 +23,13 @@
             android:textSize="@dimen/slide_title"
             android:layout_marginBottom="@dimen/slide_title"
             android:textStyle="bold" />
+
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
             android:layout_marginTop="30dp"
             android:src="@drawable/chatbn" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,6 +40,7 @@
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />
+
     </LinearLayout>
 
 </RelativeLayout>
