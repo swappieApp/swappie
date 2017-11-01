@@ -1,7 +1,0 @@
-#Mon Oct 30 19:39:15 CET 2017
-base.0=/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b0802a6eae68bb222b73edfb42e3da14f036bfbb
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a1061f60934dffb05c3b1b9f4cd9483d526f0897/classes.dex
-base.1=/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a1061f60934dffb05c3b1b9f4cd9483d526f0897
-file.0=/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b0802a6eae68bb222b73edfb42e3da14f036bfbb/classes.dex

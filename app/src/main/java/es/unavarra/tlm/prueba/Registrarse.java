@@ -46,7 +46,6 @@ public class Registrarse extends AppCompatActivity {
         String ubicacion = "42.798617, -1.634627";
         String metodo = "email";
 
-
         new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         //new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);
 
