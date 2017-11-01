@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+=======
+<?xml version="1.0" encoding="utf-8"?>
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
+<<<<<<< HEAD
     <dimen name="nav_header_height">192dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
@@ -13,3 +18,8 @@
     <dimen name="slide_desc">16dp</dimen>
     <dimen name="desc_padding">40dp</dimen>
 </resources>
+=======
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476

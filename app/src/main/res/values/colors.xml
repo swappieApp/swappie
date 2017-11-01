@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
@@ -32,4 +33,11 @@
     </array>
 
 
+=======
+    <color name="colorPrimary">#E9ABFC</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="action_bar_items">#C51162</color>
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476
 </resources>

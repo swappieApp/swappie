@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
 
     <string name="facebook_app_id">1588980934457495</string>
 
@@ -70,4 +71,17 @@
     </string>
 
 
+=======
+    <string name="app_name">Swappie</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476
 </resources>

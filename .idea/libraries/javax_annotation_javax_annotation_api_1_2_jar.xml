@@ -4,8 +4,12 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
+<<<<<<< HEAD
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/ad18a02db08eaee697f812e333f692fc51129e4a/javax.annotation-api-1.2-sources.jar!/" />
     </SOURCES>
+=======
+    <SOURCES />
+>>>>>>> fa5b8ed80618b6a65151ce5ccacf3fe5b46dd476
   </library>
 </component>
