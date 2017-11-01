@@ -456,18 +456,21 @@ public class ClasePeticionRest {
         String funcionAPI = "guardar_objeto";
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
+        File foto;
         Context context;
 
-        public GuardarObjeto(Context context, int idUsuario, int idObjeto, String descripcion) {
+        public GuardarObjeto(Context context, int idUsuario, String descripcion, File foto) {
             ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
-            parametros.add(new KeyValue("id_objeto", idObjeto+""));
             parametros.add(new KeyValue("descripcion", descripcion));
             this.context = context;
         }
 
         @Override
         protected String doInBackground(String... strings) {
+
+            int idObjeto = guardarFoto(context, foto);
+            parametros.add(new KeyValue("id_objeto", idObjeto+""));
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
             if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
                 return "true";
@@ -489,40 +492,26 @@ public class ClasePeticionRest {
 
     }
 
-    public static class GuardarFoto extends AsyncTask<String, String, Integer> {
+    public static int guardarFoto(Context context, File foto) {
 
         String funcionAPI = "guardar_objeto";
-        File foto;
+        ArrayList<KeyValue> parametros = new ArrayList<>();
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
-        Context context;
-
-        public GuardarFoto(Context context, File foto) {
-            this.context = context;
-            this.foto = foto;
-        }
-
-        @Override
-        protected Integer doInBackground(String... strings) {
-            ArrayList<KeyValue> respuesta = doFileUpload(foto);
-            int idObjeto = 0;
-            if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
-                if (respuesta.get(1).getKey().equals("id_objeto")){
-                    idObjeto = Integer.parseInt(respuesta.get(1).getValue());
-                }
-            }
-            return idObjeto;
-        }
-
-        @Override
-        protected void onPostExecute(Integer result) {
-            super.onPostExecute(result);
-            if (result.equals("true")){
-                Toast.makeText(context, "Foto del Objeto Nº "+ result +" guardada correctamente", Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(context, "Error al crear el objeto", Toast.LENGTH_SHORT).show();
+        ArrayList<KeyValue> respuesta = doFileUpload(foto);
+        int idObjeto = 0;
+        if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
+            if (respuesta.get(1).getKey().equals("id_objeto")){
+                idObjeto = Integer.parseInt(respuesta.get(1).getValue());
             }
         }
+
+        if (idObjeto != 0){
+            Toast.makeText(context, "Foto del Objeto Nº "+ idObjeto +" guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(context, "Error al crear el objeto", Toast.LENGTH_SHORT).show();
+        }
+
+        return idObjeto;
 
     }
 
@@ -692,6 +681,43 @@ public class ClasePeticionRest {
 
     }
 
+        /*
+    public static class GuardarFoto extends AsyncTask<String, String, Integer> {
 
+        String funcionAPI = "guardar_objeto";
+        File foto;
+
+        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        Context context;
+
+        public GuardarFoto(Context context, File foto) {
+            this.context = context;
+            this.foto = foto;
+        }
+
+        @Override
+        protected Integer doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = doFileUpload(foto);
+            int idObjeto = 0;
+            if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
+                if (respuesta.get(1).getKey().equals("id_objeto")){
+                    idObjeto = Integer.parseInt(respuesta.get(1).getValue());
+                }
+            }
+            return idObjeto;
+        }
+
+        @Override
+        protected void onPostExecute(Integer result) {
+            super.onPostExecute(result);
+            if (result.equals("true")){
+                Toast.makeText(context, "Foto del Objeto Nº "+ result +" guardada correctamente", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(context, "Error al crear el objeto", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+    }
+*/
 
 }
