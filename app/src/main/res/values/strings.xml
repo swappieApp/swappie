@@ -11,6 +11,7 @@
     <string name="pass">Contraseña</string>
     <string name="btn1">ENTRAR</string>
     <string name="registrarsebtn">REGISTRARSE</string>
+    <string name="iniciarSesionbtn">INICIAR SESIÓN</string>
 
     <string name="continuar">Continuar sin registrarme</string>
     <string name="continuarEmail">Continuar con email</string>
@@ -55,6 +56,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_usuario_registrado">UsuarioRegistrado</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="aboutus">SOBRE NOSOTROS</string>
+    <string name="contact">Contacto</string>
+    <string name="cuentanos">CUÉNTANOS LO QUE PIENSAS</string>
+    <string name="feedback">Envíanos tus comentarios</string>
+    <string name="contact_us">CONTÁCTANOS</string>
+    <string name="popup">Si tienes alguna duda, puedes enviarnos un e-mail a swappieapp2017@gmail.com</string>
+    <string name="toastEmailMalo">El email no es válido</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

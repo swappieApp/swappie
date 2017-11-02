@@ -8,8 +8,10 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -26,13 +28,11 @@ public class Registrarse extends AppCompatActivity {
 
     }
 
-
+    public static boolean esMailValido(CharSequence objetivo) {
+        return objetivo != null && Patterns.EMAIL_ADDRESS.matcher(objetivo).matches();
+    }
 
     public void clickRegistrarse(View view){
-
-        ProgressDialog dialog = new ProgressDialog(Registrarse.this);
-        dialog.setMessage("Please wait");
-        dialog.show();
 
         EditText edit = (EditText)findViewById(R.id.editText);
         EditText edit2 = (EditText)findViewById(R.id.editText2);
@@ -47,7 +47,12 @@ public class Registrarse extends AppCompatActivity {
         String metodo = "email";
 
 
-        new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        if (esMailValido(email)){
+            new ClasePeticionRest.GuardarUsuario(Registrarse.this,nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }else{
+            Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo),Toast.LENGTH_LONG);
+            toastMailMalo.show();
+        }
         //new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);
 
         //Log.d("resultado", String.valueOf(result));

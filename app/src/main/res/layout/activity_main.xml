@@ -115,6 +115,7 @@
                 android:layout_weight="0.40"
                 android:paddingLeft="20dp"
                 android:text="@string/iniciarSesion"
+                android:onClick="loginEmail"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"

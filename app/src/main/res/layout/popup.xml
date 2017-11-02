@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Si tienes alguna duda, puedes enviarnos un e-mail a swappieapp2017@gmail.com"
+        android:text="@string/popup"
         android:id="@+id/text_dialog"
         android:layout_below="@+id/a"
         android:layout_marginTop="20dp"
@@ -41,7 +41,7 @@
         android:layout_height="80dp"
         android:id="@+id/a"
         android:gravity="center"
-        android:text="CONTÁCTANOS"
+        android:text="@string/contact_us"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:background="@drawable/linear_gradient"

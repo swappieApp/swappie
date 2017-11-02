@@ -95,24 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
                 if (user!=null){
 
-                    String name = user.getDisplayName();
-                    String imagen = String.valueOf(user.getPhotoUrl());
-                    String id = user.getUid();
-                    String email = user.getEmail();
-
-                    Log.d("etiqueta", name);
-                    Log.d("etiqueta", imagen);
-                    Log.d("etiqueta", id);
-
-                    SharedPreferences info = getSharedPreferences("Config", 0);
-                    SharedPreferences.Editor editor = info.edit();
-                    editor.putString("metodo","google");
-                    editor.putString("nombre",name);
-                    editor.putString("email",email);
-                    editor.putBoolean("sesion", true);
-                    editor.putString("foto", imagen);
-                    editor.commit();
-
                     Intent intent = new Intent(MainActivity.this,UsuarioRegistrado.class);
                     startActivity(intent);
                     finish();
@@ -221,6 +203,23 @@ public class MainActivity extends AppCompatActivity {
             if (result.isSuccess()) {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
+
+                String name = account.getDisplayName();
+                String imagen = String.valueOf(account.getPhotoUrl());
+                String id = account.getIdToken();
+                String email = account.getEmail();
+
+
+                SharedPreferences info = getSharedPreferences("Config", 0);
+                SharedPreferences.Editor editor = info.edit();
+                editor.putString("metodo","google");
+                editor.putString("nombre",name);
+                editor.putString("email",email);
+                editor.putBoolean("sesion", true);
+                editor.putString("foto", imagen);
+                editor.commit();
+
+
                 firebaseAuthWithGoogle(account);
             } else {
                 // Google Sign In failed, update UI appropriately
@@ -264,6 +263,15 @@ public class MainActivity extends AppCompatActivity {
         finish();
 
     }
+
+    public void loginEmail(View view){
+
+        Intent intent = new Intent(this, IniciarSesion.class);
+        startActivity(intent);
+        finish();
+
+    }
+
 
     public void logout(View view) {
         LoginManager.getInstance().logOut();

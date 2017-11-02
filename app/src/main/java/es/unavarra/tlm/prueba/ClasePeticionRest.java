@@ -234,6 +234,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "guardar_usuario";
         String nombre, apellidos, email, metodoLogin;
+        ProgressDialog dialog;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
@@ -255,6 +256,9 @@ public class ClasePeticionRest {
                 parametros.add(new KeyValue("password", password));
             }
             parametros.add(new KeyValue("ubicacion", ubicacion));
+            this.dialog = new ProgressDialog(context);
+            this.dialog.setMessage("Please wait");
+            this.dialog.show();
 
         }
 
@@ -278,9 +282,16 @@ public class ClasePeticionRest {
         protected void onPostExecute(Integer result) {
             super.onPostExecute(result);
             guardarUsuarioEnSharedPreferences(result);
-            Toast.makeText(context, "Creado usuario Nº " + result, Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
+            if (result==0){
+                this.dialog.dismiss();
+                Toast.makeText(context, "Email ya registrado", Toast.LENGTH_SHORT).show();
+
+            }else{
+                Toast.makeText(context, "Creado usuario Nº " + result, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, UsuarioRegistrado.class);
+                context.startActivity(intent);
+                ((Activity)context).finish();
+            }
         }
 
         public void guardarUsuarioEnSharedPreferences(int id){
