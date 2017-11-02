@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "724402415151",
+    "firebase_url": "https://swappie-9bb6f.firebaseio.com",
+    "project_id": "swappie-9bb6f",
+    "storage_bucket": "swappie-9bb6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724402415151:android:21f1d3cc8cb678fb",
+        "android_client_info": {
+          "package_name": "es.unavarra.tlm.prueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724402415151-0qm01p5i2c3fvi8j5fgg17hs78af05u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.unavarra.tlm.prueba",
+            "certificate_hash": "90b1d26063ee14037c5de43d6756d602d57fa380"
+          }
+        },
+        {
+          "client_id": "724402415151-rsm66a5eia04cttcg4u4m7q9cteil214.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlQ5iNcHDU0Xsu7gzct4kBfjcNxK460Ts"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724402415151-rsm66a5eia04cttcg4u4m7q9cteil214.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

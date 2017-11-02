@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tutorial"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/tutorial" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="SOBRE NOSOTROS">
+            <menu>
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/contact"
+                    android:title="Contacto" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="CUÉNTANOS LO QUE PIENSAS">
+            <menu>
+                <item
+                    android:id="@+id/nav_help_us"
+                    android:icon="@drawable/help_us"
+                    android:title="Envíanos tus comentarios"
+                    />
+            </menu>
+        </item>
+    </group>
+
+</menu>
