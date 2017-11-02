@@ -78,7 +78,7 @@ public class Camara extends AppCompatActivity {
         setContentView(R.layout.activity_camara);
         verifyStoragePermissions(this);
 
-        Button boton = (Button)findViewById(R.id.boton_camara);
+        /*Button boton = (Button)findViewById(R.id.boton_camara);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +96,7 @@ public class Camara extends AppCompatActivity {
                      /*catch (IOException ex) {
                         // Error occurred while creating the File
                         Log.i("tag", "IOException");
-                    }*/
+                    }
                     //cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
                     //startActivityForResult(cameraIntent, REQUEST_IMAGE_CAPTURE);
                     // Continue only if the File was successfully created
@@ -107,9 +107,15 @@ public class Camara extends AppCompatActivity {
                     }
                 }
             }
-        });
+        });*/
 
-        Button botonDos = (Button)findViewById(R.id.boton_crop);
+        CropImage.activity()
+                .setGuidelines(CropImageView.Guidelines.ON)
+                .setAspectRatio(3,4)
+                .setFixAspectRatio(true)
+                .start(activity);
+
+        /*Button botonDos = (Button)findViewById(R.id.boton_crop);
         botonDos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,12 +127,12 @@ public class Camara extends AppCompatActivity {
                         .setFixAspectRatio(true)
                         .start(activity);
             }
-        });
+        });*/
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+        /*if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             try {
                 mImageView = (ImageView)findViewById(R.id.image_test);
                 mImageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse("file:"+mCurrentPhotoPath));
@@ -154,7 +160,7 @@ public class Camara extends AppCompatActivity {
                 texto.setText(errors.toString());
 
             }
-        }
+        }*/
 
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);

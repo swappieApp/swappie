@@ -2,49 +2,409 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/serranux/Escritorio/swappie/app/libs/apache-mime4j-0.7.2/lib/apache-mime4j-core-0.7.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
-        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/apache-mime4j-core-0.7.2_63347f2624dc7d750e07162bd25ac4f3baa2effb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serranux/Escritorio/swappie/app/libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
-        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/gradle-wrapper_2efd778b7f34f545a14bda83903f4a731296a129.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e3fd8ced1f52c7574af952e2e6da0df8df08eb82">
-        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/httpcore-4.4.6_695526354cad051e063b4a73345cd93555219e13.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\libs\httpcomponents-client-4.5.3\lib\httpclient-4.5.3.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="d1577ae15f01ef5438c5afc62162457c00a34713">
-        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/httpclient-4.5.3_fa4babf95af5c9eb24add6d0657ff721bf543a9d.jar" />
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-4.5.3_ec8a7e0114eaa8585b8f5e3f955149a9fd131bc4\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/serranux/Escritorio/swappie/app/libs/httpcomponents-client-4.5.3/lib/httpmime-4.5.3.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\138826d1b1609df93097c3691cf843899ebae2af\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_43427c79051726c7e5fee134d205f31ef9e0b2a2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\c5b90a69d6e7fc02ef6c4380a7f72a1e315498e4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fd884c18139b3867e43df7526fb85ba76042a158\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\libs\httpcomponents-client-4.5.3\lib\httpcore-4.4.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e3fd8ced1f52c7574af952e2e6da0df8df08eb82">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore-4.4.6_73abf5a0fa436622b5f7e76a252d5cdb5b5df6d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\libs\apache-mime4j-0.7.2\lib\apache-mime4j-core-0.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\2\apache-mime4j-core-0.7.2_cc6b4e56fad9ae1a8bd2869c8a6ed5c4dde6b830\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\48192b19fe25e7cad1448e4ebaa3ee3d7cdb86a3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3996e78b811f962667630143863b751dcc047aa3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\common-1.0.0_5aea334c75eeaa25f061135b91d01c4aa842bb1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\b4f454562ea2d57aad261113571e5171761aaa4d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0f529f43fd6faebbcd794dbcbfe07b554a7e78bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_11ffa98e79e8af5ba6067b74cb285148ab8776b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\916301565bc5ac73cafead054e0b9382b1b6036c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c8d0bc5eaa828fab23b51097fc05e7d38f3a820\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\7f8b2c049f4b1203901ad15f9b8bc5a7230905a3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c743a2fd48eaf8ea5eac0bdfa23c654ca4d0fd74">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_879fd05906715054feb9997ad6643889a8ddcb54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\8f43f0a6285bfccd2929aa439768616e8ef36e48\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_790afa20ea53ae32cca51d3f54135720ecfaf75e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\libs\CircleImageView-master\gradle\wrapper\gradle-wrapper.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\2\gradle-wrapper_81772727559be0f324b6cd70e42fd14793f7cbe2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\3dbcb832e0c2a58e8d76c752b3239a42b49d6f29\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4b9cd08956cc25c5e2827345cfb2c899cdb8a6d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\68e56cfa49db7607ca22ab237500ad34ef45d691\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f113be98f3f147ae52b8d0a4c78447a28143e5fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\ed853d85c4ac478d1c382f1a07a22901e1f5f741\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e3501da4dae741e5f82e4853de4a698716433c19\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\f2bfd44d2f041706405c2256dc893fa58002f8c4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c64130b5024e7353817c47df425da4ad94ab2e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\9a2c104110e8ed5deab1162cdf5be2ad6b0b8c0a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_83478244c53f442a55b00310812c263042fedf83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\4efa03d695d88277d3ec76d8391fd9ba6ef094b8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6586925e4621be284db3d0a7edb723138dce07d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\af837ef8e3f2470bb7b36f9198e08205bd267701\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e811daf19ff84fbdaf8410537d69a04ddf4c2c5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\8e342be136a178cb90082880d0ac87717c15c76f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c82b9f9dc4ca29521241c2eca8637af59b520e05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_478024034f79216ac4f2af9dd35026ec19ec6659\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\3befb6c360da24a6397d7ffc8d99087c3f8cc088\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8eff036ec401f07feb475e6b6546e665aafeada0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\43848fe9c534013ec9ff37595584521221c0bc6f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a157c0a22c71511dd694ab107e688b43d3391c65">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_98e790c1af7885c04ae07b76124bd6154f6bf31a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\41b2d17a68cce06268ddbfbed440886e3f180bef\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_352386f70d11d1b575408843400c428c0a64cdd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\7b77253a701b4ea6809380799aa24d6698a6ac39\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1a10332e561dbad9fd003560979e6202383d0d2c">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d611938b800a710e0e4dde8133269b315a5aa88f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\21766b0b6b306a7433a34b643b08c5e1ee6738b9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_25ac9a8c63c03db68b49b44c20ad6847278a7b76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\ca48a67b6846d36309f7ba2fd13294ab7135dd2a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4376d72354cda41b11208de2819a8ac7dba78559\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\common-1.0.0_0b864e0600fc2c076b4463df7edcd612c1a40695\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\73f9c2d43e5b2e31ee62322fea5c256060f826ac\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="820605b42a2d3d9cb9e6c4cc7453fb4f802aedff">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d7ade2599020fd52bf6a38f40a311ada3fc6cda4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\8ac169c10c6d0d8531794bb4d3d539b908ab3e09\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3bd847e08ba7093fbddd52c42164cc4723d90a7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b09b2abc95a554c7e132f7dc227ca2c0e8cd286c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\e596487b6edb335d94789b42d7ae4b5c1fc6fe2a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_07cbc19dfbdfae0b5348c4be9e0798a0b9125cca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\d2843aa6e6a6781bab787005128248ce3052f397\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b08619d10fc2cfc274d2dd1264885fdf1089b8b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_8ff70c679aba6cea16fd5b0a0d34012669b50d37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="08a0f97fe355d06d45704ddc97173167db995d71">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a60a627a2e3c3046ce96bc05e34121d527276b06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\libs\httpcomponents-client-4.5.3\lib\httpmime-4.5.3.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="889fd6d061bb63b99dd5c6aba35a555ae863de52">
-        <dex dex="/home/serranux/Escritorio/swappie/app/build/intermediates/pre-dexed/debug/httpmime-4.5.3_993f4be9924aa04aa891bf1aa11382cfcff646d1.jar" />
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpmime-4.5.3_d2888e9d264e1ed916c0c672b7b8a1dfc378d9dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\45ff6ea3fb81c5e28f5f239ae3e7ee6d47ab72b2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c28c83a03e74babb05d7ffc842c34ffe822b4fc0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.1.0_9da7b2cf44d95b011edfe8b34743db68c36fb86e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\735cd1ac0be58c007bb76d04ffb631d0ac1ff911\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_64b94a4823fc69c1c6cf62ffde04126feb27b0c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\d973128fe834a18077908fc78acda118b836ef15\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80cde9cb330ad9db56e65390b1eb15763a707ceb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\8115638ff992eed23cfdf03887b939ad91b50050\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1fa122c981bea2f7e82eb8536b07bf99b6ab708\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\6ac88b5d4d0de3dace2e2019ee2a40015b349cb3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9873d07d337be5ef610c58d4f07f9bf39d69981f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\8a37b6a05b6282490087241002dbd68e5fbd9e01\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_29f89e9afed1fb752da5e2adf3b522b9b55af804\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fermin\.android\build-cache\b5d151fb01fae02a2fd60bcdf2b5f272ed1a784a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2dac704c044b4512a30fdca59b4718c800f895ac\classes.dex" />
     </item>
 
 </items>
