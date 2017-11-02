@@ -32,7 +32,6 @@ import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 
 public class ClasePeticionRest {
 
-    //public ArrayList<KeyValue> respuesta = new ArrayList<>();
 
     public ClasePeticionRest(){
         super();
@@ -41,12 +40,12 @@ public class ClasePeticionRest {
     public static ArrayList<KeyValue> peticionRest(final ArrayList<KeyValue> parametros, final String funcionAPI, final String metodo){
 
         final ArrayList<KeyValue> respuesta = new ArrayList<>();
-        //final int[] responseCode = {-1};
-
 
         try {
 
             respuesta.clear();
+
+            Log.d("etiqueta", "size_params = "+parametros.size());
 
             String urlParametros = URLEncoder.encode(parametros.get(0).getKey(), "utf-8")+"="+URLEncoder.encode(parametros.get(0).getValue(), "utf-8");
             for (int x = 1; x < parametros.size(); x++){
@@ -56,7 +55,7 @@ public class ClasePeticionRest {
             String stringURL = "http://swappie.tk/base/php/" + funcionAPI + ".php?"+urlParametros;
             URL url = new URL(stringURL);
 
-            //Log.e("URL", url.toString());
+            Log.d("etiqueta", "CP2");
             Log.d("etiqueta", String.valueOf(url));
 
 
@@ -66,16 +65,17 @@ public class ClasePeticionRest {
             if (metodo.equals("post")){
                 myConnection.setDoOutput(true);
             }
+            /*
             for (int x = 0; x < parametros.size(); x++){
                 myConnection.setRequestProperty(parametros.get(x).getKey(), parametros.get(x).getValue());
             }
-
-
+            */
 
             if (myConnection.getResponseCode() == 200){
 
-                Log.d("probando1", "entro al if");
+                Log.d("etiqueta", "entro al if");
                 InputStream responseBody = myConnection.getInputStream();
+                Log.d("etiqueta", "RESPONSE:"+responseBody.toString());
                 InputStreamReader responseBodyReader = new InputStreamReader(responseBody, "UTF-8");
                 JsonReader jsonReader = new JsonReader(responseBodyReader);
                 jsonReader.setLenient(true);
@@ -88,24 +88,17 @@ public class ClasePeticionRest {
                 }
                 jsonReader.close();
 
-
             } else {
-                Log.d("probando1", "entro al else");
+                Log.d("etiqueta", "entro al else");
                 respuesta.add(new KeyValue("ok", "false"));
                 respuesta.add(new KeyValue("error", "error en la peticion"));
             }
 
-
             myConnection.disconnect();
-
-
-
 
         } catch (Exception e) {
             e.printStackTrace();
-
         }
-
         return respuesta;
 
     }
@@ -301,7 +294,6 @@ public class ClasePeticionRest {
         Context context;
 
         public GuardarSwipe(Context context, int idUsuario, int idObjeto, boolean decision) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
             parametros.add(new KeyValue("id_objeto", idObjeto+""));
             parametros.add(new KeyValue("decision", decision+""));
@@ -339,7 +331,6 @@ public class ClasePeticionRest {
         Context context;
 
         public GuardarMatch(Context context, int idUsuario1, int idUsuario2, boolean chatEmpezado) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
             parametros.add(new KeyValue("id_usuario2", idUsuario2+""));
             parametros.add(new KeyValue("chat_empezado", chatEmpezado+""));
@@ -377,7 +368,6 @@ public class ClasePeticionRest {
         Context context;
 
         public CrearChat(Context context, int idUsuario1, int idUsuario2) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
             parametros.add(new KeyValue("id_usuario2", idUsuario2+""));
             this.context = context;
@@ -414,7 +404,6 @@ public class ClasePeticionRest {
         Context context;
 
         public GuardarMensaje(Context context, int idChat, int idAutor, String mensaje) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_chat", idChat+""));
             parametros.add(new KeyValue("id_autor", idAutor+""));
             parametros.add(new KeyValue("mensaje", mensaje));
@@ -453,7 +442,6 @@ public class ClasePeticionRest {
         Context context;
 
         public GuardarObjeto(Context context, int idUsuario, String descripcion, File foto) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
             parametros.add(new KeyValue("descripcion", descripcion));
             this.context = context;
@@ -516,7 +504,6 @@ public class ClasePeticionRest {
         Context context;
 
         public ComprobarSwipe(Context context, int idUsuario1, int idObjeto) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
             parametros.add(new KeyValue("id_objeto", idObjeto+""));
             this.context = context;
@@ -558,7 +545,6 @@ public class ClasePeticionRest {
         Context context;
 
         public CogerSwipes(Context context, int idUsuario1) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
             this.context = context;
         }
@@ -590,7 +576,6 @@ public class ClasePeticionRest {
         Context context;
 
         public CogerInfoObjeto(Context context, int idObjeto) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_objeto", idObjeto+""));
             this.context = context;
         }
@@ -624,7 +609,6 @@ public class ClasePeticionRest {
         Context context;
 
         public HacerLogin(Context context, String metodoLogin, String email, String password) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("metodo_login", metodoLogin));
             parametros.add(new KeyValue("email", email));
             parametros.add(new KeyValue("password", password));
@@ -634,7 +618,7 @@ public class ClasePeticionRest {
             this.dialog.setMessage("Please wait");
             this.dialog.show();
 
-            for (int i=0; i<=parametros.size();i++){
+            for (int i=0; i<parametros.size();i++){
                 Log.d("etiqueta",parametros.get(i).getKey());
                 Log.d("etiqueta",parametros.get(i).getValue());
             }
@@ -705,7 +689,6 @@ public class ClasePeticionRest {
         Context context;
 
         public ActualizarChat(Context context, int idUsuario, int idChat) {
-            ArrayList<KeyValue> parametros = new ArrayList<>();
             parametros.add(new KeyValue("id_usuario", idUsuario + ""));
             parametros.add(new KeyValue("id_chat", idChat + ""));
             this.context = context;
@@ -756,44 +739,5 @@ public class ClasePeticionRest {
         }
 
     }
-
-        /*
-    public static class GuardarFoto extends AsyncTask<String, String, Integer> {
-
-        String funcionAPI = "guardar_objeto";
-        File foto;
-
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
-        Context context;
-
-        public GuardarFoto(Context context, File foto) {
-            this.context = context;
-            this.foto = foto;
-        }
-
-        @Override
-        protected Integer doInBackground(String... strings) {
-            ArrayList<KeyValue> respuesta = doFileUpload(foto);
-            int idObjeto = 0;
-            if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
-                if (respuesta.get(1).getKey().equals("id_objeto")){
-                    idObjeto = Integer.parseInt(respuesta.get(1).getValue());
-                }
-            }
-            return idObjeto;
-        }
-
-        @Override
-        protected void onPostExecute(Integer result) {
-            super.onPostExecute(result);
-            if (result.equals("true")){
-                Toast.makeText(context, "Foto del Objeto Nº "+ result +" guardada correctamente", Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(context, "Error al crear el objeto", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-    }
-*/
 
 }
