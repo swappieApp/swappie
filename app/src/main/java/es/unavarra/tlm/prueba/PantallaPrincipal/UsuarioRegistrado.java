@@ -88,6 +88,7 @@ public class UsuarioRegistrado extends AppCompatActivity
         // Se identifica el método que utilizó el usuario para registrarse.
         SharedPreferences settings = getSharedPreferences("Config", 0);
         metodo = settings.getString("metodo","");
+        Log.d("elmetodo",metodo);
 
         if (metodo.equals("google")){
 
@@ -164,6 +165,10 @@ public class UsuarioRegistrado extends AppCompatActivity
             String name = settings.getString("nombre", "");
             String apellidos = settings.getString("apellidos","");
             String email = settings.getString("email","");
+
+            Log.d("etiqueta",name);
+            Log.d("etiqueta",apellidos);
+            Log.d("etiqueta",email);
 
             // Se selecciona la cabecera del menú lateral de navegación.
             View headerView = navigationView.getHeaderView(0);
