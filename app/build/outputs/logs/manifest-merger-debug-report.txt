@@ -1,0 +1,414 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:2:1-78:12
+	package
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:8:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:10:22-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:14:22-78
+uses-feature#android.hardware.camera
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:15:5-16:35
+	android:required
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:16:9-32
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:15:19-57
+application
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:18:5-76:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/serranux/.android/build-cache/df2d07008f613701bccfa21f73986b73f1592aea/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] /home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/serranux/.android/build-cache/10528be9e137d1d09a0a913db75f4f2b12004505/output/AndroidManifest.xml:26:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:28:5-38:19
+MERGED from [com.android.support:customtabs:23.4.0] /home/serranux/.android/build-cache/fb103eb4dfd093d4bf75317587d6abe1441c79a9/output/AndroidManifest.xml:22:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/serranux/.android/build-cache/c98ff47b2872f2976dff0ee9ed2bf9fd602c23e2/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/serranux/.android/build-cache/cbb5e05111198eed92d383d4a1cbaa40dcfed587/output/AndroidManifest.xml:26:5-20
+MERGED from [link.fls:swipestack:0.3.0] /home/serranux/.android/build-cache/9c254c8ff843cd6ff12f447dafab420e99a4dbbf/output/AndroidManifest.xml:11:5-14:38
+MERGED from [com.google.firebase:firebase-core:10.2.0] /home/serranux/.android/build-cache/1b5aee3fbb6b7430d9f973b84fae4d55c71541e5/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/serranux/.android/build-cache/4aa06d8240ecbe4530bc0eb5d2aa959a97da2b74/output/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/serranux/.android/build-cache/6103805fa58198b6253f3151f03d48aa4b3e2485/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/serranux/.android/build-cache/6c2686227f7fdb51e8fb216ed664aea4094e31b2/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/serranux/.android/build-cache/ebff19098f6767c1bda129e8ed5f66ec7d6d6352/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/serranux/.android/build-cache/3715dfc36f69cdcd4de3c8db3e3511b85d5e7a78/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/serranux/.android/build-cache/5cfd578b4b536144b85e4a8a3375bc53ba5fb9c0/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/serranux/.android/build-cache/73e3093be9241634aa785a89edccf3fc67384fb0/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/serranux/.android/build-cache/a4c150e126c1cf5a5a990af86c5dc3b48dd5d225/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/serranux/.android/build-cache/04eb4839cf4d1d10298f8b506dac40cab8226e8d/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/serranux/.android/build-cache/de29b34ac1c34b908a9e668412e88d800e48ecd2/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/serranux/.android/build-cache/b6dc6439ff2824ce6734cff74ce3525fd9d40c61/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.android.support:exifinterface:26.1.0] /home/serranux/.android/build-cache/e91bd869d1a95e243371b802b3d66682304fa5ef/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.volley:volley:1.0.0] /home/serranux/.android/build-cache/3aea0a77cfbaee8f019e3e6ce0e8513ed068ecac/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:22:9-41
+	android:supportsRtl
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:24:9-35
+	android:roundIcon
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:23:9-54
+	android:allowBackup
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:20:9-35
+	android:icon
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:21:9-43
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:25:9-40
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:19:9-34
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:26:9-28:55
+	android:value
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:28:13-52
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:27:13-58
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:30:9-102
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:30:19-99
+activity#es.unavarra.tlm.prueba.Welcome
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:31:9-39:20
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:33:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:32:13-36
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:37:27-74
+activity#es.unavarra.tlm.prueba.MainActivity
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:40:9-42:59
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:42:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:41:13-41
+activity#es.unavarra.tlm.prueba.Invitado
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:43:9-46
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:43:19-43
+activity#es.unavarra.tlm.prueba.Tutorial
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:44:9-46:59
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:45:13-37
+activity#es.unavarra.tlm.prueba.PreferenceManager
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:47:9-55
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:47:19-52
+activity#es.unavarra.tlm.prueba.Navigation_drawer
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:48:9-51:59
+	android:label
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:50:13-69
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:49:13-46
+activity#es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:52:9-55:59
+	android:label
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:54:13-70
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:53:13-64
+activity#es.unavarra.tlm.prueba.Registrarse
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:56:9-57:68
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:57:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:56:19-46
+activity#es.unavarra.tlm.prueba.Camara
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:58:9-59:61
+	android:configChanges
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:59:13-59
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:58:19-41
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:60:9-61:58
+	android:theme
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:61:13-56
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:60:19-82
+provider#android.support.v4.content.FileProvider
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:65:5-73:16
+	android:authorities
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:67:9-63
+	android:grantUriPermissions
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:69:9-43
+	android:exported
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:68:9-33
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:66:9-63
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:70:9-72:60
+	android:resource
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:72:13-47
+	android:name
+		ADDED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml:71:13-63
+uses-sdk
+INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/serranux/.android/build-cache/df2d07008f613701bccfa21f73986b73f1592aea/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] /home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/serranux/.android/build-cache/edac48df9bad6f1a8edd39aeffe6102294f10127/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/serranux/.android/build-cache/10528be9e137d1d09a0a913db75f4f2b12004505/output/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:customtabs:23.4.0] /home/serranux/.android/build-cache/fb103eb4dfd093d4bf75317587d6abe1441c79a9/output/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/serranux/.android/build-cache/c98ff47b2872f2976dff0ee9ed2bf9fd602c23e2/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/serranux/.android/build-cache/cbb5e05111198eed92d383d4a1cbaa40dcfed587/output/AndroidManifest.xml:20:5-43
+MERGED from [link.fls:swipestack:0.3.0] /home/serranux/.android/build-cache/9c254c8ff843cd6ff12f447dafab420e99a4dbbf/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:10.2.0] /home/serranux/.android/build-cache/1b5aee3fbb6b7430d9f973b84fae4d55c71541e5/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/serranux/.android/build-cache/4aa06d8240ecbe4530bc0eb5d2aa959a97da2b74/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] /home/serranux/.android/build-cache/778b179b0db7cd2f3844e8208fe05fd52e307154/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/serranux/.android/build-cache/6103805fa58198b6253f3151f03d48aa4b3e2485/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/serranux/.android/build-cache/6c2686227f7fdb51e8fb216ed664aea4094e31b2/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/serranux/.android/build-cache/ebff19098f6767c1bda129e8ed5f66ec7d6d6352/output/AndroidManifest.xml:17:5-43
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/serranux/.android/build-cache/4fa37f38ad3ecc01505aded69937e06a48919570/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.1.0] /home/serranux/.android/build-cache/3715dfc36f69cdcd4de3c8db3e3511b85d5e7a78/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /home/serranux/.android/build-cache/5cfd578b4b536144b85e4a8a3375bc53ba5fb9c0/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/serranux/.android/build-cache/73e3093be9241634aa785a89edccf3fc67384fb0/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/serranux/.android/build-cache/a4c150e126c1cf5a5a990af86c5dc3b48dd5d225/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/serranux/.android/build-cache/04eb4839cf4d1d10298f8b506dac40cab8226e8d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/serranux/.android/build-cache/de29b34ac1c34b908a9e668412e88d800e48ecd2/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/serranux/.android/build-cache/b6dc6439ff2824ce6734cff74ce3525fd9d40c61/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:exifinterface:26.1.0] /home/serranux/.android/build-cache/e91bd869d1a95e243371b802b3d66682304fa5ef/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.0.0] /home/serranux/.android/build-cache/3aea0a77cfbaee8f019e3e6ce0e8513ed068ecac/output/AndroidManifest.xml:7:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/serranux/Escritorio/swappie/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/serranux/.android/build-cache/edac48df9bad6f1a8edd39aeffe6102294f10127/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/serranux/.android/build-cache/10528be9e137d1d09a0a913db75f4f2b12004505/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/serranux/.android/build-cache/cbb5e05111198eed92d383d4a1cbaa40dcfed587/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:26.1.0] /home/serranux/.android/build-cache/3715dfc36f69cdcd4de3c8db3e3511b85d5e7a78/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/serranux/.android/build-cache/85c94c10721ec42ff4648b57004bfe8093b8b72b/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/serranux/.android/build-cache/5cfd578b4b536144b85e4a8a3375bc53ba5fb9c0/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/serranux/.android/build-cache/73e3093be9241634aa785a89edccf3fc67384fb0/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/serranux/.android/build-cache/a4c150e126c1cf5a5a990af86c5dc3b48dd5d225/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/serranux/.android/build-cache/04eb4839cf4d1d10298f8b506dac40cab8226e8d/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/serranux/.android/build-cache/de29b34ac1c34b908a9e668412e88d800e48ecd2/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/serranux/.android/build-cache/14887b6c5b0dbcf304437b745ebcadebcffd9020/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:exifinterface:26.1.0] /home/serranux/.android/build-cache/e91bd869d1a95e243371b802b3d66682304fa5ef/output/AndroidManifest.xml:23:9-25:38
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/serranux/.android/build-cache/9650f6537c2e638373d533beac22e65be5bbd457/output/AndroidManifest.xml:26:9-47
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:29:9-32:75
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:33:9-36:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:34:13-58
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:37:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] /home/serranux/.android/build-cache/d33ae783b5ecef3b234f3373b01e264e87965730/output/AndroidManifest.xml:37:19-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/serranux/.android/build-cache/f321a04a80dbdd0182f403de2d605be96ba966e9/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/serranux/.android/build-cache/3184678e016cd3562f2a3a11a5b989dbee49e913/output/AndroidManifest.xml:32:16-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/serranux/.android/build-cache/5abcf5846b9de8486344b3c58744d0bf921e0473/output/AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/serranux/.android/build-cache/91197602487a5aaa3008ffaaed239d79c99a63f0/output/AndroidManifest.xml:6:79-143
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/serranux/.android/build-cache/0713b2790a31ebc320745f00ca5e366af48d969a/output/AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/serranux/.android/build-cache/6103805fa58198b6253f3151f03d48aa4b3e2485/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/serranux/.android/build-cache/6103805fa58198b6253f3151f03d48aa4b3e2485/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/serranux/.android/build-cache/6103805fa58198b6253f3151f03d48aa4b3e2485/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/serranux/.android/build-cache/6103805fa58198b6253f3151f03d48aa4b3e2485/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.0] /home/serranux/.android/build-cache/ebff19098f6767c1bda129e8ed5f66ec7d6d6352/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.0] /home/serranux/.android/build-cache/ebff19098f6767c1bda129e8ed5f66ec7d6d6352/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.0] /home/serranux/.android/build-cache/ebff19098f6767c1bda129e8ed5f66ec7d6d6352/output/AndroidManifest.xml:20:20-65
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/serranux/.android/build-cache/b6dc6439ff2824ce6734cff74ce3525fd9d40c61/output/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/serranux/.android/build-cache/b6dc6439ff2824ce6734cff74ce3525fd9d40c61/output/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/serranux/.android/build-cache/b6dc6439ff2824ce6734cff74ce3525fd9d40c61/output/AndroidManifest.xml:26:13-58

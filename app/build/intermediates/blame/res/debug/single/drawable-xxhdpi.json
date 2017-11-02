@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/swipe.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/swipe.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cloud.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/cloud.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cross.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/cross.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/background_2423825_640.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/background_2423825_640.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/upload.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/upload.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/chat.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/chat.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/chatbn.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/chatbn.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/swipebn.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/swipebn.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/swipe.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/swipe.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/help_us.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/help_us.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/contact.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/contact.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cross.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/cross.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/chatbn.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/chatbn.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/menu.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/menu.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/menu.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/menu.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/networking.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/networking.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/logout.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/logout.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/swappie.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/swappie.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cloud.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/cloud.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/swipebn.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/swipebn.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/upload.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/upload.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/containers.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/containers.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/contact.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/contact.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/chat.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/chat.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/logout.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/logout.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/swappie.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/swappie.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/containers.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/containers.png"
+    },
+    {
+        "merged": "/home/serranux/Escritorio/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/networking.png",
+        "source": "/home/serranux/Escritorio/swappie/app/src/main/res/drawable-xxhdpi/networking.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/help_us.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/help_us.png"
+    },
+    {
+        "merged": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/background_2423825_640.png",
+        "source": "/home/ibai/AndroidStudioProjects/swappie/app/src/main/res/drawable-xxhdpi/background_2423825_640.png"
+    }
+]

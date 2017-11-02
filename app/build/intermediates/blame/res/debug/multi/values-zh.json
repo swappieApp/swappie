@@ -1,0 +1,164 @@
+[
+    {
+        "outputFile": "/home/serranux/Escritorio/swappie/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 61,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 61,
+                        "endOffset": 164
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 62,
+                    "endOffset": 227
+                },
+                "from": {
+                    "file": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 169,
+                        "endColumn": 62,
+                        "endOffset": 227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 232,
+                    "endColumn": 64,
+                    "endOffset": 292
+                },
+                "from": {
+                    "file": "/home/serranux/.android/build-cache/b1ee24c7a26e90bc04c6e0a1bfecf4f127237907/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 232,
+                        "endColumn": 64,
+                        "endOffset": 292
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/ibai/AndroidStudioProjects/swappie/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 61,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 61,
+                        "endOffset": 164
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 62,
+                    "endOffset": 227
+                },
+                "from": {
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 169,
+                        "endColumn": 62,
+                        "endOffset": 227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 232,
+                    "endColumn": 64,
+                    "endOffset": 292
+                },
+                "from": {
+                    "file": "/home/ibai/.android/build-cache/794a6b92d72b7e92150d729c327c7d81b93f26ee/output/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 232,
+                        "endColumn": 64,
+                        "endOffset": 292
+                    }
+                }
+            }
+        ]
+    }
+]
