@@ -4,8 +4,10 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class IniciarSesion extends AppCompatActivity {
 
@@ -15,20 +17,26 @@ public class IniciarSesion extends AppCompatActivity {
         setContentView(R.layout.activity_iniciar_sesion);
     }
 
+    public static boolean esMailValido(CharSequence objetivo) {
+        return objetivo != null && Patterns.EMAIL_ADDRESS.matcher(objetivo).matches();
+    }
+
     public void iniciarSesion(View view){
 
-        ProgressDialog dialog = new ProgressDialog(IniciarSesion.this);
-        dialog.setMessage("Please wait");
-        dialog.show();
 
         EditText edit = (EditText)findViewById(R.id.editText);
         EditText edit2 = (EditText)findViewById(R.id.editText2);
-
 
         String email = edit.getText().toString();
         String pass = edit2.getText().toString();
         String metodo = "email";
 
+        if (esMailValido(email)){
+            new ClasePeticionRest.HacerLogin(IniciarSesion.this,metodo,email,pass).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }else{
+            Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo),Toast.LENGTH_LONG);
+            toastMailMalo.show();
+        }
 
 
     }

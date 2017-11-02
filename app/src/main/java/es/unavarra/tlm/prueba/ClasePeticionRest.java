@@ -55,8 +55,9 @@ public class ClasePeticionRest {
 
             String stringURL = "http://swappie.tk/base/php/" + funcionAPI + ".php?"+urlParametros;
             URL url = new URL(stringURL);
+
             //Log.e("URL", url.toString());
-            //Log.d("etiqueta", String.valueOf(url));
+            Log.d("etiqueta", String.valueOf(url));
 
 
             final HttpURLConnection myConnection = (HttpURLConnection) url.openConnection();
@@ -69,26 +70,6 @@ public class ClasePeticionRest {
                 myConnection.setRequestProperty(parametros.get(x).getKey(), parametros.get(x).getValue());
             }
 
-
-           /*AsyncTask.execute(new Runnable() {
-
-                public void run() {
-                    try {
-                        responseCode[0] = myConnection.getResponseCode();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-            });
-
-
-            SystemClock.sleep(3000);
-
-
-
-            if (responseCode[0] == 200) {
-            */
 
 
             if (myConnection.getResponseCode() == 200){
@@ -637,6 +618,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "hacer_login";
         String nombre, apellidos, email, metodoLogin;
+        ProgressDialog dialog;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
@@ -647,6 +629,15 @@ public class ClasePeticionRest {
             parametros.add(new KeyValue("email", email));
             parametros.add(new KeyValue("password", password));
             this.context = context;
+
+            this.dialog = new ProgressDialog(context);
+            this.dialog.setMessage("Please wait");
+            this.dialog.show();
+
+            for (int i=0; i<=parametros.size();i++){
+                Log.d("etiqueta",parametros.get(i).getKey());
+                Log.d("etiqueta",parametros.get(i).getValue());
+            }
         }
 
         public HacerLogin(Context context, String metodoLogin, String email) {
@@ -659,12 +650,18 @@ public class ClasePeticionRest {
         @Override
         protected ArrayList<KeyValue> doInBackground(String... strings) {
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            if (respuesta.size()==0){
+                Log.d("etiqueta","nulo1");
+            }
             return respuesta;
         }
 
         @Override
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
+            if (result.size()==0){
+                Log.d("etiqueta","nulo2");
+            }
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
                 nombre = result.get(2).getValue();
@@ -673,7 +670,9 @@ public class ClasePeticionRest {
                 Toast.makeText(context, "Logueado usuario Nº " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, UsuarioRegistrado.class);
                 context.startActivity(intent);
+                ((Activity)context).finish();
             }else if (result.get(1).getKey().equals("error")){
+                this.dialog.dismiss();
                 Toast.makeText(context, "ERROR: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
             }
         }
@@ -692,8 +691,7 @@ public class ClasePeticionRest {
 
             editor.commit();
 
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
+
 
         }
 
