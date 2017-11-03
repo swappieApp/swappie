@@ -478,6 +478,7 @@ public class ClasePeticionRest {
                 mostrarToast(activity, "Objeto guardado correctamente");
                 Intent intent = new Intent(activity, UsuarioRegistrado.class);
                 context.startActivity(intent);
+                activity.finish();
             }else{
                 mostrarToast(activity, "Error al guardar el objeto");
             }
