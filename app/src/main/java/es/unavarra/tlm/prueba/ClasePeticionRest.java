@@ -48,6 +48,8 @@ public class ClasePeticionRest {
 
         try {
 
+
+
             respuesta.clear();
 
             Log.d("etiqueta", "size_params = "+parametros.size());
