@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.Image;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
@@ -33,6 +34,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static android.R.attr.duration;
+import static android.R.attr.fingerprintAuthDrawable;
 import static android.R.attr.id;
 
 public class Camara extends AppCompatActivity {
@@ -131,15 +133,6 @@ public class Camara extends AppCompatActivity {
             }
         });*/
 
-        Button aceptar = findViewById(R.id.camera_accept);
-        aceptar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                EditText descripcion = findViewById(R.id.camera_description);
-                new ClasePeticionRest.GuardarObjeto(getApplicationContext(),getSharedPreferences("Config", 0).getInt("user", 0),descripcion.getText().toString(),new File(mCurrentPhotoPath));
-            }
-        });
     }
 
     @Override
@@ -177,7 +170,7 @@ public class Camara extends AppCompatActivity {
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
-                Uri resultUri = result.getUri();
+                final Uri resultUri = result.getUri();
 
                 try {
                     mImageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), resultUri);
@@ -186,16 +179,25 @@ public class Camara extends AppCompatActivity {
                 }
                 FileOutputStream out = null;
                     try {
+
                         System.out.println(resultUri.getPath());
                         out = new FileOutputStream(resultUri.getPath());
                         Bitmap b = Bitmap.createScaledBitmap(mImageBitmap, 1200, 1600, false);
                         b.compress(Bitmap.CompressFormat.JPEG, 70, out);
-                        File photoFile = null;
-                        photoFile = createImageFile(getApplicationContext());
-                        out = new FileOutputStream(mCurrentPhotoPath);
+                        //out = new FileOutputStream(mCurrentPhotoPath);
                         b.compress(Bitmap.CompressFormat.JPEG, 70, out);
-                        ImageView imageTest = (ImageView) findViewById(R.id.image_test);
+                        ImageView imageTest = findViewById(R.id.image_test);
                         imageTest.setImageBitmap(b);
+
+                        Button aceptar = findViewById(R.id.camera_accept);
+                        aceptar.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                EditText descripcion = findViewById(R.id.camera_description);
+                                File foto = new File(resultUri.getPath());
+                                new ClasePeticionRest.GuardarObjeto(activity,getSharedPreferences("Config", 0).getInt("user", 0),descripcion.getText().toString(),foto).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                            }
+                        });
 
                         // bmp is your Bitmap instance
                         // PNG is a lossless format, the compression factor (100) is ignored

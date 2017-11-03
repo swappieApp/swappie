@@ -1,11 +1,14 @@
 package es.unavarra.tlm.prueba;
 
 import android.app.Activity;
+import android.app.Notification;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Message;
 import android.os.SystemClock;
 import android.util.JsonReader;
 import android.util.Log;
@@ -25,6 +28,8 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
+
+import static com.facebook.FacebookSdk.getApplicationContext;
 
 /**
  * Created by ibai on 10/20/17.
@@ -118,6 +123,7 @@ public class ClasePeticionRest {
 
         try {
 
+            Log.d("etiqueta", "URI:"+foto.getAbsolutePath());
             //------------------ CLIENT REQUEST
             FileInputStream fileInputStream = new FileInputStream(foto);
             // open a URL connection to the Servlet
@@ -187,11 +193,11 @@ public class ClasePeticionRest {
             }
             jsonReader.close();
 
-            while ((str = inStream.readLine()) != null) {
+            /*while ((str = inStream.readLine()) != null) {
 
                 Log.e("Debug", "Server Response " + str);
 
-            }
+            }*/
 
             inStream.close();
 
@@ -440,17 +446,21 @@ public class ClasePeticionRest {
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         File foto;
         Context context;
+        Activity activity;
 
-        public GuardarObjeto(Context context, int idUsuario, String descripcion, File foto) {
+        public GuardarObjeto(Activity activity, int idUsuario, String descripcion, File foto) {
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
             parametros.add(new KeyValue("descripcion", descripcion));
-            this.context = context;
+            this.foto = foto;
+            this.context = activity;
+            this.activity = activity;
         }
 
         @Override
         protected String doInBackground(String... strings) {
 
-            int idObjeto = guardarFoto(context, foto);
+            int idObjeto = guardarFoto(activity, foto);
+            Log.e("etiqueta", "IDFoto = "+idObjeto);
             parametros.add(new KeyValue("id_objeto", idObjeto+""));
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
             if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
@@ -465,18 +475,20 @@ public class ClasePeticionRest {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.equals("true")){
-                Toast.makeText(context, "Objeto guardado correctamente", Toast.LENGTH_SHORT).show();
+                mostrarToast(activity, "Objeto guardado correctamente");
+                Intent intent = new Intent(activity, UsuarioRegistrado.class);
+                context.startActivity(intent);
             }else{
-                Toast.makeText(context, "Error al guardar el objeto", Toast.LENGTH_SHORT).show();
+                mostrarToast(activity, "Error al guardar el objeto");
             }
         }
 
     }
 
-    public static int guardarFoto(Context context, File foto) {
+    public static int guardarFoto(Activity activity, File foto) {
 
-        String funcionAPI = "guardar_objeto";
-        ArrayList<KeyValue> parametros = new ArrayList<>();
+        //String funcionAPI = "guardar_objeto";
+        //ArrayList<KeyValue> parametros = new ArrayList<>();
 
         ArrayList<KeyValue> respuesta = doFileUpload(foto);
         int idObjeto = 0;
@@ -486,10 +498,11 @@ public class ClasePeticionRest {
             }
         }
 
+
         if (idObjeto != 0){
-            Toast.makeText(context, "Foto del Objeto Nº "+ idObjeto +" guardada correctamente", Toast.LENGTH_SHORT).show();
+            //mostrarToast(activity, "Foto del Objeto Nº "+ idObjeto +" guardada correctamente");
         }else{
-            Toast.makeText(context, "Error al crear el objeto", Toast.LENGTH_SHORT).show();
+            //mostrarToast(activity, "Error al crear el objeto");
         }
 
         return idObjeto;
@@ -739,6 +752,16 @@ public class ClasePeticionRest {
             this.value = value;
         }
 
+    }
+
+    public static void mostrarToast(final Activity activity, final String frase){
+        activity.runOnUiThread(new Runnable()
+        {
+            public void run()
+            {
+                Toast.makeText(activity, frase, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 }
