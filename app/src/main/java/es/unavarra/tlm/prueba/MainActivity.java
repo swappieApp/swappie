@@ -41,7 +41,7 @@ import java.util.Arrays;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private LoginButton loginButton;
     private CallbackManager callbackManager;
@@ -84,48 +84,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         // ----------------------  FIREBASE PARA LOGIN CON GOOGLE ----------------------//
-        mAuth = FirebaseAuth.getInstance();
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
 
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-
-
-                if (user!=null){
-
-                    Intent intent = new Intent(MainActivity.this,UsuarioRegistrado.class);
-                    startActivity(intent);
-                    finish();
-
-                }
-            }
-        };
-
-        google = (SignInButton) findViewById(R.id.loginButtonGoogle);
-
-        // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
 
-        mGoogleApiClient = new GoogleApiClient.Builder(getApplicationContext()).enableAutoManage(this, new GoogleApiClient.OnConnectionFailedListener() {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this , new GoogleApiClient.OnConnectionFailedListener() {
                     @Override
                     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                        Toast.makeText(getApplicationContext(), R.string.error_login, Toast.LENGTH_SHORT).show();
+
                     }
-                }).addApi(Auth.GOOGLE_SIGN_IN_API, gso).build();
+                } /* OnConnectionFailedListener */)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                .build();
 
 
-        google.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+       // google = (SignInButton) findViewById(R.id.loginButtonGoogle);
 
-                signIn();
-            }
-        });
+        findViewById(R.id.loginButtonGoogle).setOnClickListener(this);
 
 
 
@@ -186,73 +164,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart(){
-        super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
-
-    }
-
-    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            if (result.isSuccess()) {
-                // Google Sign In was successful, authenticate with Firebase
-                GoogleSignInAccount account = result.getSignInAccount();
-
-                String name = account.getDisplayName();
-                String imagen = String.valueOf(account.getPhotoUrl());
-                String id = account.getIdToken();
-                String email = account.getEmail();
-
-
-                SharedPreferences info = getSharedPreferences("Config", 0);
-                SharedPreferences.Editor editor = info.edit();
-                editor.putString("metodo","google");
-                editor.putString("nombre",name);
-                editor.putString("email",email);
-                editor.putBoolean("sesion", true);
-                editor.putString("foto", imagen);
-                editor.commit();
-
-
-                firebaseAuthWithGoogle(account);
-            } else {
-                // Google Sign In failed, update UI appropriately
-                // ...
-            }
+            handleSignInResult(result);
         }
     }
-
-    private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
-        Log.d(TAG, "firebaseAuthWithGoogle:" + acct.getId());
-
-        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "signInWithCredential:success");
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-
-                        }
-
-                        // ...
-                    }
-                });
-    }
-
 
 
 
@@ -326,4 +246,45 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.loginButtonGoogle:
+                signIn();
+                break;
+            // ...
+        }
+    }
+
+    private void handleSignInResult(GoogleSignInResult result) {
+        Log.d(TAG, "handleSignInResult:" + result.isSuccess());
+        if (result.isSuccess()) {
+            // Signed in successfully, show authenticated UI.
+            GoogleSignInAccount account = result.getSignInAccount();
+
+            String name = account.getDisplayName();
+            String imagen = String.valueOf(account.getPhotoUrl());
+            String id = account.getIdToken();
+            String email = account.getEmail();
+
+
+            SharedPreferences info = getSharedPreferences("Config", 0);
+            SharedPreferences.Editor editor = info.edit();
+            editor.putString("metodo","google");
+            editor.putString("nombre",name);
+            editor.putString("email",email);
+            editor.putBoolean("sesion", true);
+            editor.putString("foto", imagen);
+            editor.commit();
+
+            Intent intent = new Intent(MainActivity.this,UsuarioRegistrado.class);
+            startActivity(intent);
+            finish();
+
+
+        } else {
+            // Signed out, show unauthenticated UI.
+
+        }
+    }
 }

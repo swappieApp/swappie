@@ -48,6 +48,7 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
         //toolbar.setTitle("Swappie");
         //toolbar.setTitleTextColor(Color.rgb(240,98,146));
 
+        GetLocation location = new GetLocation();
 
         // ----------------------  MENÚ LATERAL ----------------------//
 

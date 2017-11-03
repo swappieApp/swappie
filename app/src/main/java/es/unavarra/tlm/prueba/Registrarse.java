@@ -19,6 +19,7 @@ import es.unavarra.tlm.prueba.ClasePeticionRest;
 
 public class Registrarse extends AppCompatActivity {
 
+    GetLocation location = new GetLocation();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class Registrarse extends AppCompatActivity {
         String apellidos = edit2.getText().toString();
         String email = edit3.getText().toString();
         String pass = edit4.getText().toString();
-        String ubicacion = "42.798617, -1.634627";
+        String ubicacion = location.getCoords(this);
         String metodo = "email";
 
 
