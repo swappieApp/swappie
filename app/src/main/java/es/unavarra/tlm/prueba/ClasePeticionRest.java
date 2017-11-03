@@ -798,6 +798,9 @@ public class ClasePeticionRest {
                 this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
 
             }else if (result.get(1).getKey().equals("error")){
+                if (result.get(1).getValue().equals("no registrado")){
+
+                }
                 mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
         }
@@ -808,13 +811,13 @@ public class ClasePeticionRest {
             SharedPreferences.Editor editor = settings.edit();
 
             editor.putInt("user", id);
-            editor.putString("email",this.email);
+            //editor.putString("metodo", metodoLogin);
+            editor.putBoolean("sesion", true);
+            //editor.putString("nombre",nombre);
+            //editor.putString("apellidos",apellidos);
+            editor.putString("email",email);
 
             editor.commit();
-
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
-            ((Activity)context).finish();
 
         }
 
