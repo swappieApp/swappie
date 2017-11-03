@@ -763,6 +763,120 @@ public class ClasePeticionRest {
 
     }
 
+    public static class ComprobarFacebook extends AsyncTask<String, String, ArrayList<KeyValue>> {
+
+        String funcionAPI = "comprobar_facebook";
+        String email;
+
+        ArrayList<KeyValue> parametros = new ArrayList<>();
+        Context context;
+
+        public ComprobarFacebook(Context context, String email) {
+            parametros.add(new KeyValue("email", email));
+            this.context = context;
+            this.email=email;
+        }
+
+        @Override
+        protected ArrayList<KeyValue> doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            if (respuesta.size()==0){
+                Log.d("etiqueta","nulo1");
+            }
+            return respuesta;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<KeyValue> result) {
+            super.onPostExecute(result);
+
+            if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
+
+                int idUsuario = Integer.parseInt(result.get(1).getValue());
+
+                mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
+                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+
+            }else if (result.get(1).getKey().equals("error")){
+                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
+            }
+        }
+
+        public void guardarUsuarioEnSharedPreferences(int id){
+
+            SharedPreferences settings = context.getSharedPreferences("Config", 0);
+            SharedPreferences.Editor editor = settings.edit();
+
+            editor.putInt("user", id);
+            editor.putString("email",this.email);
+
+            editor.commit();
+
+            Intent intent = new Intent(context, UsuarioRegistrado.class);
+            context.startActivity(intent);
+            ((Activity)context).finish();
+
+        }
+
+    }
+
+    public static class ComprobarGoogle extends AsyncTask<String, String, ArrayList<KeyValue>> {
+
+        String funcionAPI = "comprobar_google";
+        String email;
+
+        ArrayList<KeyValue> parametros = new ArrayList<>();
+        Context context;
+
+        public ComprobarGoogle(Context context, String email) {
+            parametros.add(new KeyValue("email", email));
+            this.context = context;
+            this.email=email;
+        }
+
+        @Override
+        protected ArrayList<KeyValue> doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            if (respuesta.size()==0){
+                Log.d("etiqueta","nulo1");
+            }
+            return respuesta;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<KeyValue> result) {
+            super.onPostExecute(result);
+
+            if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
+
+                int idUsuario = Integer.parseInt(result.get(1).getValue());
+
+                mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
+                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+
+            }else if (result.get(1).getKey().equals("error")){
+                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
+            }
+        }
+
+        public void guardarUsuarioEnSharedPreferences(int id){
+
+            SharedPreferences settings = context.getSharedPreferences("Config", 0);
+            SharedPreferences.Editor editor = settings.edit();
+
+            editor.putInt("user", id);
+            editor.putString("email",this.email);
+
+            editor.commit();
+
+            Intent intent = new Intent(context, UsuarioRegistrado.class);
+            context.startActivity(intent);
+            ((Activity)context).finish();
+
+        }
+
+    }
+
     public static class KeyValue{
 
         String key, value;
