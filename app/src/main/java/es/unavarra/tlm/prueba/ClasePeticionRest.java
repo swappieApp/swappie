@@ -728,6 +728,39 @@ public class ClasePeticionRest {
 
     }
 
+    public static class CogerObjetosInicio extends AsyncTask<String, String, ArrayList<KeyValue>> {
+
+        String funcionAPI = "coger_info_objeto";
+
+        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        Context context;
+
+        public CogerObjetosInicio(Context context, int idUsuario) {
+            parametros.add(new KeyValue("id_usuario", idUsuario+""));
+            this.context = context;
+        }
+
+        @Override
+        protected ArrayList<KeyValue> doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            return respuesta;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<KeyValue> result) {
+            super.onPostExecute(result);
+            if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
+                //Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "\"JSON: \" + result.get(1).getValue()");
+            }else if (result.get(1).getKey().equals("error")){
+                //Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "\"JSON: \" + result.get(1).getValue()");
+            }
+
+        }
+
+    }
+
     public static class KeyValue{
 
         String key, value;
