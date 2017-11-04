@@ -214,6 +214,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         try {
             name = object.getString("name");
+            String[] name2 = name.split(" ");
+            String first_name = name2[0];
+            String last_name = name2[1];
+            if (name2.length==3){
+                last_name=last_name+" "+name2[2];
+            }
             email = object.getString("email");
             id = object.getString("id");
 
@@ -221,21 +227,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             SharedPreferences.Editor editor = info.edit();
             editor.putString("metodo","facebook");
             editor.putBoolean("sesion", true);
-            editor.putString("nombre",name);
+
+            editor.putString("nombre",first_name);
+            editor.putString("apellidos",last_name);
+
             editor.putString("id",id);
             editor.putString("email",email);
 
             editor.commit();
 
-            Intent i=new Intent(MainActivity.this, UsuarioRegistrado.class);
-            startActivity(i);
-            finish();
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        //new ClasePeticionRest.ComprobarFacebook(MainActivity.this,email).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        new ClasePeticionRest.ComprobarFacebook(MainActivity.this,email).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         //prefs = getSharedPreferences("es.unavarra.tlm", Context.MODE_PRIVATE);
         //prefs.edit().putString("es.unavarra.tlm.sesion", "true").apply();
         //prefs.edit().putString("es.unavarra.tlm.email", email).apply();
@@ -263,23 +269,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             GoogleSignInAccount account = result.getSignInAccount();
 
             String name = account.getDisplayName();
+            String[] name2 = name.split(" ");
+            String first_name = name2[0];
+            String last_name = name2[1];
+            if (name2.length==3){
+                last_name=last_name+" "+name2[2];
+            }
             String imagen = String.valueOf(account.getPhotoUrl());
             String id = account.getIdToken();
             String email = account.getEmail();
-
+            String ubicacion = GetLocation.getCoords(this);
 
             SharedPreferences info = getSharedPreferences("Config", 0);
             SharedPreferences.Editor editor = info.edit();
             editor.putString("metodo","google");
-            editor.putString("nombre",name);
+            editor.putString("nombre",first_name);
+            editor.putString("apellidos",last_name);
             editor.putString("email",email);
             editor.putBoolean("sesion", true);
             editor.putString("foto", imagen);
             editor.commit();
 
-            Intent intent = new Intent(MainActivity.this,UsuarioRegistrado.class);
-            startActivity(intent);
-            finish();
+            new ClasePeticionRest.ComprobarGoogle(MainActivity.this,first_name,last_name,email,ubicacion).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
 
         } else {

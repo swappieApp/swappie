@@ -223,6 +223,7 @@ public class ClasePeticionRest {
         Context context;
 
 
+
         public GuardarUsuario(Context context, String nombre, String apellidos, String email, String password, String ubicacion, String metodoLogin) {
 
             this.context = context;
@@ -268,6 +269,14 @@ public class ClasePeticionRest {
             if (result==0){
                 this.dialog.dismiss();
                 mostrarToast((Activity)context, "Email ya registrado");
+
+                //Boramos las SharedPreferences
+                SharedPreferences info = context.getSharedPreferences("Config", 0);
+                SharedPreferences.Editor editor = info.edit();
+                editor.clear();
+                // Se borra la sesión de Shared Preferences.
+                editor.putBoolean("sesion", false);
+                editor.commit();
 
             }else{
                 mostrarToast((Activity)context, "Creado usuario Nº "+result);
@@ -779,23 +788,28 @@ public class ClasePeticionRest {
     public static class ComprobarFacebook extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
         String funcionAPI = "comprobar_facebook";
-        String nombre, apellidos, email, ubicacion;
+        String nombre, apellidos, email, metodoLogin,password,ubicacion;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
 
-        public ComprobarFacebook(Context context, String nombre, String apellidos, String email, String ubicacion) {
+        public ComprobarFacebook(Context context, String email) {
             parametros.add(new KeyValue("email", email));
             this.context = context;
-            this.nombre = nombre;
-            this.apellidos = apellidos;
-            this.ubicacion = ubicacion;
             this.email=email;
         }
 
         @Override
         protected ArrayList<KeyValue> doInBackground(String... strings) {
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            if (respuesta.size()==0){
+                Log.d("etiquetafb","nulo1");
+            }
+
+            for (int i=0;i<respuesta.size();i++){
+                Log.d("etiquetafb",respuesta.get(i).getKey());
+                Log.d("etiquetafb",respuesta.get(i).getValue());
+            }
             return respuesta;
         }
 
@@ -805,26 +819,53 @@ public class ClasePeticionRest {
 
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
 
+                Log.d("etiquetafb","entro al if");
+
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                guardarUsuarioEnSharedPreferences(context, idUsuario, "facebook", nombre, apellidos, email);
+                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
 
             }else if (result.get(1).getKey().equals("error")){
+
+                Log.d("etiquetafb","entro al else");
+
                 if (result.get(1).getValue().equals("no registrado")){
-                    new GuardarUsuario(context, nombre, apellidos, email, null, ubicacion, "facebook");
-                }else{
-                    mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
+
+                    Log.d("etiquetafb","entro a no registrado");
+
+
+                    SharedPreferences settings = context.getSharedPreferences("Config", 0);
+                    String name=settings.getString("nombre","");
+                    String apellidos= settings.getString("apellidos","");
+                    this.nombre=name;
+                    this.apellidos=apellidos;
+                    this.password="";
+                    this.ubicacion=GetLocation.getCoords((Activity)context);
+                    this.metodoLogin="facebook";
+
+                    new ClasePeticionRest.GuardarUsuario(this.context,this.nombre,this.apellidos,this.email,this.password,this.ubicacion,this.metodoLogin).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
                 }
+                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
+        }
+
+        public void guardarUsuarioEnSharedPreferences(int id){
+
+            Intent intent = new Intent(context, UsuarioRegistrado.class);
+            context.startActivity(intent);
+            ((Activity)context).finish();
+
         }
 
     }
 
+
     public static class ComprobarGoogle extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
         String funcionAPI = "comprobar_google";
-        String nombre, apellidos, email, ubicacion;
+        String nombre, apellidos, email, metodoLogin,password,ubicacion;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
@@ -853,15 +894,35 @@ public class ClasePeticionRest {
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                guardarUsuarioEnSharedPreferences(context, idUsuario, "google", nombre, apellidos, email);
+                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
 
             }else if (result.get(1).getKey().equals("error")){
                 if (result.get(1).getValue().equals("no registrado")){
-                    new GuardarUsuario(context, nombre, apellidos, email, null, ubicacion, "google");
+
+                    SharedPreferences settings = context.getSharedPreferences("Config", 0);
+                    String name=settings.getString("nombre","");
+                    String apellidos= settings.getString("apellidos","");
+                    this.nombre=name;
+                    this.apellidos=apellidos;
+                    this.password="";
+                    this.ubicacion=GetLocation.getCoords((Activity)context);
+                    this.metodoLogin="google";
+
+                    new ClasePeticionRest.GuardarUsuario(this.context,this.nombre,this.apellidos,this.email,this.password,this.ubicacion,this.metodoLogin).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
+
                 }else{
                     mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
                 }
             }
+        }
+
+        public void guardarUsuarioEnSharedPreferences(int id){
+
+            Intent intent = new Intent(context, UsuarioRegistrado.class);
+            context.startActivity(intent);
+            ((Activity)context).finish();
+
         }
 
     }

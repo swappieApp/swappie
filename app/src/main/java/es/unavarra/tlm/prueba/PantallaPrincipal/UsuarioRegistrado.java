@@ -97,6 +97,7 @@ public class UsuarioRegistrado extends AppCompatActivity
             // Se extrae la información almacenada en Shared Preferences.
             boolean sesion = settings.getBoolean("sesion", false);
             String name = settings.getString("nombre", "");
+            String apellidos = settings.getString("apellidos","");
             String imagen = settings.getString("foto","");
             String email = settings.getString("email","");
 
@@ -105,7 +106,7 @@ public class UsuarioRegistrado extends AppCompatActivity
 
             // Se asigna el nombre del usuario al campo correspondiente.
             txt = (TextView) headerView.findViewById(R.id.nameUser);
-            txt.setText(name);
+            txt.setText(name + " " + apellidos);
 
             // Se asigna el email del usuario al campo correspondiente.
             txt = (TextView) headerView.findViewById(R.id.emailUser);
@@ -129,9 +130,7 @@ public class UsuarioRegistrado extends AppCompatActivity
             boolean sesion = settings.getBoolean("sesion", false);
             String name = settings.getString("nombre", "");
             String id = settings.getString("id", "");
-            String[] name2 = name.split(" ");
-            String first_name = name2[0];
-            String last_name = name2[1];
+            String apellidos = settings.getString("apellidos","");
             String email = settings.getString("email","");
 
             Log.d("etiqueta", String.valueOf(sesion));
@@ -142,7 +141,7 @@ public class UsuarioRegistrado extends AppCompatActivity
 
             // Se asigna el nombre completo del usuario al campo correspondiente.
             txt = (TextView) headerView.findViewById(R.id.nameUser);
-            txt.setText(first_name + " " + last_name);
+            txt.setText(name + " " + apellidos);
 
             // Se asigna el email del usuario al campo correspondiente.
             txt = (TextView) headerView.findViewById(R.id.emailUser);
