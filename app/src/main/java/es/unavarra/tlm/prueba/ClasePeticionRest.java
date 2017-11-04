@@ -48,15 +48,16 @@ public class ClasePeticionRest {
 
         try {
 
-
-
             respuesta.clear();
 
             Log.d("etiqueta", "size_params = "+parametros.size());
 
-            String urlParametros = URLEncoder.encode(parametros.get(0).getKey(), "utf-8")+"="+URLEncoder.encode(parametros.get(0).getValue(), "utf-8");
-            for (int x = 1; x < parametros.size(); x++){
-                urlParametros += "&"+URLEncoder.encode(parametros.get(x).getKey(), "utf-8")+"="+URLEncoder.encode(parametros.get(x).getValue(), "utf-8");
+            String urlParametros = "";
+            if (parametros.size() != 0) {
+                urlParametros = URLEncoder.encode(parametros.get(0).getKey(), "utf-8") + "=" + URLEncoder.encode(parametros.get(0).getValue(), "utf-8");
+                for (int x = 1; x < parametros.size(); x++) {
+                    urlParametros += "&" + URLEncoder.encode(parametros.get(x).getKey(), "utf-8") + "=" + URLEncoder.encode(parametros.get(x).getValue(), "utf-8");
+                }
             }
 
             String stringURL = "http://swappie.tk/base/php/" + funcionAPI + ".php?"+urlParametros;
@@ -263,33 +264,17 @@ public class ClasePeticionRest {
         @Override
         protected void onPostExecute(Integer result) {
             super.onPostExecute(result);
-            guardarUsuarioEnSharedPreferences(result);
+            guardarUsuarioEnSharedPreferences(context, result, metodoLogin, nombre, apellidos, email);
             if (result==0){
                 this.dialog.dismiss();
-                Toast.makeText(context, "Email ya registrado", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Email ya registrado");
 
             }else{
-                Toast.makeText(context, "Creado usuario Nº " + result, Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Creado usuario Nº "+result);
                 Intent intent = new Intent(context, UsuarioRegistrado.class);
                 context.startActivity(intent);
                 ((Activity)context).finish();
             }
-        }
-
-        public void guardarUsuarioEnSharedPreferences(int id){
-
-            SharedPreferences settings = context.getSharedPreferences("Config", 0);
-            SharedPreferences.Editor editor = settings.edit();
-
-            editor.putInt("user", id);
-            editor.putString("metodo", metodoLogin);
-            editor.putBoolean("sesion", true);
-            editor.putString("nombre",nombre);
-            editor.putString("apellidos",apellidos);
-            editor.putString("email",email);
-
-            editor.commit();
-
         }
 
     }
@@ -323,9 +308,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.equals("true")){
-                Toast.makeText(context, "Swipe guardado correctamente", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Swipe guardado correctamente");
             }else{
-                Toast.makeText(context, "Error al guardar el swipe", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Error al guardar el swipe");
             }
         }
 
@@ -360,9 +345,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.equals("true")){
-                Toast.makeText(context, "Match guardado correctamente", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Match guardado correctamente");
             }else{
-                Toast.makeText(context, "Error al guardar el match", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Error al guardar el match");
             }
         }
 
@@ -396,9 +381,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.equals("true")){
-                Toast.makeText(context, "Chat creado correctamente", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Chat creado correctamente");
             }else{
-                Toast.makeText(context, "Error al crear el chat", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Error al crear el chat");
             }
         }
 
@@ -433,9 +418,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.equals("true")){
-                Toast.makeText(context, "Mensaje guardado correctamente", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Mensaje guardado correctamente");
             }else{
-                Toast.makeText(context, "Error al guardar el mensaje", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Error al guardar el mensaje");
             }
         }
 
@@ -536,18 +521,18 @@ public class ClasePeticionRest {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 if (result.get(1).getValue().equals("true")){
-                    Toast.makeText(context, "MATCH!", Toast.LENGTH_SHORT).show();
+                    mostrarToast((Activity)context, "MATCH!");
                 }else if (result.get(1).getValue().equals("false")){
-                    Toast.makeText(context, "NO MATCH!", Toast.LENGTH_SHORT).show();
+                    mostrarToast((Activity)context, "NO MATCH!");
                 }
             }else if (result.get(1).getKey().equals("error")){
-                Toast.makeText(context, "ERROR: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
 
             if (result.equals("true")){
-                Toast.makeText(context, "Objeto guardado correctamente", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Objeto guardado correctamente");
             }else{
-                Toast.makeText(context, "Error al guardar el objeto", Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Error al guardar el objeto");
             }
         }
 
@@ -575,9 +560,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "\"JSON: \" + result.get(1).getValue()");
             }else if (result.get(1).getKey().equals("error")){
-                Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "\"JSON: \" + result.get(1).getValue()");
             }
 
         }
@@ -606,9 +591,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }else if (result.get(1).getKey().equals("error")){
-                Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -666,13 +651,13 @@ public class ClasePeticionRest {
                 this.nombre = result.get(2).getValue();
                 this.apellidos = result.get(3).getValue();
 
-                Toast.makeText(context, "Logueado usuario Nº " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
 
                 this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
 
             }else if (result.get(1).getKey().equals("error")){
                 this.dialog.dismiss();
-                Toast.makeText(context, "ERROR: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
         }
 
@@ -721,9 +706,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }else if (result.get(1).getKey().equals("error")){
-                Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -732,7 +717,7 @@ public class ClasePeticionRest {
 
     public static class CogerObjetosInicio extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
-        String funcionAPI = "coger_info_objeto";
+        String funcionAPI = "coger_objetos_inicio";
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
@@ -752,11 +737,39 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                //Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
-                mostrarToast((Activity)context, "\"JSON: \" + result.get(1).getValue()");
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }else if (result.get(1).getKey().equals("error")){
-                //Toast.makeText(context, "JSON: " + result.get(1).getValue(), Toast.LENGTH_SHORT).show();
-                mostrarToast((Activity)context, "\"JSON: \" + result.get(1).getValue()");
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
+            }
+
+        }
+
+    }
+
+    public static class CogerObjetosAleatoriosInicio extends AsyncTask<String, String, ArrayList<KeyValue>> {
+
+        String funcionAPI = "coger_objetos_aleatorios";
+
+        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        Context context;
+
+        public CogerObjetosAleatoriosInicio(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        protected ArrayList<KeyValue> doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            return respuesta;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<KeyValue> result) {
+            super.onPostExecute(result);
+            if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
+            }else if (result.get(1).getKey().equals("error")){
+                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -766,23 +779,23 @@ public class ClasePeticionRest {
     public static class ComprobarFacebook extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
         String funcionAPI = "comprobar_facebook";
-        String email;
+        String nombre, apellidos, email, ubicacion;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
 
-        public ComprobarFacebook(Context context, String email) {
+        public ComprobarFacebook(Context context, String nombre, String apellidos, String email, String ubicacion) {
             parametros.add(new KeyValue("email", email));
             this.context = context;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.ubicacion = ubicacion;
             this.email=email;
         }
 
         @Override
         protected ArrayList<KeyValue> doInBackground(String... strings) {
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
-            if (respuesta.size()==0){
-                Log.d("etiqueta","nulo1");
-            }
             return respuesta;
         }
 
@@ -795,30 +808,15 @@ public class ClasePeticionRest {
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+                guardarUsuarioEnSharedPreferences(context, idUsuario, "facebook", nombre, apellidos, email);
 
             }else if (result.get(1).getKey().equals("error")){
                 if (result.get(1).getValue().equals("no registrado")){
-
+                    new GuardarUsuario(context, nombre, apellidos, email, null, ubicacion, "facebook");
+                }else{
+                    mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
                 }
-                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
-        }
-
-        public void guardarUsuarioEnSharedPreferences(int id){
-
-            SharedPreferences settings = context.getSharedPreferences("Config", 0);
-            SharedPreferences.Editor editor = settings.edit();
-
-            editor.putInt("user", id);
-            //editor.putString("metodo", metodoLogin);
-            editor.putBoolean("sesion", true);
-            //editor.putString("nombre",nombre);
-            //editor.putString("apellidos",apellidos);
-            editor.putString("email",email);
-
-            editor.commit();
-
         }
 
     }
@@ -826,23 +824,23 @@ public class ClasePeticionRest {
     public static class ComprobarGoogle extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
         String funcionAPI = "comprobar_google";
-        String email;
+        String nombre, apellidos, email, ubicacion;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
 
-        public ComprobarGoogle(Context context, String email) {
+        public ComprobarGoogle(Context context, String nombre, String apellidos, String email, String ubicacion) {
             parametros.add(new KeyValue("email", email));
             this.context = context;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.ubicacion = ubicacion;
             this.email=email;
         }
 
         @Override
         protected ArrayList<KeyValue> doInBackground(String... strings) {
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
-            if (respuesta.size()==0){
-                Log.d("etiqueta","nulo1");
-            }
             return respuesta;
         }
 
@@ -855,27 +853,15 @@ public class ClasePeticionRest {
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+                guardarUsuarioEnSharedPreferences(context, idUsuario, "google", nombre, apellidos, email);
 
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
+                if (result.get(1).getValue().equals("no registrado")){
+                    new GuardarUsuario(context, nombre, apellidos, email, null, ubicacion, "google");
+                }else{
+                    mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
+                }
             }
-        }
-
-        public void guardarUsuarioEnSharedPreferences(int id){
-
-            SharedPreferences settings = context.getSharedPreferences("Config", 0);
-            SharedPreferences.Editor editor = settings.edit();
-
-            editor.putInt("user", id);
-            editor.putString("email",this.email);
-
-            editor.commit();
-
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
-            ((Activity)context).finish();
-
         }
 
     }
@@ -915,6 +901,22 @@ public class ClasePeticionRest {
                 Toast.makeText(activity, frase, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public static void guardarUsuarioEnSharedPreferences(Context context, int id, String metodoLogin, String nombre, String apellidos, String email){
+
+        SharedPreferences settings = context.getSharedPreferences("Config", 0);
+        SharedPreferences.Editor editor = settings.edit();
+
+        editor.putInt("user", id);
+        editor.putString("metodo", metodoLogin);
+        editor.putBoolean("sesion", true);
+        editor.putString("nombre",nombre);
+        editor.putString("apellidos",apellidos);
+        editor.putString("email",email);
+
+        editor.commit();
+
     }
 
 }

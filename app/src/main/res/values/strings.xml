@@ -64,6 +64,9 @@
     <string name="popup">Si tienes alguna duda, puedes enviarnos un e-mail a swappieapp2017@gmail.com</string>
     <string name="toastEmailMalo">El email no es válido</string>
 
+
+    <string name="match">MATCH</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

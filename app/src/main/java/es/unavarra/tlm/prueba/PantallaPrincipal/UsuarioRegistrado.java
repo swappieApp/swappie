@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
@@ -37,6 +38,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.Camara;
+import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.Navigation_drawer;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
@@ -199,6 +201,7 @@ public class UsuarioRegistrado extends AppCompatActivity
         pilaCartas = (SwipeStack) findViewById(R.id.pila_cartas);
 
         // Se cargan los productos (esto cambiará al recibirlos del servidor).
+        //new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         cargarDatos();
 
         // Se asigna el listener que controla los movimientos de swipe left y swipe right.
@@ -333,6 +336,7 @@ public class UsuarioRegistrado extends AppCompatActivity
     private void cargarDatos() {
         productos = new ArrayList<>();
 
+
         productos.add(new Producto(R.drawable.reloj, "Reloj de mujer", "Pamplona"));
         productos.add(new Producto(R.drawable.portatil, "Portatil Lenovo", "Burlada"));
         productos.add(new Producto(R.drawable.hoverboard, "Hoverboard", "Huarte"));
@@ -348,6 +352,9 @@ public class UsuarioRegistrado extends AppCompatActivity
         productos.add(new Producto(R.drawable.bici, "Bici Pinarello", "Pamplona"));
         productos.add(new Producto(R.drawable.cascomoto, "Casco moto", "Ripagaina"));
         productos.add(new Producto(R.drawable.guitarraelectrica, "Guitarra eléctrica", "Barañain"));
+
+
+        //new ClasePeticionRest.CogerObjetosInicio(getApplicationContext(), idUsuario).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
         adaptadorProductos = new AdaptadorProductos(this, productos);
         pilaCartas.setAdapter(adaptadorProductos);

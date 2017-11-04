@@ -17,5 +17,6 @@ public class PruebaApp extends Application{
         super.onCreate();
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
+
     }
 }
