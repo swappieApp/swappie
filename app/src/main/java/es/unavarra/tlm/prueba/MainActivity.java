@@ -3,6 +3,7 @@ package es.unavarra.tlm.prueba;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-        // ----------------------  FIREBASE PARA LOGIN CON GOOGLE ----------------------//
+        // ----------------------  LOGIN CON GOOGLE ----------------------//
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -109,10 +110,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // ----------------------  LOGIN CON FACEBOOK ----------------------//
 
-        loginButton = (LoginButton) findViewById(R.id.loginButton);
+        callbackManager = CallbackManager.Factory.create();
+        LoginButton loginButton = (LoginButton) findViewById(R.id.loginButton);
         loginButton.setReadPermissions(Arrays.asList("public_profile", "user_friends", "email", "user_birthday"));
 
-        callbackManager = CallbackManager.Factory.create();
 
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
 
@@ -121,15 +122,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onSuccess(LoginResult loginResult) {
 
 
-
                 GraphRequest request = GraphRequest.newMeRequest(loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
-                            @Override
-                            public void onCompleted(JSONObject object, GraphResponse response) {
+                    @Override
+                    public void onCompleted(JSONObject object, GraphResponse response) {
 
-                                displayUserInfo(object);
 
-                            }
-                        });
+                        displayUserInfo(object);
+
+                    }
+                });
 
                 Bundle parameters = new Bundle();
                 parameters.putString("fields", "id,name,link,gender,birthday,email,picture");
@@ -166,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
@@ -215,11 +217,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             email = object.getString("email");
             id = object.getString("id");
 
-            Intent i=new Intent(MainActivity.this, UsuarioRegistrado.class);
-            i.putExtra("name",name);
-            i.putExtra("id",id);
-            i.putExtra("email",email);
+            SharedPreferences info = getSharedPreferences("Config", 0);
+            SharedPreferences.Editor editor = info.edit();
+            editor.putString("metodo","facebook");
+            editor.putBoolean("sesion", true);
+            editor.putString("nombre",name);
+            editor.putString("id",id);
+            editor.putString("email",email);
 
+            editor.commit();
+
+            Intent i=new Intent(MainActivity.this, UsuarioRegistrado.class);
             startActivity(i);
             finish();
 
@@ -227,15 +235,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
 
-        SharedPreferences info = getSharedPreferences("Config", 0);
-        SharedPreferences.Editor editor = info.edit();
-        editor.putString("metodo","facebook");
-        editor.putBoolean("sesion", true);
-        editor.putString("nombre",name);
-        editor.putString("id",id);
-        editor.putString("email",email);
-
-        editor.commit();
+        //new ClasePeticionRest.ComprobarFacebook(MainActivity.this,email).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         //prefs = getSharedPreferences("es.unavarra.tlm", Context.MODE_PRIVATE);
         //prefs.edit().putString("es.unavarra.tlm.sesion", "true").apply();
         //prefs.edit().putString("es.unavarra.tlm.email", email).apply();

@@ -49,6 +49,8 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
         //toolbar.setTitleTextColor(Color.rgb(240,98,146));
 
         GetLocation location = new GetLocation();
+        String coor=location.getCoords(this);
+
 
         // ----------------------  MENÚ LATERAL ----------------------//
 
