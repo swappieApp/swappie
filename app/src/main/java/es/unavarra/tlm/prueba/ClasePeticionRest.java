@@ -1,7 +1,6 @@
 package es.unavarra.tlm.prueba;
 
 import android.app.Activity;
-import android.app.Notification;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +8,6 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.os.Handler;
-import android.os.Message;
-import android.os.SystemClock;
 import android.util.JsonReader;
 import android.util.Log;
 import android.widget.Toast;
@@ -32,13 +28,11 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
-import es.unavarra.tlm.prueba.PantallaPrincipal.Producto2;
+import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 import es.unavarra.tlm.prueba.PantallaPrincipal.model.Objeto;
 import link.fls.swipestack.SwipeStack;
-
-import static com.facebook.FacebookSdk.getApplicationContext;
 
 /**
  * Created by ibai on 10/20/17.
@@ -779,11 +773,11 @@ public class ClasePeticionRest {
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
 
-
                 Gson gson = new Gson();
                 Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
+                new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                //cargarDatos(objetos, activity);
 
-                cargarDatos(objetos, activity);
             }else if (result.get(1).getKey().equals("error")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }
@@ -1007,6 +1001,49 @@ public class ClasePeticionRest {
 
         pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
 
+
+    }
+
+    public static class CargarDatos extends AsyncTask<String, String, ArrayList<Producto2>>{
+
+        Objeto[] objetos;
+        Activity activity;
+        SwipeStack pilaCartas;
+
+        public CargarDatos(Objeto[] objetos, Activity activity){
+            super();
+            this.objetos = objetos;
+            this.activity = activity;
+            pilaCartas = (SwipeStack) activity.findViewById(R.id.pila_cartas);
+        }
+
+        @Override
+        protected ArrayList<Producto2> doInBackground(String... strings) {
+
+            ArrayList productos = new ArrayList<>();
+            for (int x = 0; x < objetos.length; x++){
+                Bitmap b = downloadBitmap(objetos[x].getId());
+                productos.add(new Producto2(b, objetos[x].getDescripcion(), ""));
+            }
+            return productos;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Producto2> producto2s) {
+            super.onPostExecute(producto2s);
+
+            AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, producto2s);
+            pilaCartas.setAdapter(adaptadorProductos);
+            pilaCartas.setListener(new SwipeStackCardListener(activity, producto2s));
+
+            Log.e("etiqueta", "FIN de la carga");
+
+        }
 
     }
 

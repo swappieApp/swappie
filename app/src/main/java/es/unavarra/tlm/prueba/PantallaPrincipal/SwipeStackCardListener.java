@@ -5,6 +5,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
+import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
 import link.fls.swipestack.SwipeStack;
 
 public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{

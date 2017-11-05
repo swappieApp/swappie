@@ -22,7 +22,7 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
-import es.unavarra.tlm.prueba.PantallaPrincipal.Producto2;
+import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 
 import java.util.ArrayList;

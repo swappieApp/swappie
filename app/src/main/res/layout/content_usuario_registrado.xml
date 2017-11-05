@@ -31,10 +31,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:paddingTop="20dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            app:stack_rotation="0"/>
+            android:paddingTop="20dp"
+            android:visibility="visible"
+            app:stack_rotation="0" />
 
 
     </FrameLayout>

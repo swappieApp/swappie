@@ -1,4 +1,4 @@
-package es.unavarra.tlm.prueba.PantallaPrincipal;
+package es.unavarra.tlm.prueba.PantallaPrincipal.model;
 
 import android.graphics.Bitmap;
 import android.widget.ImageView;

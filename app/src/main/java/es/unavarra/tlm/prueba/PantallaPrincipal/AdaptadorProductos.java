@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
 import es.unavarra.tlm.prueba.R;
 
 import java.util.List;
