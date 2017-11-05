@@ -6,6 +6,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
@@ -13,6 +15,8 @@ import android.os.SystemClock;
 import android.util.JsonReader;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -27,7 +31,12 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
+import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
+import es.unavarra.tlm.prueba.PantallaPrincipal.Producto2;
+import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
+import es.unavarra.tlm.prueba.PantallaPrincipal.model.Objeto;
+import link.fls.swipestack.SwipeStack;
 
 import static com.facebook.FacebookSdk.getApplicationContext;
 
@@ -36,7 +45,6 @@ import static com.facebook.FacebookSdk.getApplicationContext;
  */
 
 public class ClasePeticionRest {
-
 
     public ClasePeticionRest(){
         super();
@@ -63,7 +71,6 @@ public class ClasePeticionRest {
             String stringURL = "http://swappie.tk/base/php/" + funcionAPI + ".php?"+urlParametros;
             URL url = new URL(stringURL);
 
-            Log.d("etiqueta", "CP2");
             Log.d("etiqueta", String.valueOf(url));
 
 
@@ -73,21 +80,15 @@ public class ClasePeticionRest {
             if (metodo.equals("post")){
                 myConnection.setDoOutput(true);
             }
-            /*
-            for (int x = 0; x < parametros.size(); x++){
-                myConnection.setRequestProperty(parametros.get(x).getKey(), parametros.get(x).getValue());
-            }
-            */
 
             if (myConnection.getResponseCode() == 200){
 
                 Log.d("etiqueta", "entro al if");
                 InputStream responseBody = myConnection.getInputStream();
-                Log.d("etiqueta", "RESPONSE:"+responseBody.toString());
                 InputStreamReader responseBodyReader = new InputStreamReader(responseBody, "UTF-8");
                 JsonReader jsonReader = new JsonReader(responseBodyReader);
                 jsonReader.setLenient(true);
-                jsonReader.beginObject(); // Start processi ng the JSON object
+                jsonReader.beginObject(); // Start processing the JSON object
                 while (jsonReader.hasNext()) { // Loop through all keys
                     String key = jsonReader.nextName(); // Fetch the next key
                     String value = jsonReader.nextString();
@@ -107,6 +108,7 @@ public class ClasePeticionRest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        Log.e("etiqueta", "SALGO");
         return respuesta;
 
     }
@@ -214,15 +216,12 @@ public class ClasePeticionRest {
 
     public static class GuardarUsuario extends AsyncTask<String, String, Integer> {
 
-
         String funcionAPI = "guardar_usuario";
         String nombre, apellidos, email, metodoLogin;
         ProgressDialog dialog;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
-
-
 
         public GuardarUsuario(Context context, String nombre, String apellidos, String email, String password, String ubicacion, String metodoLogin) {
 
@@ -761,9 +760,11 @@ public class ClasePeticionRest {
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
+        Activity activity;
 
         public CogerObjetosAleatoriosInicio(Context context) {
             this.context = context;
+            this.activity = (Activity)context;
         }
 
         @Override
@@ -777,6 +778,12 @@ public class ClasePeticionRest {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
+
+
+                Gson gson = new Gson();
+                Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
+
+                cargarDatos(objetos, activity);
             }else if (result.get(1).getKey().equals("error")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }
@@ -860,7 +867,6 @@ public class ClasePeticionRest {
         }
 
     }
-
 
     public static class ComprobarGoogle extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
@@ -977,6 +983,48 @@ public class ClasePeticionRest {
         editor.putString("email",email);
 
         editor.commit();
+
+    }
+
+    public static void cargarDatos(Objeto[] objetos, Activity activity){
+
+        SwipeStack pilaCartas;
+        pilaCartas = (SwipeStack) activity.findViewById(R.id.pila_cartas);
+
+        ArrayList productos = new ArrayList<>();
+
+        for (int x = 0; x < objetos.length; x++){
+            Bitmap b = downloadBitmap(objetos[x].getId());
+            productos.add(new Producto2(b, objetos[x].getDescripcion(), ""));
+        }
+
+        AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, productos);
+        pilaCartas.setAdapter(adaptadorProductos);
+
+        if (adaptadorProductos.isEmpty()){
+            Log.e("etiqueta", "Adaptador vacío");
+        }
+
+        pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
+
+
+    }
+
+    public static Bitmap downloadBitmap(String id){
+
+        Bitmap bmp =null;
+        try{
+            URL ulrn = new URL("http://swappie.tk/base/img/fotos_objetos/" + id + ".jpg");
+            Log.e("etiqueta", "URL:"+ulrn.toString());
+            HttpURLConnection con = (HttpURLConnection)ulrn.openConnection();
+            con.setUseCaches(true);
+            InputStream is = con.getInputStream();
+            bmp = BitmapFactory.decodeStream(is);
+            if (null != bmp)
+                return bmp;
+
+        }catch(Exception e){}
+        return bmp;
 
     }
 

@@ -5,15 +5,14 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto;
 import link.fls.swipestack.SwipeStack;
 
 public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
     private Activity activity;
-    private ArrayList<Producto> productos;
+    private ArrayList<Producto2> productos;
 
-    public SwipeStackCardListener(Activity activity, ArrayList<Producto> productos) {
+    public SwipeStackCardListener(Activity activity, ArrayList<Producto2> productos) {
         this.activity = activity;
         this.productos = productos;
     }
@@ -43,7 +42,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
     @Override
     public void onStackEmpty() {
-
+        Log.e("etiqueta", "Stack vacio");
     }
 
 }

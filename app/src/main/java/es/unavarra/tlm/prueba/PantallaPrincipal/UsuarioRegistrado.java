@@ -42,7 +42,6 @@ import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.Navigation_drawer;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto;
 
 import java.util.ArrayList;
 
@@ -56,11 +55,11 @@ public class UsuarioRegistrado extends AppCompatActivity
     CircleImageView img;
 
     private String metodo;          // Contiene el método que utilizó el usuario para registrarse.
-
+/*
     private SwipeStack pilaCartas;
     private AdaptadorProductos adaptadorProductos;
-    private ArrayList<Producto> productos;
-
+    private ArrayList<Producto2> productos;
+*/
     private DrawerLayout drawer;
 
     private PopupWindow popUpWindow;
@@ -196,15 +195,16 @@ public class UsuarioRegistrado extends AppCompatActivity
 
         }
 
+        new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
         // Se selecciona la pila de cartas (productos).
-        pilaCartas = (SwipeStack) findViewById(R.id.pila_cartas);
+        //pilaCartas = (SwipeStack) findViewById(R.id.pila_cartas);
 
         // Se cargan los productos (esto cambiará al recibirlos del servidor).
-        //new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-        cargarDatos();
+        //cargarDatos();
 
         // Se asigna el listener que controla los movimientos de swipe left y swipe right.
-        pilaCartas.setListener(new SwipeStackCardListener(this, productos));
+        //pilaCartas.setListener(new SwipeStackCardListener(this, productos));
 
     }
 
@@ -332,6 +332,7 @@ public class UsuarioRegistrado extends AppCompatActivity
         return true;
     }
 
+/*
     private void cargarDatos() {
         productos = new ArrayList<>();
 
@@ -358,6 +359,7 @@ public class UsuarioRegistrado extends AppCompatActivity
         adaptadorProductos = new AdaptadorProductos(this, productos);
         pilaCartas.setAdapter(adaptadorProductos);
     }
+*/
 
     private View.OnClickListener cancel_button_click_listener = new View.OnClickListener() {
         public void onClick(View v) {

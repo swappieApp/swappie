@@ -11,16 +11,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import es.unavarra.tlm.prueba.R;
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto;
 
 import java.util.List;
 
 public class AdaptadorProductos extends BaseAdapter {
 
     Activity activity;
-    private List<Producto> productos;
+    private List<Producto2> productos;
 
-    public AdaptadorProductos(Activity activity, List<Producto> productos) {
+    public AdaptadorProductos(Activity activity, List<Producto2> productos) {
         this.activity = activity;
         this.productos = productos;
     }
@@ -31,7 +30,7 @@ public class AdaptadorProductos extends BaseAdapter {
     }
 
     @Override
-    public Producto getItem(int position) {
+    public Producto2 getItem(int position) {
         return this.productos.get(position);
     }
 
@@ -42,17 +41,18 @@ public class AdaptadorProductos extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Producto producto = this.getItem(position);
+
+        Producto2 producto = this.getItem(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, null, false);
+            //convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, null, false);
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, parent, true);
         }
 
         ImageView image = (ImageView) convertView.findViewById(R.id.image);
 
         // Se asigna la imagen correspondiente que aparece en la carta..
-        image.setImageBitmap(decodeSampledBitmapFromResource(activity.getResources(),
-                getItem(position).getDrawableId(), 150, 300));
+        image.setImageBitmap(producto.getBitmap());
 
         // Se asigna un listener a la imagen que muestra la información del producto.
         //image.setOnClickListener(new OpenProductInfoClickListener(activity, getItem(position)));

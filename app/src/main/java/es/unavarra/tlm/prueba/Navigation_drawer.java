@@ -22,8 +22,8 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
+import es.unavarra.tlm.prueba.PantallaPrincipal.Producto2;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
     private SwipeStack pilaCartas;
     private AdaptadorProductos adaptadorProductos;
-    private ArrayList<Producto> productos;
+    private ArrayList<Producto2> productos;
     private int posicionActual;
     private PopupWindow popUpWindow;
 
@@ -48,8 +48,8 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
         //toolbar.setTitle("Swappie");
         //toolbar.setTitleTextColor(Color.rgb(240,98,146));
 
-        GetLocation location = new GetLocation();
-        String coor=location.getCoords(this);
+        //GetLocation location = new GetLocation();
+        //String coor=location.getCoords(this);
 
 
         // ----------------------  MENÚ LATERAL ----------------------//
@@ -81,7 +81,7 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
         pilaCartas = (SwipeStack) findViewById(R.id.pila_cartas);
 
-        cargarDatos();
+        //cargarDatos();
 
         posicionActual = 0;
 
@@ -222,6 +222,7 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
     // ----------------------  MÉTODO QUE CARGA LAS IMÁGENES ----------------------//
 
+    /*
     private void cargarDatos() {
         productos = new ArrayList<>();
 
@@ -244,4 +245,5 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
         adaptadorProductos = new AdaptadorProductos(this, productos);
         pilaCartas.setAdapter(adaptadorProductos);
     }
+    */
 }
