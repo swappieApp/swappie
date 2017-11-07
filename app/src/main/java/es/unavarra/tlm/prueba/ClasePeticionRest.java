@@ -286,17 +286,20 @@ public class ClasePeticionRest {
         String funcionAPI = "guardar_swipe";
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
-        Context context;
+        Activity activity;
 
-        public GuardarSwipe(Context context, int idUsuario, int idObjeto, boolean decision) {
+        public GuardarSwipe(Activity activity, int idUsuario, int idObjeto, boolean decision) {
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
             parametros.add(new KeyValue("id_objeto", idObjeto+""));
             parametros.add(new KeyValue("decision", decision+""));
-            this.context = context;
+            this.activity = activity;
         }
 
         @Override
         protected String doInBackground(String... strings) {
+            if (Integer.parseInt(parametros.get(0).getValue()) == 0){
+                return "";
+            }
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
             if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
                 return "true";
@@ -310,9 +313,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.equals("true")){
-                mostrarToast((Activity)context, "Swipe guardado correctamente");
-            }else{
-                mostrarToast((Activity)context, "Error al guardar el swipe");
+                mostrarToast(activity, "Swipe guardado correctamente");
+            }else if (result.equals("")){
+                mostrarToast(activity, "Error al guardar el swipe");
             }
         }
 

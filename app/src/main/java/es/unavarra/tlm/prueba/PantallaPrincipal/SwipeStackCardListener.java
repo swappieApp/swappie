@@ -1,17 +1,19 @@
 package es.unavarra.tlm.prueba.PantallaPrincipal;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import java.util.ArrayList;
 
+import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.model.Producto2;
 import link.fls.swipestack.SwipeStack;
 
 public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
-    private Activity activity;
     private ArrayList<Producto2> productos;
+    Activity activity;
 
     public SwipeStackCardListener(Activity activity, ArrayList<Producto2> productos) {
         this.activity = activity;
@@ -20,19 +22,26 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
     @Override
     public void onViewSwipedToLeft(int position) {
-        String descripcion = productos.get(position).getDescription();
-        int id = productos.get(position).getId();
+        int idObjeto = productos.get(position).getId();
+        SharedPreferences settings = activity.getSharedPreferences("Config", 0);
+        int idUsuario = settings.getInt("id", 0);
 
-        Log.d("Swipe", "Descripción: " + descripcion + "  ID: " + id);
+        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, false);
+
+        String descripcion = productos.get(position).getDescription();
+        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);
     }
 
     @Override
     public void onViewSwipedToRight(int position) {
+        int idObjeto = productos.get(position).getId();
+        SharedPreferences settings = activity.getSharedPreferences("Config", 0);
+        int idUsuario = settings.getInt("id", 0);
+
+        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true);
 
         String descripcion = productos.get(position).getDescription();
-        int id = productos.get(position).getId();
-
-        Log.d("Swipe", "Descripción: " + descripcion + "  ID: " + id);
+        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);
     }
 
     @Override
