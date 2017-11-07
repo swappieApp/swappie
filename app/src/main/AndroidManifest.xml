@@ -49,7 +49,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PreferenceManager" />
         <activity
-            android:name=".Navigation_drawer"
+            android:name=".PantallaPrincipal.Navigation_drawer"
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

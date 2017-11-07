@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
+import es.unavarra.tlm.prueba.model.Producto2;
 import es.unavarra.tlm.prueba.R;
 
 import java.util.List;
@@ -46,8 +46,7 @@ public class AdaptadorProductos extends BaseAdapter {
         Producto2 producto = this.getItem(position);
 
         if (convertView == null) {
-            //convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, null, false);
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, parent, true);
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, null, false);
         }
 
         ImageView image = (ImageView) convertView.findViewById(R.id.image);

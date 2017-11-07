@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.View;
 
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto;
+import es.unavarra.tlm.prueba.model.Producto;
 
 public class OpenProductInfoClickListener implements View.OnClickListener {
 

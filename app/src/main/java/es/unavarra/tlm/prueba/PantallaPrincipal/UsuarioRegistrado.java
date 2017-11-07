@@ -39,13 +39,8 @@ import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.Camara;
 import es.unavarra.tlm.prueba.ClasePeticionRest;
-import es.unavarra.tlm.prueba.Navigation_drawer;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
-
-import java.util.ArrayList;
-
-import link.fls.swipestack.SwipeStack;
 
 public class UsuarioRegistrado extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -55,11 +50,7 @@ public class UsuarioRegistrado extends AppCompatActivity
     CircleImageView img;
 
     private String metodo;          // Contiene el método que utilizó el usuario para registrarse.
-/*
-    private SwipeStack pilaCartas;
-    private AdaptadorProductos adaptadorProductos;
-    private ArrayList<Producto2> productos;
-*/
+
     private DrawerLayout drawer;
 
     private PopupWindow popUpWindow;
@@ -195,16 +186,8 @@ public class UsuarioRegistrado extends AppCompatActivity
 
         }
 
-        new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-
-        // Se selecciona la pila de cartas (productos).
-        //pilaCartas = (SwipeStack) findViewById(R.id.pila_cartas);
-
-        // Se cargan los productos (esto cambiará al recibirlos del servidor).
-        //cargarDatos();
-
-        // Se asigna el listener que controla los movimientos de swipe left y swipe right.
-        //pilaCartas.setListener(new SwipeStackCardListener(this, productos));
+        Log.e("etiqueta", "id_usuario:"+settings.getInt("id", 0));
+        new ClasePeticionRest.CogerObjetosInicio(this, settings.getInt("id", 0)+"").executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
     }
 
@@ -331,35 +314,6 @@ public class UsuarioRegistrado extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-/*
-    private void cargarDatos() {
-        productos = new ArrayList<>();
-
-
-        productos.add(new Producto(R.drawable.reloj, "Reloj de mujer", "Pamplona"));
-        productos.add(new Producto(R.drawable.portatil, "Portatil Lenovo", "Burlada"));
-        productos.add(new Producto(R.drawable.hoverboard, "Hoverboard", "Huarte"));
-        productos.add(new Producto(R.drawable.conversorvgahdmi, "Conversor VGA/HDMI", "Barañain"));
-        productos.add(new Producto(R.drawable.armarioarchivador, "Armario archivador", "Mendillorri"));
-        productos.add(new Producto(R.drawable.minibillar, "Mini-Billar", "Villava"));
-        productos.add(new Producto(R.drawable.monitorpc, "Monitor PC", "Burlada"));
-        productos.add(new Producto(R.drawable.ps4, "PS4 y mando", "Noáin"));
-        productos.add(new Producto(R.drawable.yamahar6, "Yamaha R6", "Zizur Mayor"));
-        productos.add(new Producto(R.drawable.gabrielgarciamarquez, "Cien años de soledad", "Pamplona"));
-        productos.add(new Producto(R.drawable.cargador, "Cargador", "Barañain"));
-        productos.add(new Producto(R.drawable.cafetera, "Cafetera", "Zizur Mayor"));
-        productos.add(new Producto(R.drawable.bici, "Bici Pinarello", "Pamplona"));
-        productos.add(new Producto(R.drawable.cascomoto, "Casco moto", "Ripagaina"));
-        productos.add(new Producto(R.drawable.guitarraelectrica, "Guitarra eléctrica", "Barañain"));
-
-
-        //new ClasePeticionRest.CogerObjetosInicio(getApplicationContext(), idUsuario).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-
-        adaptadorProductos = new AdaptadorProductos(this, productos);
-        pilaCartas.setAdapter(adaptadorProductos);
-    }
-*/
 
     private View.OnClickListener cancel_button_click_listener = new View.OnClickListener() {
         public void onClick(View v) {

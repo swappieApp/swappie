@@ -1,9 +1,10 @@
-package es.unavarra.tlm.prueba;
+package es.unavarra.tlm.prueba.PantallaPrincipal;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -21,12 +22,14 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
-import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
-import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
+import es.unavarra.tlm.prueba.ClasePeticionRest;
+import es.unavarra.tlm.prueba.MainActivity;
+import es.unavarra.tlm.prueba.model.Producto2;
 
 import java.util.ArrayList;
 
+import es.unavarra.tlm.prueba.R;
+import es.unavarra.tlm.prueba.Tutorial;
 import link.fls.swipestack.SwipeStack;
 
 //          ****CLASE PRINCIPAL QUE CARGA AL INICIAR LA APP****
@@ -79,29 +82,8 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
         // ---------------------- CARGAMOS LAS IMÁGENES ----------------------//
 
 
-        pilaCartas = (SwipeStack) findViewById(R.id.pila_cartas);
+        new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
-        //cargarDatos();
-
-        posicionActual = 0;
-
-        // Se asigna el listener que controla los movimientos de swipe left y swipe right.
-        pilaCartas.setListener(new SwipeStack.SwipeStackListener() {
-            @Override
-            public void onViewSwipedToLeft(int position) {
-                posicionActual = position + 1;
-            }
-
-            @Override
-            public void onViewSwipedToRight(int position) {
-                posicionActual = position + 1;
-            }
-
-            @Override
-            public void onStackEmpty() {
-
-            }
-        });
     }
 
     // ----------------------  MÉTODOS PARA INTERACCIONAR CON EL MENÚ LATERAL ----------------------//

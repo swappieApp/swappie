@@ -1,4 +1,4 @@
-package es.unavarra.tlm.prueba.PantallaPrincipal.model;
+package es.unavarra.tlm.prueba.model;
 
 import android.graphics.Bitmap;
 import android.widget.ImageView;
@@ -10,14 +10,15 @@ import android.widget.ImageView;
 public class Producto2 {
 
     private Bitmap bitmap;
-    private ImageView image;
     private String description;
     private String location;
+    private int id;
 
-    public Producto2(Bitmap bitmap, String description, String location) {
+    public Producto2(Bitmap bitmap, String description, String location, int id) {
         this.bitmap = bitmap;
         this.description = description;
         this.location = location;
+        this.id = id;
     }
 
     public Bitmap getBitmap() {
@@ -26,14 +27,6 @@ public class Producto2 {
 
     public void setBitmap(Bitmap bitmap) {
         this.bitmap = bitmap;
-    }
-
-    public ImageView getImage() {
-        return image;
-    }
-
-    public void setImage(ImageView image) {
-        this.image = image;
     }
 
     public String getDescription() {
@@ -50,6 +43,14 @@ public class Producto2 {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
 

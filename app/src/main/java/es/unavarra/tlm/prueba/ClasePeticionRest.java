@@ -28,10 +28,10 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
+import es.unavarra.tlm.prueba.model.Producto2;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Objeto;
+import es.unavarra.tlm.prueba.model.Objeto;
 import link.fls.swipestack.SwipeStack;
 
 /**
@@ -62,7 +62,7 @@ public class ClasePeticionRest {
                 }
             }
 
-            String stringURL = "http://swappie.tk/base/php/" + funcionAPI + ".php?"+urlParametros;
+            String stringURL = "http://aux.swappie.tk/api/" + funcionAPI + ".php?"+urlParametros;
             URL url = new URL(stringURL);
 
             Log.d("etiqueta", String.valueOf(url));
@@ -118,7 +118,7 @@ public class ClasePeticionRest {
         int bytesRead, bytesAvailable, bufferSize;
         byte[] buffer;
         int maxBufferSize = 1 * 1024 * 1024;
-        String urlString = "http://swappie.tk/base/php/guardar_foto.php";
+        String urlString = "http://aux.swappie.tk/api/guardar_foto.php";
 
         try {
 
@@ -655,32 +655,15 @@ public class ClasePeticionRest {
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
 
-                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+                guardarUsuarioEnSharedPreferences(context, Integer.parseInt(result.get(1).getValue()), metodoLogin, nombre, apellidos, email);
+                Intent intent = new Intent(context, UsuarioRegistrado.class);
+                context.startActivity(intent);
+                ((Activity)context).finish();
 
             }else if (result.get(1).getKey().equals("error")){
                 this.dialog.dismiss();
                 mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
-        }
-
-        public void guardarUsuarioEnSharedPreferences(int id){
-
-            SharedPreferences settings = context.getSharedPreferences("Config", 0);
-            SharedPreferences.Editor editor = settings.edit();
-
-            editor.putInt("user", id);
-            editor.putString("metodo", this.metodoLogin);
-            editor.putBoolean("sesion", true);
-            editor.putString("nombre",this.nombre);
-            editor.putString("apellidos",this.apellidos);
-            editor.putString("email",this.email);
-
-            editor.commit();
-
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
-            ((Activity)context).finish();
-
         }
 
     }
@@ -723,10 +706,12 @@ public class ClasePeticionRest {
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
+        Activity activity;
 
-        public CogerObjetosInicio(Context context, int idUsuario) {
-            parametros.add(new KeyValue("id_usuario", idUsuario+""));
+        public CogerObjetosInicio(Context context, String idUsuario) {
+            parametros.add(new KeyValue("id_usuario", idUsuario));
             this.context = context;
+            this.activity = (Activity)context;
         }
 
         @Override
@@ -740,6 +725,16 @@ public class ClasePeticionRest {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
+
+                if (!result.get(1).getValue().equals("[]")){
+                    Gson gson = new Gson();
+                    Log.e("etiqueta", result.get(1).getValue());
+                    Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
+                    new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                }else{
+                    Log.e("etiqueta", "No hay objetos");
+                }
+
             }else if (result.get(1).getKey().equals("error")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
             }
@@ -771,12 +766,11 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
+                //mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
 
                 Gson gson = new Gson();
                 Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
                 new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
-                //cargarDatos(objetos, activity);
 
             }else if (result.get(1).getKey().equals("error")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
@@ -825,7 +819,10 @@ public class ClasePeticionRest {
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+                guardarUsuarioEnSharedPreferences(context, idUsuario, metodoLogin, nombre, apellidos, email);
+                Intent intent = new Intent(context, UsuarioRegistrado.class);
+                context.startActivity(intent);
+                ((Activity)context).finish();
 
             }else if (result.get(1).getKey().equals("error")){
 
@@ -850,14 +847,6 @@ public class ClasePeticionRest {
                 }
                 mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
             }
-        }
-
-        public void guardarUsuarioEnSharedPreferences(int id){
-
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
-            ((Activity)context).finish();
-
         }
 
     }
@@ -894,7 +883,10 @@ public class ClasePeticionRest {
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+                guardarUsuarioEnSharedPreferences(context, idUsuario, metodoLogin, nombre, apellidos, email);
+                Intent intent = new Intent(context, UsuarioRegistrado.class);
+                context.startActivity(intent);
+                ((Activity)context).finish();
 
             }else if (result.get(1).getKey().equals("error")){
                 if (result.get(1).getValue().equals("no registrado")){
@@ -915,14 +907,6 @@ public class ClasePeticionRest {
                     mostrarToast((Activity)context, "ERROR: " + result.get(1).getValue());
                 }
             }
-        }
-
-        public void guardarUsuarioEnSharedPreferences(int id){
-
-            Intent intent = new Intent(context, UsuarioRegistrado.class);
-            context.startActivity(intent);
-            ((Activity)context).finish();
-
         }
 
     }
@@ -969,7 +953,8 @@ public class ClasePeticionRest {
         SharedPreferences settings = context.getSharedPreferences("Config", 0);
         SharedPreferences.Editor editor = settings.edit();
 
-        editor.putInt("user", id);
+        Log.e("etiqueta", "GUARDAR_ID:"+id);
+        editor.putInt("id", id);
         editor.putString("metodo", metodoLogin);
         editor.putBoolean("sesion", true);
         editor.putString("nombre",nombre);
@@ -977,30 +962,6 @@ public class ClasePeticionRest {
         editor.putString("email",email);
 
         editor.commit();
-
-    }
-
-    public static void cargarDatos(Objeto[] objetos, Activity activity){
-
-        SwipeStack pilaCartas;
-        pilaCartas = (SwipeStack) activity.findViewById(R.id.pila_cartas);
-
-        ArrayList productos = new ArrayList<>();
-
-        for (int x = 0; x < objetos.length; x++){
-            Bitmap b = downloadBitmap(objetos[x].getId());
-            productos.add(new Producto2(b, objetos[x].getDescripcion(), ""));
-        }
-
-        AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, productos);
-        pilaCartas.setAdapter(adaptadorProductos);
-
-        if (adaptadorProductos.isEmpty()){
-            Log.e("etiqueta", "Adaptador vacío");
-        }
-
-        pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
-
 
     }
 
@@ -1023,7 +984,7 @@ public class ClasePeticionRest {
             ArrayList productos = new ArrayList<>();
             for (int x = 0; x < objetos.length; x++){
                 Bitmap b = downloadBitmap(objetos[x].getId());
-                productos.add(new Producto2(b, objetos[x].getDescripcion(), ""));
+                productos.add(new Producto2(b, objetos[x].getDescripcion(), "", Integer.parseInt(objetos[x].getId())));
             }
             return productos;
         }
@@ -1040,8 +1001,7 @@ public class ClasePeticionRest {
             AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, producto2s);
             pilaCartas.setAdapter(adaptadorProductos);
             pilaCartas.setListener(new SwipeStackCardListener(activity, producto2s));
-
-            Log.e("etiqueta", "FIN de la carga");
+            adaptadorProductos.notifyDataSetChanged();
 
         }
 
@@ -1051,7 +1011,7 @@ public class ClasePeticionRest {
 
         Bitmap bmp =null;
         try{
-            URL ulrn = new URL("http://swappie.tk/base/img/fotos_objetos/" + id + ".jpg");
+            URL ulrn = new URL("http://aux.swappie.tk/api/img/fotos_objetos/" + id + ".jpg");
             Log.e("etiqueta", "URL:"+ulrn.toString());
             HttpURLConnection con = (HttpURLConnection)ulrn.openConnection();
             con.setUseCaches(true);

@@ -5,7 +5,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import es.unavarra.tlm.prueba.PantallaPrincipal.model.Producto2;
+import es.unavarra.tlm.prueba.model.Producto2;
 import link.fls.swipestack.SwipeStack;
 
 public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
@@ -21,24 +21,18 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     @Override
     public void onViewSwipedToLeft(int position) {
         String descripcion = productos.get(position).getDescription();
-        String localizacion = productos.get(position).getLocation();
+        int id = productos.get(position).getId();
 
-        Log.d("Main", "Descripción: " + descripcion + "  Localización: " + localizacion);
+        Log.d("Swipe", "Descripción: " + descripcion + "  ID: " + id);
     }
 
     @Override
     public void onViewSwipedToRight(int position) {
-        //ClasePeticionRest peticion = new ClasePeticionRest();
-        //int idUsuario = 1234;
-        //int idObjeto = 9876;
-        //peticion.guardarSwipe(idUsuario, idObjeto, true);
-
-        //ClasePeticionRest.GuardarSwipe guardarSwipe = new ClasePeticionRest.GuardarSwipe(activity, 1234, 9876, true);
 
         String descripcion = productos.get(position).getDescription();
-        String localizacion = productos.get(position).getLocation();
+        int id = productos.get(position).getId();
 
-        Log.d("Main", "Descripción: " + descripcion + "  Localización: " + localizacion);
+        Log.d("Swipe", "Descripción: " + descripcion + "  ID: " + id);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package es.unavarra.tlm.prueba.PantallaPrincipal.model;
+package es.unavarra.tlm.prueba.model;
 
 import android.widget.ImageView;
 
