@@ -67,6 +67,10 @@
 
     <string name="toastEmailMalo">The format of the email address entered is not valid.</string>
 
+    <string name="match">It\'s a match!</string>
+    <string name="abrirChat">SEND A MESSAGE</string>
+    <string name="seguir">KEEP SWAPPING</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
