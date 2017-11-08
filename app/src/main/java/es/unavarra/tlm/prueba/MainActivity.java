@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putString("nombre",first_name);
             editor.putString("apellidos",last_name);
 
-            editor.putString("id",id);
+            editor.putString("idFacebook",id);
             editor.putString("email",email);
 
             editor.commit();

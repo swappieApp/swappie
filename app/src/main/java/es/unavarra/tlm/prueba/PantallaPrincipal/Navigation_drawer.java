@@ -132,6 +132,8 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
             Intent intent = new Intent(this, Tutorial.class);
             startActivity(intent);
 
+
+
         }else if (id == R.id.nav_contact) {
 
 

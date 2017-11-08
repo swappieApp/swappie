@@ -119,7 +119,7 @@ public class UsuarioRegistrado extends AppCompatActivity
             // Se extrae la información almacenada en Shared Preferences.
             boolean sesion = settings.getBoolean("sesion", false);
             String name = settings.getString("nombre", "");
-            String id = settings.getString("id", "");
+            String idFacebook = settings.getString("idFacebook", "");
             String apellidos = settings.getString("apellidos","");
             String email = settings.getString("email","");
 
@@ -140,7 +140,7 @@ public class UsuarioRegistrado extends AppCompatActivity
             // Se asigna la imagen de perfil del usuario al campo correspondiente.
             img = (CircleImageView) headerView.findViewById(R.id.imageUser);
             try {
-                imageUrl = new URL("https://graph.facebook.com/" + id + "/picture?type=large");
+                imageUrl = new URL("https://graph.facebook.com/" + idFacebook + "/picture?type=large");
                 Bitmap bmp = BitmapFactory.decodeStream(imageUrl.openConnection().getInputStream());
                 img.setImageBitmap(bmp);
             } catch (MalformedURLException e) {
@@ -239,12 +239,10 @@ public class UsuarioRegistrado extends AppCompatActivity
             if (metodo.equals("google")) {
                 // Se registró con Google.
 
-                FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-                FirebaseAuth.getInstance().signOut();
-                LoginManager.getInstance().logOut();
 
                 SharedPreferences info = getSharedPreferences("Config", 0);
                 SharedPreferences.Editor editor = info.edit();
+                editor.clear();
 
                 // Se borra la sesión de Shared Preferences.
                 editor.putBoolean("sesion", false);

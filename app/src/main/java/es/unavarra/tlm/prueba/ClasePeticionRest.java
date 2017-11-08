@@ -824,11 +824,10 @@ public class ClasePeticionRest {
 
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
+                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
+
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                guardarUsuarioEnSharedPreferences(context, idUsuario, metodoLogin, nombre, apellidos, email);
-                Intent intent = new Intent(context, UsuarioRegistrado.class);
-                context.startActivity(intent);
-                ((Activity)context).finish();
+
 
             }else if (result.get(1).getKey().equals("error")){
 
@@ -855,6 +854,13 @@ public class ClasePeticionRest {
             }
         }
 
+        public void guardarUsuarioEnSharedPreferences(int id){
+                Intent intent = new Intent(context, UsuarioRegistrado.class);
+                   context.startActivity(intent);
+                ((Activity)context).finish();
+
+        }
+
     }
 
     public static class ComprobarGoogle extends AsyncTask<String, String, ArrayList<KeyValue>> {
@@ -865,7 +871,9 @@ public class ClasePeticionRest {
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
 
+
         public ComprobarGoogle(Context context, String nombre, String apellidos, String email, String ubicacion) {
+
             parametros.add(new KeyValue("email", email));
             this.context = context;
             this.nombre = nombre;
@@ -888,11 +896,9 @@ public class ClasePeticionRest {
 
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
+                this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
                 mostrarToast((Activity)context, "Logueado usuario Nº " + result.get(1).getValue());
-                guardarUsuarioEnSharedPreferences(context, idUsuario, metodoLogin, nombre, apellidos, email);
-                Intent intent = new Intent(context, UsuarioRegistrado.class);
-                context.startActivity(intent);
-                ((Activity)context).finish();
+
 
             }else if (result.get(1).getKey().equals("error")){
                 if (result.get(1).getValue().equals("no registrado")){
@@ -914,6 +920,14 @@ public class ClasePeticionRest {
                 }
             }
         }
+
+        public void guardarUsuarioEnSharedPreferences(int id){
+
+            Intent intent = new Intent(context, UsuarioRegistrado.class);
+            context.startActivity(intent);
+            ((Activity)context).finish();
+        }
+
 
     }
 
