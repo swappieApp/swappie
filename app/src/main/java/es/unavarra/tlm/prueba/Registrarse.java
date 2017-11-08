@@ -26,7 +26,6 @@ public class Registrarse extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrarse);
 
-
     }
 
     public static boolean esMailValido(CharSequence objetivo) {
