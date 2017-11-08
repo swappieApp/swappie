@@ -186,7 +186,7 @@ public class UsuarioRegistrado extends AppCompatActivity
 
         }
 
-        Log.e("etiqueta", "id_usuario:"+settings.getInt("id", 0));
+        //Log.e("etiqueta", "id_usuario:"+settings.getInt("id", 0));
         new ClasePeticionRest.CogerObjetosInicio(this, settings.getInt("id", 0)+"").executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
     }

@@ -27,6 +27,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
+import javax.net.ssl.HttpsURLConnection;
+
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
 import es.unavarra.tlm.prueba.model.Producto2;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
@@ -55,18 +57,19 @@ public class ClasePeticionRest {
             Log.d("etiqueta", "size_params = "+parametros.size());
 
             String urlParametros = "";
-            if (parametros.size() != 0) {
-                urlParametros = URLEncoder.encode(parametros.get(0).getKey(), "utf-8") + "=" + URLEncoder.encode(parametros.get(0).getValue(), "utf-8");
-                for (int x = 1; x < parametros.size(); x++) {
-                    urlParametros += "&" + URLEncoder.encode(parametros.get(x).getKey(), "utf-8") + "=" + URLEncoder.encode(parametros.get(x).getValue(), "utf-8");
+            if (parametros != null) {
+                if (parametros.size() != 0) {
+                    urlParametros = URLEncoder.encode(parametros.get(0).getKey(), "utf-8") + "=" + URLEncoder.encode(parametros.get(0).getValue(), "utf-8");
+                    for (int x = 1; x < parametros.size(); x++) {
+                        urlParametros += "&" + URLEncoder.encode(parametros.get(x).getKey(), "utf-8") + "=" + URLEncoder.encode(parametros.get(x).getValue(), "utf-8");
+                    }
                 }
             }
 
-            String stringURL = "http://aux.swappie.tk/api/" + funcionAPI + ".php?"+urlParametros;
+            String stringURL = "https://aux.swappie.tk/api/" + funcionAPI + ".php?"+urlParametros;
             URL url = new URL(stringURL);
 
             Log.d("etiqueta", String.valueOf(url));
-
 
             final HttpURLConnection myConnection = (HttpURLConnection) url.openConnection();
             myConnection.setInstanceFollowRedirects(false);
@@ -118,7 +121,7 @@ public class ClasePeticionRest {
         int bytesRead, bytesAvailable, bufferSize;
         byte[] buffer;
         int maxBufferSize = 1 * 1024 * 1024;
-        String urlString = "http://aux.swappie.tk/api/guardar_foto.php";
+        String urlString = "https://aux.swappie.tk/api/guardar_foto.php";
 
         try {
 
@@ -1014,7 +1017,7 @@ public class ClasePeticionRest {
 
         Bitmap bmp =null;
         try{
-            URL ulrn = new URL("http://aux.swappie.tk/api/img/fotos_objetos/" + id + ".jpg");
+            URL ulrn = new URL("https://aux.swappie.tk/api/img/fotos_objetos/" + id + ".jpg");
             Log.e("etiqueta", "URL:"+ulrn.toString());
             HttpURLConnection con = (HttpURLConnection)ulrn.openConnection();
             con.setUseCaches(true);
