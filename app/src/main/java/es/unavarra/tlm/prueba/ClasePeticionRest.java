@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import javax.net.ssl.HttpsURLConnection;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
+import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
 import es.unavarra.tlm.prueba.model.Producto2;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
@@ -757,7 +758,7 @@ public class ClasePeticionRest {
         Context context;
         Activity activity;
 
-        public CogerObjetosAleatoriosInicio(Context context) {
+        public CogerObjetosAleatoriosInicio(Navigation_drawer context) {
             this.context = context;
             this.activity = (Activity)context;
         }

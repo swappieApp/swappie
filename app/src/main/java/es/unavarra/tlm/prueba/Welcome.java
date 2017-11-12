@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
+import es.unavarra.tlm.prueba.PantallaPrincipal.Splash;
 
 public class Welcome extends AppCompatActivity {
 
@@ -119,7 +120,7 @@ public class Welcome extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(Welcome.this, Navigation_drawer.class));
+        startActivity(new Intent(Welcome.this, Splash.class));
         finish();
     }
 
