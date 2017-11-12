@@ -195,7 +195,7 @@ public class Camara extends AppCompatActivity {
                             public void onClick(View view) {
                                 EditText descripcion = findViewById(R.id.camera_description);
                                 File foto = new File(resultUri.getPath());
-                                new ClasePeticionRest.GuardarObjeto(activity,getSharedPreferences("Config", 0).getInt("user", 0),descripcion.getText().toString(),foto).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                                new ClasePeticionRest.GuardarObjeto(activity,getSharedPreferences("Config", 0).getInt("id", 0),descripcion.getText().toString(),foto).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                             }
                         });
 

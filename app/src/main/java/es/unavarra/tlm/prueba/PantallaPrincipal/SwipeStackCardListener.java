@@ -2,6 +2,7 @@ package es.unavarra.tlm.prueba.PantallaPrincipal;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         SharedPreferences settings = activity.getSharedPreferences("Config", 0);
         int idUsuario = settings.getInt("id", 0);
 
-        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, false);
+        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
         String descripcion = productos.get(position).getDescription();
         Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);
@@ -38,7 +39,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         SharedPreferences settings = activity.getSharedPreferences("Config", 0);
         int idUsuario = settings.getInt("id", 0);
 
-        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true);
+        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
         String descripcion = productos.get(position).getDescription();
         Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);

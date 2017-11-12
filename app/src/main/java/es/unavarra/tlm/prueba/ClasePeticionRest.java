@@ -292,7 +292,7 @@ public class ClasePeticionRest {
         Activity activity;
 
         public GuardarSwipe(Activity activity, int idUsuario, int idObjeto, boolean decision) {
-            parametros.add(new KeyValue("id_usuario", idUsuario+""));
+            parametros.add(new KeyValue("id_usuario1", idUsuario+""));
             parametros.add(new KeyValue("id_objeto", idObjeto+""));
             parametros.add(new KeyValue("decision", decision+""));
             this.activity = activity;
