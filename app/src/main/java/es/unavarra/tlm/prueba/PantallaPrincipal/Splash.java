@@ -21,7 +21,7 @@ import es.unavarra.tlm.prueba.R;
 public class Splash extends Activity {
 
     // Set the duration of the splash screen
-    private static final long SPLASH_SCREEN_DELAY = 2000;
+    private static final long SPLASH_SCREEN_DELAY = 2400;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

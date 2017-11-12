@@ -8,6 +8,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+
     <RelativeLayout
         android:id="@+id/loading"
         android:layout_width="match_parent"
@@ -29,7 +30,17 @@
                 android:layout_width="@dimen/img_width_height"
                 android:layout_height="@dimen/img_width_height"
                 android:layout_marginTop="60dp"
-                android:src="@drawable/swappie" />
+                android:src="@drawable/swappiefin" />
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif"
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:src="@drawable/loading2"
+                android:layout_marginTop="10dp"
+                />
+
 
         </LinearLayout>
     </RelativeLayout>

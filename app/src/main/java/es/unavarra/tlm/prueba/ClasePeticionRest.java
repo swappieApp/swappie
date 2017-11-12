@@ -10,6 +10,8 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.JsonReader;
 import android.util.Log;
+import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -714,6 +716,7 @@ public class ClasePeticionRest {
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
         Activity activity;
+        RelativeLayout rel;
 
         public CogerObjetosInicio(Context context, String idUsuario) {
             parametros.add(new KeyValue("id_usuario", idUsuario));
@@ -738,6 +741,8 @@ public class ClasePeticionRest {
                     Log.e("etiqueta", result.get(1).getValue());
                     Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
                     new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                    rel= (RelativeLayout) activity.findViewById(R.id.loading);
+                    rel.setVisibility(View.GONE);
                 }else{
                     Log.e("etiqueta", "No hay objetos");
                 }
@@ -757,6 +762,7 @@ public class ClasePeticionRest {
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Context context;
         Activity activity;
+        RelativeLayout rel;
 
         public CogerObjetosAleatoriosInicio(Navigation_drawer context) {
             this.context = context;
@@ -778,6 +784,8 @@ public class ClasePeticionRest {
                 Gson gson = new Gson();
                 Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
                 new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                rel= (RelativeLayout) activity.findViewById(R.id.loading);
+                rel.setVisibility(View.GONE);
 
             }else if (result.get(1).getKey().equals("error")){
                 mostrarToast((Activity)context, "JSON: " + result.get(1).getValue());
@@ -992,11 +1000,13 @@ public class ClasePeticionRest {
         Activity activity;
         SwipeStack pilaCartas;
 
+
         public CargarDatos(Objeto[] objetos, Activity activity){
             super();
             this.objetos = objetos;
             this.activity = activity;
             pilaCartas = (SwipeStack) activity.findViewById(R.id.pila_cartas);
+
         }
 
         @Override
