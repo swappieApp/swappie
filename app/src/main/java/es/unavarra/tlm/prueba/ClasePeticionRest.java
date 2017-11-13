@@ -42,7 +42,6 @@ import link.fls.swipestack.SwipeStack;
 
 public class ClasePeticionRest {
 
-
         /****************************************/
        /*                                      */
       /*    CLASES ÚTILES (POR EL MOMENTO)    */
