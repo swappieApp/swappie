@@ -2,14 +2,21 @@ package es.unavarra.tlm.prueba;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.support.v4.widget.DrawerLayout;
 import android.util.JsonReader;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -455,6 +462,7 @@ public class ClasePeticionRest {
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
+        PopupWindow popUpWindow;
 
         public ComprobarSwipe(Activity activity, int idUsuario1, int idObjeto) {
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
@@ -476,6 +484,21 @@ public class ClasePeticionRest {
                     new GuardarMatch(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue()), true).executeOnExecutor(THREAD_POOL_EXECUTOR);
                     new CrearChat(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(result.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
                     mostrarToast(activity, "MATCH!");
+
+                    //CARGA POPUP MATCH
+                    LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    View layout = inflater.inflate(R.layout.match, (ViewGroup) activity.findViewById(R.id.match_element));
+
+                    popUpWindow = new PopupWindow(layout, DrawerLayout.LayoutParams.MATCH_PARENT, DrawerLayout.LayoutParams.MATCH_PARENT, true);
+                    popUpWindow.showAtLocation(layout, Gravity.TOP, 0, 0);
+
+                    //BOTÓN PARA SEGUIR HACIENDO SWIPE, CIERRA EL POPUP
+                    Button cancelButton = (Button) layout.findViewById(R.id.buttonSeguir);
+                    cancelButton.setOnClickListener(cancel_button_click_listener);
+
+                    //AQUÍ VA EL BOTON PARA ABRIR CHAT, AÚN NO HACE NADA
+
+
                 }else if (result.get(1).getValue().equals("false")){
                     //mostrarToast(activity, "NO MATCH!");
                 }
@@ -483,6 +506,12 @@ public class ClasePeticionRest {
                 mostrarToast(activity, "ERROR: " + result.get(1).getValue());
             }
         }
+
+        private View.OnClickListener cancel_button_click_listener = new View.OnClickListener() {
+            public void onClick(View v) {
+                popUpWindow.dismiss();
+            }
+        };
 
     }
 
