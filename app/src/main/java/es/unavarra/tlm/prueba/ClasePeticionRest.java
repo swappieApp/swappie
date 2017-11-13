@@ -9,6 +9,8 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.JsonReader;
 import android.util.Log;
+import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -28,6 +30,7 @@ import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
 import es.unavarra.tlm.prueba.model.Producto;
+import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 import es.unavarra.tlm.prueba.model.Objeto;
@@ -598,6 +601,7 @@ public class ClasePeticionRest {
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
+        RelativeLayout rel;
 
         public CogerObjetoSwipe(Activity activity, int idUsuario) {
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
@@ -620,6 +624,8 @@ public class ClasePeticionRest {
                 if (!result.get(1).getValue().equals("[]")){
                     Gson gson = new Gson();
                     Log.e("etiqueta", result.get(1).getValue());
+                    rel= (RelativeLayout) activity.findViewById(R.id.loading);
+                    rel.setVisibility(View.GONE);
                     Objeto objeto = gson.fromJson(result.get(1).getValue(), Objeto.class);
                     new CargarObjetoNuevo(objeto, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }else{
@@ -640,9 +646,9 @@ public class ClasePeticionRest {
 
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
+        RelativeLayout rel;
 
         public CogerObjetosAleatoriosInicio(Activity activity) {
-            this.activity = activity;
             this.activity = activity;
         }
 
@@ -661,6 +667,8 @@ public class ClasePeticionRest {
                 Gson gson = new Gson();
                 Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
                 new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                rel= (RelativeLayout) activity.findViewById(R.id.loading);
+                rel.setVisibility(View.GONE);
 
             }else if (result.get(1).getKey().equals("error")){
                 mostrarToast(activity, "JSON: " + result.get(1).getValue());

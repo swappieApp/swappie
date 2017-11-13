@@ -51,6 +51,16 @@ dependencies {
 
 
 
+
+
+
+    compile files('libs/apache-mime4j-0.7.2/lib/apache-mime4j-core-0.7.2.jar')
+    compile files('libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar')
+    compile files('libs/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar')
+    compile files('libs/httpcomponents-client-4.5.3/lib/httpmime-4.5.3.jar')
+
+
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
@@ -62,21 +72,15 @@ dependencies {
     compile 'com.google.firebase:firebase-core:10.2.0'
     compile 'com.google.firebase:firebase-auth:10.2.0'
     compile 'com.google.android.gms:play-services-auth:10.2.0'
-
     compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
-
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.google.code.gson:gson:2.2.3'
-
-    compile files('libs/apache-mime4j-0.7.2/lib/apache-mime4j-core-0.7.2.jar')
-    compile files('libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar')
-    compile files('libs/httpcomponents-client-4.5.3/lib/httpcore-4.4.6.jar')
-    compile files('libs/httpcomponents-client-4.5.3/lib/httpmime-4.5.3.jar')
-
-
-
     testCompile 'junit:junit:4.12'
+
+
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
 }
 
 apply plugin: 'com.google.gms.google-services'
+
 

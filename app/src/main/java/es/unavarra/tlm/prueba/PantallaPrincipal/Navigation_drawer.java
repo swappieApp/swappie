@@ -1,8 +1,10 @@
 package es.unavarra.tlm.prueba.PantallaPrincipal;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -18,6 +20,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.Toast;
@@ -27,6 +30,8 @@ import es.unavarra.tlm.prueba.MainActivity;
 import es.unavarra.tlm.prueba.model.Producto;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
@@ -80,7 +85,6 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
 
         // ---------------------- CARGAMOS LAS IMÁGENES ----------------------//
-
 
         new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
@@ -230,4 +234,6 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
         pilaCartas.setAdapter(adaptadorProductos);
     }
     */
+
+
 }
