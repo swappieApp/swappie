@@ -24,7 +24,7 @@ import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.MainActivity;
-import es.unavarra.tlm.prueba.model.Producto2;
+import es.unavarra.tlm.prueba.model.Producto;
 
 import java.util.ArrayList;
 
@@ -38,7 +38,7 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
     private SwipeStack pilaCartas;
     private AdaptadorProductos adaptadorProductos;
-    private ArrayList<Producto2> productos;
+    private ArrayList<Producto> productos;
     private int posicionActual;
     private PopupWindow popUpWindow;
 

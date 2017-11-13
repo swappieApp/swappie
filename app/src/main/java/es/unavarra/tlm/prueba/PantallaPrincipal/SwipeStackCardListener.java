@@ -8,15 +8,15 @@ import android.util.Log;
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.ClasePeticionRest;
-import es.unavarra.tlm.prueba.model.Producto2;
+import es.unavarra.tlm.prueba.model.Producto;
 import link.fls.swipestack.SwipeStack;
 
 public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
-    private ArrayList<Producto2> productos;
+    private ArrayList<Producto> productos;
     Activity activity;
 
-    public SwipeStackCardListener(Activity activity, ArrayList<Producto2> productos) {
+    public SwipeStackCardListener(Activity activity, ArrayList<Producto> productos) {
         this.activity = activity;
         this.productos = productos;
     }

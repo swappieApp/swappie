@@ -27,11 +27,11 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.facebook.login.LoginManager;
-import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -41,6 +41,7 @@ import es.unavarra.tlm.prueba.Camara;
 import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
+import es.unavarra.tlm.prueba.model.Producto;
 
 public class UsuarioRegistrado extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -54,6 +55,8 @@ public class UsuarioRegistrado extends AppCompatActivity
     private DrawerLayout drawer;
 
     private PopupWindow popUpWindow;
+
+    public static ArrayList<Producto> productos = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -347,5 +350,13 @@ public class UsuarioRegistrado extends AppCompatActivity
 
     }
 
+
+    public ArrayList<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(ArrayList<Producto> productos) {
+        this.productos = productos;
+    }
 
 }

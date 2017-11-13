@@ -1,34 +1,32 @@
 package es.unavarra.tlm.prueba.model;
 
+import android.graphics.Bitmap;
 import android.widget.ImageView;
+
+/**
+ * Created by ibai on 11/4/17.
+ */
 
 public class Producto {
 
-    private int drawableId;
-    private ImageView image;
+    private Bitmap bitmap;
     private String description;
     private String location;
+    private int id;
 
-    public Producto(int drawableId, String description, String location) {
-        this.drawableId = drawableId;
+    public Producto(Bitmap bitmap, String description, String location, int id) {
+        this.bitmap = bitmap;
         this.description = description;
         this.location = location;
+        this.id = id;
     }
 
-    public int getDrawableId() {
-        return drawableId;
+    public Bitmap getBitmap() {
+        return bitmap;
     }
 
-    public void setDrawableId(int drawableId) {
-        this.drawableId = drawableId;
-    }
-
-    public ImageView getImage() {
-        return image;
-    }
-
-    public void setImage(ImageView image) {
-        this.image = image;
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
     }
 
     public String getDescription() {
@@ -45,6 +43,14 @@ public class Producto {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
 

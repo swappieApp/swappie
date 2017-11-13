@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import es.unavarra.tlm.prueba.model.Producto2;
+import es.unavarra.tlm.prueba.model.Producto;
 import es.unavarra.tlm.prueba.R;
 
 import java.util.List;
@@ -18,9 +18,9 @@ import java.util.List;
 public class AdaptadorProductos extends BaseAdapter {
 
     Activity activity;
-    private List<Producto2> productos;
+    private List<Producto> productos;
 
-    public AdaptadorProductos(Activity activity, List<Producto2> productos) {
+    public AdaptadorProductos(Activity activity, List<Producto> productos) {
         this.activity = activity;
         this.productos = productos;
     }
@@ -31,7 +31,7 @@ public class AdaptadorProductos extends BaseAdapter {
     }
 
     @Override
-    public Producto2 getItem(int position) {
+    public Producto getItem(int position) {
         return this.productos.get(position);
     }
 
@@ -43,7 +43,7 @@ public class AdaptadorProductos extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Producto2 producto = this.getItem(position);
+        Producto producto = this.getItem(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.stack_item_product, null, false);
