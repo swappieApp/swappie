@@ -710,6 +710,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "comprobar_facebook";
         String nombre, apellidos, email, metodoLogin,password,ubicacion;
+        int id;
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
@@ -742,7 +743,7 @@ public class ClasePeticionRest {
 
                 Log.d("etiquetafb","entro al if");
 
-                int idUsuario = Integer.parseInt(result.get(1).getValue());
+                this.id = Integer.parseInt(result.get(1).getValue());
 
                 this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
 
@@ -775,6 +776,9 @@ public class ClasePeticionRest {
         }
 
         public void guardarUsuarioEnSharedPreferences(int id){
+
+            ClasePeticionRest.guardaridUsuario(activity,id);
+
                 Intent intent = new Intent(activity, UsuarioRegistrado.class);
                    activity.startActivity(intent);
                 (activity).finish();
@@ -842,6 +846,8 @@ public class ClasePeticionRest {
         }
 
         public void guardarUsuarioEnSharedPreferences(int id){
+
+            ClasePeticionRest.guardaridUsuario(activity,id);
 
             Intent intent = new Intent(activity, UsuarioRegistrado.class);
             activity.startActivity(intent);
@@ -911,6 +917,17 @@ public class ClasePeticionRest {
         editor.putString("nombre",nombre);
         editor.putString("apellidos",apellidos);
         editor.putString("email",email);
+
+        editor.commit();
+
+    }
+
+    public static void guardaridUsuario(Activity activity, int id){
+
+        SharedPreferences settings = activity.getSharedPreferences("Config", 0);
+        SharedPreferences.Editor editor = settings.edit();
+;
+        editor.putInt("id", id);
 
         editor.commit();
 

@@ -248,6 +248,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             editor.commit();
 
+            Log.d("variables","HE INICIADO LA SESIÓN CON FACEBOOK");
+
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -301,6 +303,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putBoolean("sesion", true);
             editor.putString("foto", imagen);
             editor.commit();
+
 
             new ClasePeticionRest.ComprobarGoogle(MainActivity.this,first_name,last_name,email,ubicacion).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 

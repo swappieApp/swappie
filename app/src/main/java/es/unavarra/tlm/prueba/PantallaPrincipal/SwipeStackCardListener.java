@@ -15,17 +15,23 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
     private ArrayList<Producto> productos;
     Activity activity;
+    int idUsuario;
+    SharedPreferences settings;
 
     public SwipeStackCardListener(Activity activity, ArrayList<Producto> productos) {
         this.activity = activity;
         this.productos = productos;
+        this.settings = activity.getSharedPreferences("Config", 0);
+        this.idUsuario = settings.getInt("id", 0);
+
     }
+
 
     @Override
     public void onViewSwipedToLeft(int position) {
         int idObjeto = productos.get(position).getId();
-        SharedPreferences settings = activity.getSharedPreferences("Config", 0);
-        int idUsuario = settings.getInt("id", 0);
+
+        Log.d("variables", settings.getString("nombre","")+" hace swipe left y su id es "+String.valueOf(this.idUsuario));
 
         new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
@@ -36,8 +42,6 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     @Override
     public void onViewSwipedToRight(int position) {
         int idObjeto = productos.get(position).getId();
-        SharedPreferences settings = activity.getSharedPreferences("Config", 0);
-        int idUsuario = settings.getInt("id", 0);
 
         new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
