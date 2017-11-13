@@ -3,20 +3,20 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    android:background="@color/white"
+    android:background="@drawable/linear_gradient"
     android:clickable="true"
     android:onClick="registrarse"
     android:layout_gravity="center_horizontal"
     android:weightSum="1">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/networking" />
+        android:src="@drawable/people" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/join"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_weight="0.76" />
