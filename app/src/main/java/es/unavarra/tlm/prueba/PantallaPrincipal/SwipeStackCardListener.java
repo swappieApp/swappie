@@ -38,10 +38,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
-            ClasePeticionRest.mostrarToast(activity, "SI NO TE REGISTRAS, ESTO NO VALE PARA NADA");
-            Intent intent = new Intent(activity, MainActivity.class);
-            activity.startActivity(intent);
-            activity.finish();
+            new ClasePeticionRest.CogerObjetoAleatorioSwipe(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }
 
         String descripcion = productos.get(position).getDescription();
@@ -55,7 +52,11 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
-            new ClasePeticionRest.CogerObjetoAleatorioSwipe(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+
+            ClasePeticionRest.mostrarCustomToast(activity);
+            Intent intent = new Intent(activity, MainActivity.class);
+            activity.startActivity(intent);
+            activity.finish();
         }
 
         String descripcion = productos.get(position).getDescription();

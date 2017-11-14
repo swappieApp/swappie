@@ -8,7 +8,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.support.v4.widget.DrawerLayout;
+
 import android.util.JsonReader;
 import android.util.Log;
 import android.view.Gravity;
@@ -21,6 +21,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+
+import android.support.v4.widget.DrawerLayout;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -944,6 +946,23 @@ public class ClasePeticionRest {
             public void run()
             {
                 Toast.makeText(activity, frase, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    public static void mostrarCustomToast(final Activity activity){
+        activity.runOnUiThread(new Runnable()
+        {
+            public void run()
+            {
+
+                LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View layout = inflater.inflate(R.layout.toast, (ViewGroup) activity.findViewById(R.id.match_toast));
+                Toast toast = new Toast(activity);
+                toast.setView(layout);
+                toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,0, 230);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.show();
             }
         });
     }
