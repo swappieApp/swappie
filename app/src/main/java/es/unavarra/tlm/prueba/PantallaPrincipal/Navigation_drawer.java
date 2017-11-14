@@ -41,10 +41,7 @@ import link.fls.swipestack.SwipeStack;
 
 public class Navigation_drawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private SwipeStack pilaCartas;
-    private AdaptadorProductos adaptadorProductos;
-    private ArrayList<Producto> productos;
-    private int posicionActual;
+    public static ArrayList<Producto> productos = new ArrayList<>();
     private PopupWindow popUpWindow;
 
     @Override

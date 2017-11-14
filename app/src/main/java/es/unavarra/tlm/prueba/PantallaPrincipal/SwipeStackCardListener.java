@@ -1,6 +1,7 @@
 package es.unavarra.tlm.prueba.PantallaPrincipal;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.ClasePeticionRest;
+import es.unavarra.tlm.prueba.MainActivity;
 import es.unavarra.tlm.prueba.model.Producto;
 import link.fls.swipestack.SwipeStack;
 
@@ -23,7 +25,6 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         this.productos = productos;
         this.settings = activity.getSharedPreferences("Config", 0);
         this.idUsuario = settings.getInt("id", 0);
-
     }
 
 
@@ -34,7 +35,14 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         //Log.d("variables", settings.getString("nombre","")+" hace swipe left y su id es "+String.valueOf(this.idUsuario));
         //Log.d("variables", String.valueOf(settings.getBoolean("sesion",false)));
 
-        new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        if (this.idUsuario != 0) {
+            new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }else{
+            ClasePeticionRest.mostrarToast(activity, "SI NO TE REGISTRAS, ESTO NO VALE PARA NADA");
+            Intent intent = new Intent(activity, MainActivity.class);
+            activity.startActivity(intent);
+            activity.finish();
+        }
 
         String descripcion = productos.get(position).getDescription();
         Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);
@@ -44,7 +52,11 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     public void onViewSwipedToRight(int position) {
         int idObjeto = productos.get(position).getId();
 
-        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        if (this.idUsuario != 0) {
+            new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }else{
+            new ClasePeticionRest.CogerObjetoAleatorioSwipe(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }
 
         String descripcion = productos.get(position).getDescription();
         Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);

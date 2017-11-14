@@ -316,13 +316,6 @@ public class ClasePeticionRest {
         @Override
         protected String doInBackground(String... strings) {
             //Añadir que además si la decision es true, abra la pantalla de registro
-            if (this.idUsuario == 0 && this.decision==true ){
-                mostrarToast(activity, "SI NO TE REGISTRAS, ESTO NO VALE PARA NADA");
-                Intent intent = new Intent(activity, MainActivity.class);
-                activity.startActivity(intent);
-                activity.finish();
-                return "";
-            }
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
             if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
                 return "true";
@@ -338,8 +331,8 @@ public class ClasePeticionRest {
             if (result.equals("true")){
                 new CogerObjetoSwipe(activity, idUsuario).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                 new ComprobarSwipe(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
-            }else if (result.equals("")){
-                mostrarToast(activity, "Error al guardar el swipe");
+            }else{
+                mostrarToast(activity, "Error al guardar el swipe: " + result);
             }
         }
 
@@ -430,7 +423,6 @@ public class ClasePeticionRest {
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
             parametros.add(new KeyValue("descripcion", descripcion));
             this.foto = foto;
-            this.activity = activity;
             this.activity = activity;
         }
 
@@ -599,7 +591,6 @@ public class ClasePeticionRest {
         public CogerObjetosInicio(Activity activity, String idUsuario) {
             parametros.add(new KeyValue("id_usuario", idUsuario));
             this.activity = activity;
-            this.activity = activity;
         }
 
         @Override
@@ -642,7 +633,6 @@ public class ClasePeticionRest {
         public CogerObjetoSwipe(Activity activity, int idUsuario) {
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
             this.activity = activity;
-            this.activity = activity;
         }
 
         @Override
@@ -665,6 +655,51 @@ public class ClasePeticionRest {
                     Objeto objeto = gson.fromJson(result.get(1).getValue(), Objeto.class);
                     new CargarObjetoNuevo(objeto, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }else{
+                    UsuarioRegistrado.productos.remove(0);
+                    Log.e("etiqueta", "No hay objetos nuevos");
+                }
+
+            }else if (result.get(1).getKey().equals("error")){
+                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+            }
+
+        }
+
+    }
+
+    public static class CogerObjetoAleatorioSwipe extends AsyncTask<String, String, ArrayList<KeyValue>> {
+
+        String funcionAPI = "coger_objeto_aleatorio_swipe";
+
+        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        Activity activity;
+        RelativeLayout rel;
+
+        public CogerObjetoAleatorioSwipe(Activity activity) {
+            this.activity = activity;
+        }
+
+        @Override
+        protected ArrayList<KeyValue> doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            return respuesta;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<KeyValue> result) {
+            super.onPostExecute(result);
+            if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
+
+                if (!result.get(1).getValue().equals("[]")){
+                    Gson gson = new Gson();
+                    Log.e("etiqueta", result.get(1).getValue());
+                    rel= (RelativeLayout) activity.findViewById(R.id.loading);
+                    rel.setVisibility(View.GONE);
+                    Objeto objeto = gson.fromJson(result.get(1).getValue(), Objeto.class);
+                    new CargarObjetoAleatorioNuevo(objeto, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                }else{
+                    UsuarioRegistrado.productos.remove(0);
                     Log.e("etiqueta", "No hay objetos nuevos");
                 }
 
@@ -702,7 +737,7 @@ public class ClasePeticionRest {
 
                 Gson gson = new Gson();
                 Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
-                new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                new CargarDatosNoRegistrado(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 rel= (RelativeLayout) activity.findViewById(R.id.loading);
                 rel.setVisibility(View.GONE);
 
@@ -997,6 +1032,49 @@ public class ClasePeticionRest {
 
     }
 
+    public static class CargarDatosNoRegistrado extends AsyncTask<String, String, ArrayList<Producto>>{
+
+        Objeto[] objetos;
+        Activity activity;
+        SwipeStack pilaCartas;
+
+        public CargarDatosNoRegistrado(Objeto[] objetos, Activity activity){
+            super();
+            this.objetos = objetos;
+            this.activity = activity;
+            pilaCartas = (SwipeStack) activity.findViewById(R.id.pila_cartas);
+        }
+
+        @Override
+        protected ArrayList<Producto> doInBackground(String... strings) {
+
+            ArrayList<Producto> productos = Navigation_drawer.productos;
+            for (int x = 0; x < objetos.length; x++){
+                Bitmap b = downloadBitmap(objetos[x].getId());
+                productos.add(new Producto(b, objetos[x].getDescripcion(), "", Integer.parseInt(objetos[x].getId())));
+            }
+
+            return productos;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Producto> productos) {
+            super.onPostExecute(productos);
+
+            AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, productos);
+            pilaCartas.setAdapter(adaptadorProductos);
+            pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
+            adaptadorProductos.notifyDataSetChanged();
+
+        }
+
+    }
+
     public static class CargarObjetoNuevo extends AsyncTask<String, String, ArrayList<Producto>>{
 
         Objeto objeto;
@@ -1014,6 +1092,49 @@ public class ClasePeticionRest {
         protected ArrayList<Producto> doInBackground(String... strings) {
 
             ArrayList<Producto> productos = UsuarioRegistrado.productos;
+
+            Bitmap b = downloadBitmap(objeto.getId());
+            productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
+            productos.remove(0);
+
+            return productos;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Producto> productos) {
+            super.onPostExecute(productos);
+
+            AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, productos);
+            pilaCartas.setAdapter(adaptadorProductos);
+            pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
+            adaptadorProductos.notifyDataSetChanged();
+
+        }
+
+    }
+
+    public static class CargarObjetoAleatorioNuevo extends AsyncTask<String, String, ArrayList<Producto>>{
+
+        Objeto objeto;
+        Activity activity;
+        SwipeStack pilaCartas;
+
+        public CargarObjetoAleatorioNuevo(Objeto objeto, Activity activity){
+            super();
+            this.objeto = objeto;
+            this.activity = activity;
+            pilaCartas = (SwipeStack) activity.findViewById(R.id.pila_cartas);
+        }
+
+        @Override
+        protected ArrayList<Producto> doInBackground(String... strings) {
+
+            ArrayList<Producto> productos = Navigation_drawer.productos;
 
             Bitmap b = downloadBitmap(objeto.getId());
             productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));

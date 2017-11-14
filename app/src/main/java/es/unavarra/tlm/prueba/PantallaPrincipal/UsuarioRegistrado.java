@@ -61,6 +61,7 @@ public class UsuarioRegistrado extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        productos.clear();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario_registrado);
 
