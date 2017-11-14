@@ -7,7 +7,7 @@ package es.unavarra.tlm.prueba.model;
 public class Objeto {
 
     String id, id_usuario, descripcion, ubicacion, fecha_subido;
-    int distancia;
+    float distancia;
 
     public Objeto(String id, String id_usuario, String descripcion, String ubicacion, String fecha_subido) {
         this.id = id;

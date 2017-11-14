@@ -300,6 +300,8 @@ public class ClasePeticionRest {
         static ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
         int idUsuario;
+        boolean decision;
+
 
         public GuardarSwipe(Activity activity, int idUsuario, int idObjeto, boolean decision) {
             parametros.add(new KeyValue("id_usuario1", idUsuario+""));
@@ -307,13 +309,18 @@ public class ClasePeticionRest {
             parametros.add(new KeyValue("decision", decision+""));
             this.activity = activity;
             this.idUsuario = idUsuario;
+            this.decision=decision;
             //Log.d("variables2", String.valueOf(this.idUsuario));
         }
 
         @Override
         protected String doInBackground(String... strings) {
-            if (this.idUsuario == 0){
+            //Añadir que además si la decision es true, abra la pantalla de registro
+            if (this.idUsuario == 0 && this.decision==true ){
                 mostrarToast(activity, "SI NO TE REGISTRAS, ESTO NO VALE PARA NADA");
+                Intent intent = new Intent(activity, MainActivity.class);
+                activity.startActivity(intent);
+                activity.finish();
                 return "";
             }
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
