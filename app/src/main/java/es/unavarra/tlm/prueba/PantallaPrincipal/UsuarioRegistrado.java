@@ -264,6 +264,7 @@ public class UsuarioRegistrado extends AppCompatActivity
 
                 SharedPreferences info = getSharedPreferences("Config", 0);
                 SharedPreferences.Editor editor = info.edit();
+                editor.clear();
 
                 // Se borra la sesión de Shared Preferences.
                 editor.putBoolean("sesion", false);

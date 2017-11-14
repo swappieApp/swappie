@@ -31,9 +31,10 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     public void onViewSwipedToLeft(int position) {
         int idObjeto = productos.get(position).getId();
 
-        Log.d("variables", settings.getString("nombre","")+" hace swipe left y su id es "+String.valueOf(this.idUsuario));
+        //Log.d("variables", settings.getString("nombre","")+" hace swipe left y su id es "+String.valueOf(this.idUsuario));
+        //Log.d("variables", String.valueOf(settings.getBoolean("sesion",false)));
 
-        new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
         String descripcion = productos.get(position).getDescription();
         Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);

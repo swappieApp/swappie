@@ -307,11 +307,12 @@ public class ClasePeticionRest {
             parametros.add(new KeyValue("decision", decision+""));
             this.activity = activity;
             this.idUsuario = idUsuario;
+            //Log.d("variables2", String.valueOf(this.idUsuario));
         }
 
         @Override
         protected String doInBackground(String... strings) {
-            if (Integer.parseInt(parametros.get(0).getValue()) == 0){
+            if (this.idUsuario == 0){
                 mostrarToast(activity, "SI NO TE REGISTRAS, ESTO NO VALE PARA NADA");
                 return "";
             }
