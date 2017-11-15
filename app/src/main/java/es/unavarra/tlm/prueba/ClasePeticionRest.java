@@ -51,11 +51,13 @@ import link.fls.swipestack.SwipeStack;
 
 public class ClasePeticionRest {
 
+
         /****************************************/
        /*                                      */
       /*    CLASES ÚTILES (POR EL MOMENTO)    */
      /*                                      */
     /****************************************/
+
 
     public static ArrayList<KeyValue> peticionRest(final ArrayList<KeyValue> parametros, final String funcionAPI, final String metodo){
 
@@ -299,7 +301,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "guardar_swipe";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
         int idUsuario;
         boolean decision;
@@ -344,7 +346,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "guardar_match";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
         public GuardarMatch(Activity activity, int idUsuario1, int idUsuario2, boolean chatEmpezado) {
@@ -381,12 +383,12 @@ public class ClasePeticionRest {
 
         String funcionAPI = "crear_chat";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
-        public CrearChat(Activity activity, int idUsuario1, int idUsuario2) {
+        public CrearChat(Activity activity, int idUsuario1, int idObjeto) {
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
-            parametros.add(new KeyValue("id_objeto", idUsuario2+""));
+            parametros.add(new KeyValue("id_objeto", idObjeto+""));
             this.activity = activity;
         }
 
@@ -417,7 +419,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "guardar_objeto";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         File foto;
         Activity activity;
 
@@ -462,7 +464,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "comprobar_swipe";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
         PopupWindow popUpWindow;
 
@@ -484,7 +486,7 @@ public class ClasePeticionRest {
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 if (result.get(1).getValue().equals("true")){
                     new GuardarMatch(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue()), true).executeOnExecutor(THREAD_POOL_EXECUTOR);
-                    new CrearChat(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(result.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                    new CrearChat(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
                     mostrarToast(activity, "MATCH!");
 
                     //CARGA POPUP MATCH
@@ -587,7 +589,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "coger_objetos_inicio";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
         public CogerObjetosInicio(Activity activity, String idUsuario) {
@@ -628,7 +630,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "coger_objeto_swipe";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
         RelativeLayout rel;
 
@@ -657,7 +659,7 @@ public class ClasePeticionRest {
                     Objeto objeto = gson.fromJson(result.get(1).getValue(), Objeto.class);
                     new CargarObjetoNuevo(objeto, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }else{
-                    UsuarioRegistrado.productos.remove(0);
+                    //UsuarioRegistrado.productos.remove(0);
                     Log.e("etiqueta", "No hay objetos nuevos");
                 }
 
@@ -673,7 +675,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "coger_objeto_aleatorio_swipe";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
         RelativeLayout rel;
 
@@ -691,7 +693,6 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
 
                 if (!result.get(1).getValue().equals("[]")){
                     Gson gson = new Gson();
@@ -717,7 +718,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "coger_objetos_aleatorios";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
         RelativeLayout rel;
 
@@ -906,7 +907,7 @@ public class ClasePeticionRest {
 
 
 
-        /********* **************/
+        /************************/
        /*                      */
       /*    MÉTODOS VARIOS    */
      /*                      */
@@ -1114,7 +1115,7 @@ public class ClasePeticionRest {
 
             Bitmap b = downloadBitmap(objeto.getId());
             productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
-            productos.remove(0);
+            //productos.remove(0);
 
             return productos;
         }
@@ -1153,13 +1154,11 @@ public class ClasePeticionRest {
         @Override
         protected ArrayList<Producto> doInBackground(String... strings) {
 
-            ArrayList<Producto> productos = Navigation_drawer.productos;
-
             Bitmap b = downloadBitmap(objeto.getId());
-            productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
-            productos.remove(0);
+            Navigation_drawer.productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
+            //Navigation_drawer.productos.remove(0);
 
-            return productos;
+            return Navigation_drawer.productos;
         }
 
         @Override
@@ -1171,9 +1170,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<Producto> productos) {
             super.onPostExecute(productos);
 
-            AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, productos);
+            AdaptadorProductos adaptadorProductos = new AdaptadorProductos(activity, Navigation_drawer.productos);
             pilaCartas.setAdapter(adaptadorProductos);
-            pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
+            pilaCartas.setListener(new SwipeStackCardListener(activity, Navigation_drawer.productos));
             adaptadorProductos.notifyDataSetChanged();
 
         }
@@ -1202,18 +1201,18 @@ public class ClasePeticionRest {
 
 
 
-
-
         /******************************************/
        /*                                        */
       /*    CLASES INÚTILES (POR EL MOMENTO)    */
      /*                                        */
     /******************************************/
+
+
     public static class CogerSwipes extends AsyncTask<String, String, ArrayList<KeyValue>> {
 
         String funcionAPI = "coger_swipes";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
         public CogerSwipes(Activity activity, int idUsuario1) {
@@ -1244,7 +1243,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "coger_info_objeto";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
         public CogerInfoObjeto(Activity activity, int idObjeto) {
@@ -1275,7 +1274,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "actualizar_chat";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
         public ActualizarChat(Activity activity, int idUsuario, int idChat) {
@@ -1307,7 +1306,7 @@ public class ClasePeticionRest {
 
         String funcionAPI = "guardar_mensaje";
 
-        static ArrayList<KeyValue> parametros = new ArrayList<>();
+        ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
         public GuardarMensaje(Activity activity, int idChat, int idAutor, String mensaje) {

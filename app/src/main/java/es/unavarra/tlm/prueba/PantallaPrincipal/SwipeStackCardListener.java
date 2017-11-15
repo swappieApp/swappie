@@ -32,9 +32,6 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     public void onViewSwipedToLeft(int position) {
         int idObjeto = productos.get(position).getId();
 
-        //Log.d("variables", settings.getString("nombre","")+" hace swipe left y su id es "+String.valueOf(this.idUsuario));
-        //Log.d("variables", String.valueOf(settings.getBoolean("sesion",false)));
-
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
@@ -42,7 +39,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         }
 
         String descripcion = productos.get(position).getDescription();
-        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);
+        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto + " DECISION: false ID_USUARIO: " + this.idUsuario);
     }
 
     @Override
@@ -50,9 +47,8 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         int idObjeto = productos.get(position).getId();
 
         if (this.idUsuario != 0) {
-            new ClasePeticionRest.GuardarSwipe(activity, idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
-
             ClasePeticionRest.mostrarCustomToast(activity);
             Intent intent = new Intent(activity, MainActivity.class);
             activity.startActivity(intent);
@@ -60,7 +56,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         }
 
         String descripcion = productos.get(position).getDescription();
-        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto);
+        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto + " DECISION: true ID_USUARIO: " + this.idUsuario);
     }
 
     @Override
