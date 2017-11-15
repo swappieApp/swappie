@@ -659,7 +659,6 @@ public class ClasePeticionRest {
                     Objeto objeto = gson.fromJson(result.get(1).getValue(), Objeto.class);
                     new CargarObjetoNuevo(objeto, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }else{
-                    //UsuarioRegistrado.productos.remove(0);
                     Log.e("etiqueta", "No hay objetos nuevos");
                 }
 
@@ -702,7 +701,6 @@ public class ClasePeticionRest {
                     Objeto objeto = gson.fromJson(result.get(1).getValue(), Objeto.class);
                     new CargarObjetoAleatorioNuevo(objeto, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }else{
-                    UsuarioRegistrado.productos.remove(0);
                     Log.e("etiqueta", "No hay objetos nuevos");
                 }
 
@@ -1115,7 +1113,6 @@ public class ClasePeticionRest {
 
             Bitmap b = downloadBitmap(objeto.getId());
             productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
-            //productos.remove(0);
 
             return productos;
         }
@@ -1156,7 +1153,6 @@ public class ClasePeticionRest {
 
             Bitmap b = downloadBitmap(objeto.getId());
             Navigation_drawer.productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
-            //Navigation_drawer.productos.remove(0);
 
             return Navigation_drawer.productos;
         }
