@@ -38,6 +38,7 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
+import es.unavarra.tlm.prueba.chat.ChatActivity;
 import es.unavarra.tlm.prueba.model.Producto;
 import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
@@ -501,6 +502,9 @@ public class ClasePeticionRest {
                     cancelButton.setOnClickListener(cancel_button_click_listener);
 
                     //AQUÍ VA EL BOTON PARA ABRIR CHAT, AÚN NO HACE NADA
+                    Button buttonIniciarChat = (Button) layout.findViewById(R.id.buttonChat);
+                    buttonIniciarChat.setOnClickListener(button_chat_click_listener);
+
 
 
                 }else if (result.get(1).getValue().equals("false")){
@@ -514,6 +518,13 @@ public class ClasePeticionRest {
         private View.OnClickListener cancel_button_click_listener = new View.OnClickListener() {
             public void onClick(View v) {
                 popUpWindow.dismiss();
+            }
+        };
+
+        private View.OnClickListener button_chat_click_listener = new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(activity, ChatActivity.class);
+                activity.startActivity(intent);
             }
         };
 
