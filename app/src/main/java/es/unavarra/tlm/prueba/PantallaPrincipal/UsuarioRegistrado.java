@@ -41,10 +41,8 @@ import es.unavarra.tlm.prueba.Camara;
 import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
-<<<<<<< HEAD
+
 import es.unavarra.tlm.prueba.chat.ChatListActivity;
-=======
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
 import es.unavarra.tlm.prueba.model.Producto;
 
 public class UsuarioRegistrado extends AppCompatActivity
@@ -357,16 +355,12 @@ public class UsuarioRegistrado extends AppCompatActivity
 
     }
 
-<<<<<<< HEAD
     public void openChat(View view) {
 
         Intent intent = new Intent(this, ChatListActivity.class);
         startActivity(intent);
 
     }
-
-=======
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
 
     public ArrayList<Producto> getProductos() {
         return productos;

@@ -72,13 +72,11 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-<<<<<<< HEAD
+
         <activity android:name=".chat.ChatListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".chat.ChatActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-=======
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
 
         <provider
             android:name="android.support.v4.content.FileProvider"

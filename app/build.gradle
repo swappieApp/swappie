@@ -75,10 +75,7 @@ dependencies {
     compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.google.code.gson:gson:2.2.3'
-<<<<<<< HEAD
     compile 'com.loopj.android:android-async-http:1.4.9'
-=======
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
     testCompile 'junit:junit:4.12'
 
 

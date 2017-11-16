@@ -8,12 +8,9 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
 
-<<<<<<< HEAD
     <color name="message_mine">#58FAF4</color>
     <color name="message_not_mine">#F5A9F2</color>
 
-=======
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
     <!-- Screens background color-->
     <color name="bg_slider_screen1">#c7448d</color>
     <color name="bg_slider_screen2">#279ec7</color>

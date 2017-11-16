@@ -34,7 +34,6 @@
                 android:src="@drawable/ic_menu_camera"
                 android:layout_marginRight="20dp"/>
 
-<<<<<<< HEAD
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -43,8 +42,6 @@
                 android:src="@drawable/conversaciones"
                 android:layout_marginRight="20dp"/>
 
-=======
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

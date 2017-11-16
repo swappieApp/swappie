@@ -2,7 +2,6 @@
 <items version="2" >
 
     <item
-<<<<<<< HEAD
         is-multidex="false"
         jar="/home/serranux/Escritorio/swappie-version4/app/libs/httpcomponents-client-4.5.3/lib/httpclient-4.5.3.jar"
         jumboMode="false"
@@ -46,14 +45,6 @@
         revision="26.0.1"
         sha1="889fd6d061bb63b99dd5c6aba35a555ae863de52">
         <dex dex="/home/serranux/Escritorio/swappie-version4/app/build/intermediates/pre-dexed/debug/httpmime-4.5.3_62458b53f1c438023fea12c2de2a855fbde0ae80.jar" />
-=======
-        is-multidex="true"
-        jar="C:\Users\Fermin\AndroidStudioProjects\swappie\app\libs\httpcomponents-client-4.5.3\lib\httpclient-4.5.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="d1577ae15f01ef5438c5afc62162457c00a34713">
-        <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-4.5.3_ec8a7e0114eaa8585b8f5e3f955149a9fd131bc4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -450,7 +441,6 @@
         revision="26.0.1"
         sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
         <dex dex="C:\Users\Fermin\AndroidStudioProjects\swappie\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2dac704c044b4512a30fdca59b4718c800f895ac\classes.dex" />
->>>>>>> c4667b644ec0608fb6fbf2b97bcb2824885d6dbc
     </item>
 
 </items>
