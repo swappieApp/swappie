@@ -89,4 +89,6 @@
     <string name="boton_aceptar">ACEPTAR</string>
     <string name="boton_cancelar">CANCELAR</string>
 
+    <string name="oops">Parece que no hay más imágenes para mostrar</string>
+
 </resources>

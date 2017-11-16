@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -45,6 +46,7 @@ import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 import es.unavarra.tlm.prueba.model.Objeto;
 import link.fls.swipestack.SwipeStack;
+import pl.droidsonroids.gif.GifImageView;
 
 /**
  * Created by ibai on 10/20/17.
@@ -602,6 +604,8 @@ public class ClasePeticionRest {
 
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
+        ImageView img;
+        GifImageView gif;
 
         public CogerObjetosInicio(Activity activity, String idUsuario) {
             parametros.add(new KeyValue("id_usuario", idUsuario));
@@ -627,6 +631,10 @@ public class ClasePeticionRest {
                     new CargarDatos(objetos, activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }else{
                     Log.e("etiqueta", "No hay objetos");
+                    gif= (GifImageView) activity.findViewById(R.id.gif);
+                    gif.setVisibility(View.GONE);
+                    img = (ImageView)  activity.findViewById(R.id.imagen_swappie);
+                    img.setImageResource(R.drawable.sorry);
                 }
 
             }else if (result.get(1).getKey().equals("error")){
