@@ -85,4 +85,8 @@
     <string name="keyboard_hint">Escribe tu mensaje</string>
     <string name="send_message_button">Enviar</string>
 
+    <!-- Strings related to the camera -->
+    <string name="boton_aceptar">ACEPTAR</string>
+    <string name="boton_cancelar">CANCELAR</string>
+
 </resources>

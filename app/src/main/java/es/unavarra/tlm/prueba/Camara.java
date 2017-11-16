@@ -33,6 +33,9 @@ import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
+import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
+
 import static android.R.attr.duration;
 import static android.R.attr.fingerprintAuthDrawable;
 import static android.R.attr.id;
@@ -199,6 +202,16 @@ public class Camara extends AppCompatActivity {
                             }
                         });
 
+                        Button cancelar = findViewById(R.id.camera_cancel);
+                        cancelar.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(activity,UsuarioRegistrado.class);
+                                activity.startActivity(intent);
+                                finish();
+                            }
+                        });
+
                         // bmp is your Bitmap instance
                         // PNG is a lossless format, the compression factor (100) is ignored
                     } catch (Exception e) {
@@ -223,7 +236,7 @@ public class Camara extends AppCompatActivity {
     private File createImageFile(Context context) {
         // Create an image file name
 
-        TextView texto = (TextView)findViewById(R.id.texto);
+        //TextView texto = (TextView)findViewById(R.id.texto);
 
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "JPEG_"+timeStamp+"_";
@@ -233,7 +246,7 @@ public class Camara extends AppCompatActivity {
         if (!storageDir.exists()) {
             mkdirs = storageDir.mkdirs();
         }
-        texto.setText(storageDir.getAbsolutePath()+" "+mkdirs);
+        //texto.setText(storageDir.getAbsolutePath()+" "+mkdirs);
         Toast toast = Toast.makeText(context, storageDir.getAbsolutePath(), Toast.LENGTH_SHORT);
         toast.show();
         File image = null;
