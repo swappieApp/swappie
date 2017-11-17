@@ -491,7 +491,7 @@ public class ClasePeticionRest {
                 if (result.get(1).getValue().equals("true")){
                     new GuardarMatch(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue()), true).executeOnExecutor(THREAD_POOL_EXECUTOR);
                     new CrearChat(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
-                    mostrarToast(activity, "MATCH!");
+                    //mostrarToast(activity, "MATCH!");
 
                     //CARGA POPUP MATCH
                     LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -584,7 +584,7 @@ public class ClasePeticionRest {
                 this.nombre = result.get(2).getValue();
                 this.apellidos = result.get(3).getValue();
 
-                mostrarToast(activity, "Logueado usuario Nº " + result.get(1).getValue());
+                //mostrarToast(activity, "Logueado usuario Nº " + result.get(1).getValue());
 
                 guardarUsuarioEnSharedPreferences(activity, Integer.parseInt(result.get(1).getValue()), metodoLogin, nombre, apellidos, email);
                 Intent intent = new Intent(activity, UsuarioRegistrado.class);
@@ -593,7 +593,7 @@ public class ClasePeticionRest {
 
             }else if (result.get(1).getKey().equals("error")){
                 this.dialog.dismiss();
-                mostrarToast(activity, "ERROR: " + result.get(1).getValue());
+                //mostrarToast(activity, "ERROR: " + result.get(1).getValue());
             }
         }
 
@@ -624,7 +624,7 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
 
                 if (!result.get(1).getValue().equals("[]")){
                     text= (TextView) activity.findViewById(R.id.no_imagenes);
@@ -643,7 +643,7 @@ public class ClasePeticionRest {
                 }
 
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -687,7 +687,7 @@ public class ClasePeticionRest {
                 }
 
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -729,7 +729,7 @@ public class ClasePeticionRest {
                 }
 
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -767,7 +767,7 @@ public class ClasePeticionRest {
                 rel.setVisibility(View.GONE);
 
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+               // mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -815,7 +815,7 @@ public class ClasePeticionRest {
 
                 this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
 
-                mostrarToast(activity, "Logueado usuario Nº " + result.get(1).getValue());
+                //mostrarToast(activity, "Logueado usuario Nº " + result.get(1).getValue());
 
 
             }else if (result.get(1).getKey().equals("error")){
@@ -889,7 +889,7 @@ public class ClasePeticionRest {
                 int idUsuario = Integer.parseInt(result.get(1).getValue());
 
                 this.guardarUsuarioEnSharedPreferences(Integer.parseInt(result.get(1).getValue()));
-                mostrarToast(activity, "Logueado usuario Nº " + result.get(1).getValue());
+                //mostrarToast(activity, "Logueado usuario Nº " + result.get(1).getValue());
 
 
             }else if (result.get(1).getKey().equals("error")){
@@ -1250,9 +1250,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                mostrarToast(activity, "\"JSON: \" + result.get(1).getValue()");
+                //mostrarToast(activity, "\"JSON: \" + result.get(1).getValue()");
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "\"JSON: \" + result.get(1).getValue()");
+                //mostrarToast(activity, "\"JSON: \" + result.get(1).getValue()");
             }
 
         }
@@ -1281,9 +1281,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }
 
         }
@@ -1313,9 +1313,9 @@ public class ClasePeticionRest {
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }else if (result.get(1).getKey().equals("error")){
-                mostrarToast(activity, "JSON: " + result.get(1).getValue());
+                //mostrarToast(activity, "JSON: " + result.get(1).getValue());
             }
 
         }
