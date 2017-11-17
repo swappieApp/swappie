@@ -10,6 +10,7 @@
     <string name="apellidos">Last name</string>
     <string name="email">Email</string>
     <string name="pass">Password</string>
+    <string name="pass_confirm">Repeat password</string>
     <string name="btn1">SIGN IN</string>
     <string name="registrarsebtn">REGISTER</string>
     <string name="iniciarSesionbtn">SIGN IN</string>
@@ -66,6 +67,7 @@
     <string name="popup">If you have any questions you can email us at swappieapp2017@gmail.com</string>
 
     <string name="toastEmailMalo">The format of the email address entered is not valid.</string>
+    <string name="toastPassMal">Passwords don\'t match</string>
 
     <string name="match">It\'s a match!</string>
     <string name="abrirChat">SEND A MESSAGE</string>
@@ -94,5 +96,6 @@
     <string name="boton_cancelar">CANCEL</string>
 
     <string name="oops">It seems there are no more images for you</string>
+    <string name="nohaychat">You don\'t have any chat yet\</string>
 
 </resources>

@@ -1,7 +1,11 @@
 package es.unavarra.tlm.prueba.chat.network;
 
 import android.app.Activity;
+import android.media.Image;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -20,6 +24,8 @@ public class ChatListHandler extends AsyncHttpResponseHandler {
 
     private Activity activity;
     private ListView chatList;
+    private TextView text;
+    private ImageView im;
 
     public ChatListHandler(Activity activity) {
         this.activity = activity;
@@ -32,22 +38,40 @@ public class ChatListHandler extends AsyncHttpResponseHandler {
         // Respuesta del servidor.
         ChatListResponse response = gson.fromJson(new String(responseBody), ChatListResponse.class);
 
-        // Se selecciona la ListView para la lista de chats.
-        chatList = (ListView) activity.findViewById(R.id.chat_list);
+        if (response.getChats().size()==0){
+            chatList = (ListView) activity.findViewById(R.id.chat_list);
+            chatList.setVisibility(View.GONE);
+            text = (TextView)activity.findViewById(R.id.no_chat);
+            text.setVisibility(View.VISIBLE);
+            im = (ImageView)activity.findViewById(R.id.sorry);
+            im.setVisibility(View.VISIBLE);
 
-        // ArrayList que contiene los chats.
-        List<Chat> chats = new ArrayList<>();
+        }else{
 
-        // Se llena el ArrayList anterior con los chats enviados por el servidor.
-        for (int i = 0; i < response.getCount(); i++) {
-            chats.add(response.getChats().get(i));
+            // Se selecciona la ListView para la lista de chats.
+            chatList = (ListView) activity.findViewById(R.id.chat_list);
+            chatList.setVisibility(View.VISIBLE);
+            text = (TextView)activity.findViewById(R.id.no_chat);
+            text.setVisibility(View.GONE);
+            im = (ImageView)activity.findViewById(R.id.sorry);
+            im.setVisibility(View.GONE);
+
+            // ArrayList que contiene los chats.
+            List<Chat> chats = new ArrayList<>();
+
+            // Se llena el ArrayList anterior con los chats enviados por el servidor.
+            for (int i = 0; i < response.getCount(); i++) {
+                chats.add(response.getChats().get(i));
+            }
+
+            // Se asigna el adaptador a la ListView.
+            chatList.setAdapter(new ChatAdapter(activity, chats));
+
+            // Listener para abrir cada chat.
+            chatList.setOnItemClickListener(new ChatListItemClickListener(activity, chats));
         }
 
-        // Se asigna el adaptador a la ListView.
-        chatList.setAdapter(new ChatAdapter(activity, chats));
 
-        // Listener para abrir cada chat.
-        chatList.setOnItemClickListener(new ChatListItemClickListener(activity, chats));
 
     }
 

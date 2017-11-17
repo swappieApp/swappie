@@ -92,11 +92,22 @@
             android:hint="@string/pass"
             android:inputType="textPassword" />
 
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/editText4"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/pass_confirm"
+            android:inputType="textPassword" />
+
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText4"
+            android:layout_below="@+id/editText5"
             android:layout_centerHorizontal="true"
             android:clickable="true"
             android:onClick="clickRegistrarse"

@@ -9,6 +9,7 @@
     <string name="apellidos">Apellidos</string>
     <string name="email">Email</string>
     <string name="pass">Contraseña</string>
+    <string name="pass_confirm">Confirma la contraseña</string>
     <string name="btn1">ENTRAR</string>
     <string name="registrarsebtn">REGISTRARSE</string>
     <string name="iniciarSesionbtn">INICIAR SESIÓN</string>
@@ -63,6 +64,7 @@
     <string name="contact_us">CONTÁCTANOS</string>
     <string name="popup">Si tienes alguna duda, puedes enviarnos un e-mail a swappieapp2017@gmail.com</string>
     <string name="toastEmailMalo">El email no es válido</string>
+    <string name="toastPassMal">Las contraseñas no coinciden</string>
 
     <string name="match">It\'s a match!</string>
     <string name="abrirChat">ENVIAR MENSAJE</string>
@@ -90,5 +92,6 @@
     <string name="boton_cancelar">CANCELAR</string>
 
     <string name="oops">Parece que no hay más imágenes para mostrar</string>
+    <string name="nohaychat">Todavía no tienes ningún chat</string>
 
 </resources>

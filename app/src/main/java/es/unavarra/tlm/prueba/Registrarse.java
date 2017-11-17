@@ -38,20 +38,34 @@ public class Registrarse extends AppCompatActivity {
         EditText edit2 = (EditText)findViewById(R.id.editText2);
         EditText edit3 = (EditText)findViewById(R.id.editText3);
         EditText edit4 = (EditText)findViewById(R.id.editText4);
+        EditText edit5 = (EditText)findViewById(R.id.editText5);
 
         String nombre = edit.getText().toString();
         String apellidos = edit2.getText().toString();
         String email = edit3.getText().toString();
         String pass = edit4.getText().toString();
+        String pass2 = edit5.getText().toString();
         String ubicacion = location.getCoords(this);
         String metodo = "email";
 
 
-        if (esMailValido(email)){
-            new ClasePeticionRest.GuardarUsuario(Registrarse.this,nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        if (esMailValido(email)&&!pass.equals("")){
+            if (pass.equals(pass2)){
+                new ClasePeticionRest.GuardarUsuario(Registrarse.this,nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            }else{
+                Toast toastPassMal = Toast.makeText(getApplicationContext(), getString(R.string.toastPassMal),Toast.LENGTH_LONG);
+                toastPassMal.show();
+            }
+
         }else{
-            Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo),Toast.LENGTH_LONG);
-            toastMailMalo.show();
+            if (pass.equals("")){
+                Toast toastMailMalo = Toast.makeText(getApplicationContext(), "El campo contraseña no puede estar vacío",Toast.LENGTH_LONG);
+                toastMailMalo.show();
+            }else{
+                Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo),Toast.LENGTH_LONG);
+                toastMailMalo.show();
+            }
+
         }
         //new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);
 

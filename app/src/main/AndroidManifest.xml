@@ -67,7 +67,8 @@
         <activity
             android:name=".Camara"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".IniciarSesion"
             android:theme="@style/AppTheme.NoActionBar" />

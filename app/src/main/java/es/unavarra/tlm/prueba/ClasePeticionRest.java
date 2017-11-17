@@ -83,7 +83,7 @@ public class ClasePeticionRest {
                 }
             }
 
-            String stringURL = "https://aux.swappie.tk/api/" + funcionAPI + ".php?"+urlParametros;
+            String stringURL = "https://api.swappie.tk/api/" + funcionAPI + ".php?"+urlParametros;
             URL url = new URL(stringURL);
 
             Log.d("etiqueta", String.valueOf(url));
@@ -138,7 +138,7 @@ public class ClasePeticionRest {
         int bytesRead, bytesAvailable, bufferSize;
         byte[] buffer;
         int maxBufferSize = 1 * 1024 * 1024;
-        String urlString = "https://aux.swappie.tk/api/guardar_foto.php";
+        String urlString = "https://api.swappie.tk/api/guardar_foto.php";
 
         try {
 
@@ -1203,7 +1203,7 @@ public class ClasePeticionRest {
 
         Bitmap bmp =null;
         try{
-            URL ulrn = new URL("https://aux.swappie.tk/api/img/fotos_objetos/" + id + ".jpg");
+            URL ulrn = new URL("https://api.swappie.tk/api/img/fotos_objetos/" + id + ".jpg");
             Log.e("etiqueta", "URL:"+ulrn.toString());
             HttpURLConnection con = (HttpURLConnection)ulrn.openConnection();
             con.setUseCaches(true);
