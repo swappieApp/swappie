@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -606,6 +607,7 @@ public class ClasePeticionRest {
         Activity activity;
         ImageView img;
         GifImageView gif;
+        TextView text;
 
         public CogerObjetosInicio(Activity activity, String idUsuario) {
             parametros.add(new KeyValue("id_usuario", idUsuario));
@@ -625,6 +627,8 @@ public class ClasePeticionRest {
                 mostrarToast(activity, "JSON: " + result.get(1).getValue());
 
                 if (!result.get(1).getValue().equals("[]")){
+                    text= (TextView) activity.findViewById(R.id.no_imagenes);
+                    text.setVisibility(View.GONE);
                     Gson gson = new Gson();
                     Log.e("etiqueta", result.get(1).getValue());
                     Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
@@ -635,6 +639,7 @@ public class ClasePeticionRest {
                     gif.setVisibility(View.GONE);
                     img = (ImageView)  activity.findViewById(R.id.imagen_swappie);
                     img.setImageResource(R.drawable.sorry);
+
                 }
 
             }else if (result.get(1).getKey().equals("error")){
