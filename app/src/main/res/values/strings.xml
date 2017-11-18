@@ -93,5 +93,6 @@
 
     <string name="oops">Parece que no hay más imágenes para mostrar</string>
     <string name="nohaychat">Todavía no tienes ningún chat</string>
+    <string name="nointernet">Parece que no tienes conexión a internet o la calidad es mala</string>
 
 </resources>

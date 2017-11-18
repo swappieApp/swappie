@@ -23,7 +23,7 @@
         android:layout_width="@dimen/img_width_height"
         android:layout_height="@dimen/img_width_height"
         android:layout_marginTop="60dp"
-        android:src="@drawable/sorry" />
+        android:src="@drawable/chat" />
 
     <TextView
         android:id="@+id/no_chat"

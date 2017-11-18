@@ -27,19 +27,41 @@
 
 
             <ImageView
-                android:layout_width="@dimen/img_width_height"
-                android:layout_height="@dimen/img_width_height"
-                android:layout_marginTop="60dp"
+                android:id="@+id/img50"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="40dp"
                 android:src="@drawable/swappiefin" />
 
 
             <pl.droidsonroids.gif.GifImageView
-                android:id="@+id/gif"
+                android:id="@+id/gif30"
                 android:layout_width="match_parent"
                 android:layout_height="139dp"
                 android:src="@drawable/loading2"
                 android:layout_marginTop="10dp"
                 />
+
+            <TextView
+                android:id="@+id/no_internet"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="@string/nointernet"/>
+
+            <Button
+                android:id="@+id/retrybtn"
+                android:layout_width="117dp"
+                android:clickable="true"
+                android:onClick="reload"
+                android:layout_height="wrap_content"
+                android:text="RETRY"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"/>
 
 
         </LinearLayout>

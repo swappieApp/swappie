@@ -96,6 +96,8 @@
     <string name="boton_cancelar">CANCEL</string>
 
     <string name="oops">It seems there are no more images for you</string>
-    <string name="nohaychat">You don\'t have any chat yet\</string>
+    <string name="nohaychat">You don\'t have any chats yet\</string>
+    <string name="nointernet">There is no internet connection or it is limited. Make sure Wi-Fi or cellular data
+    is turned on, then try again.</string>
 
 </resources>

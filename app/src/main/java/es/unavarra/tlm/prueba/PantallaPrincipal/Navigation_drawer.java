@@ -22,10 +22,13 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.ClasePeticionRest;
+import es.unavarra.tlm.prueba.Connectivity;
 import es.unavarra.tlm.prueba.MainActivity;
 import es.unavarra.tlm.prueba.model.Producto;
 
@@ -36,6 +39,7 @@ import java.util.TimerTask;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
 import link.fls.swipestack.SwipeStack;
+import pl.droidsonroids.gif.GifImageView;
 
 //          ****CLASE PRINCIPAL QUE CARGA AL INICIAR LA APP****
 
@@ -43,6 +47,10 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
     public static ArrayList<Producto> productos = new ArrayList<>();
     private PopupWindow popUpWindow;
+    GifImageView gif;
+    ImageView img;
+    TextView text;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +94,22 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
         // ---------------------- CARGAMOS LAS IMÁGENES ----------------------//
 
-        new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        if (Connectivity.isConnectedFast(this)){
+            new ClasePeticionRest.CogerObjetosAleatoriosInicio(this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            text= (TextView) this.findViewById(R.id.no_internet);
+            text.setVisibility(View.GONE);
+            btn = (Button)this.findViewById(R.id.retrybtn);
+            btn.setVisibility(View.GONE);
+
+        }else{
+            gif= (GifImageView) this.findViewById(R.id.gif30);
+            gif.setVisibility(View.GONE);
+            img = (ImageView)  this.findViewById(R.id.img50);
+            img.setImageResource(R.drawable.nointernetconnection);
+
+
+        }
+
 
     }
 
@@ -171,9 +194,19 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
 
     public void registrarse(View v){
 
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        finish();
+        if (Connectivity.isConnectedFast(this)){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }else{
+            Intent intent = new Intent(this, Navigation_drawer.class);
+            startActivity(intent);
+            finish();
+
+
+        }
+
+
         //registro.setVisibility(View.VISIBLE);
         //imagenes.setVisibility(View.GONE);
     }
@@ -205,6 +238,12 @@ public class Navigation_drawer extends AppCompatActivity implements NavigationVi
             Toast.makeText(Navigation_drawer.this,
                     "No tienes clientes de email instalados.", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void reload(View v){
+        Intent intent = new Intent(this, Navigation_drawer.class);
+        startActivity(intent);
+        finish();
     }
 
 
