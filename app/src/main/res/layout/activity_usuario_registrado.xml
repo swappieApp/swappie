@@ -36,7 +36,7 @@
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gif"
                 android:layout_width="match_parent"
-                android:layout_height="139dp"
+                android:layout_height="140dp"
                 android:src="@drawable/loading2"
                 android:layout_marginTop="10dp"
                 />
