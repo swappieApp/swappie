@@ -76,45 +76,18 @@ public class Camara extends AppCompatActivity {
     private Bitmap mImageBitmap;
     private String mCurrentPhotoPath;
     private ImageView mImageView;
+    private int result_code;
+    private boolean foto_hecha;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        foto_hecha = false;
         setContentView(R.layout.activity_camara);
         verifyStoragePermissions(this);
-
-        /*Button boton = (Button)findViewById(R.id.boton_camara);
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                TextView texto = (TextView)findViewById(R.id.texto);
-                texto.setText("Hola");
-
-                Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if (cameraIntent.resolveActivity(getPackageManager()) != null) {
-                    // Create the File where the photo should go
-                    File photoFile = null;
-
-
-                        photoFile = createImageFile(getApplicationContext());
-                     /*catch (IOException ex) {
-                        // Error occurred while creating the File
-                        Log.i("tag", "IOException");
-                    }
-                    //cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
-                    //startActivityForResult(cameraIntent, REQUEST_IMAGE_CAPTURE);
-                    // Continue only if the File was successfully created
-                    if (photoFile != null) {
-                        cameraIntent.putExtra("crop", "true");
-                        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
-                        startActivityForResult(cameraIntent, REQUEST_IMAGE_CAPTURE);
-                    }
-                }
-            }
-        });*/
 
         CropImage.activity()
                 .setGuidelines(CropImageView.Guidelines.ON)
@@ -122,55 +95,15 @@ public class Camara extends AppCompatActivity {
                 .setFixAspectRatio(true)
                 .start(activity);
 
-        /*Button botonDos = (Button)findViewById(R.id.boton_crop);
-        botonDos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // start picker to get image for cropping and then use the image in cropping activity
-                CropImage.activity()
-                        .setGuidelines(CropImageView.Guidelines.ON)
-                        .setAspectRatio(3,4)
-                        .setFixAspectRatio(true)
-                        .start(activity);
-            }
-        });*/
-
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        /*if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            try {
-                mImageView = (ImageView)findViewById(R.id.image_test);
-                mImageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse("file:"+mCurrentPhotoPath));
-                FileOutputStream out = null;
-                try {
-                    out = new FileOutputStream(mCurrentPhotoPath);
-                    mImageBitmap.compress(Bitmap.CompressFormat.JPEG, 70, out); // bmp is your Bitmap instance
-                    // PNG is a lossless format, the compression factor (100) is ignored
-                } catch (Exception e) {
-                    e.printStackTrace();
-                } finally {
-                    try {
-                        if (out != null) {
-                            out.close();
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-                mImageView.setImageBitmap(mImageBitmap);
-            } catch (IOException e) {
-                StringWriter errors = new StringWriter();
-                e.printStackTrace(new PrintWriter(errors));
-                TextView texto = (TextView)findViewById(R.id.texto);
-                texto.setText(errors.toString());
 
-            }
-        }*/
+        result_code = resultCode;
 
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            foto_hecha = true;
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
                 final Uri resultUri = result.getUri();
@@ -230,6 +163,14 @@ public class Camara extends AppCompatActivity {
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Exception error = result.getError();
             }
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (foto_hecha && result_code == 0){
+            activity.finish();
         }
     }
 
