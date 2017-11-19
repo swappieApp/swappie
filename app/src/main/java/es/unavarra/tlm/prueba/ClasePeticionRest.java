@@ -595,7 +595,7 @@ public class ClasePeticionRest {
 
             }else if (result.get(1).getKey().equals("error")){
                 this.dialog.dismiss();
-                //mostrarToast(activity, "ERROR: " + result.get(1).getValue());
+                mostrarToast(activity, "Email o contraseña incorrectos");
             }
         }
 

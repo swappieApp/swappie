@@ -45,6 +45,7 @@ import org.json.JSONObject;
 
 import java.util.Arrays;
 
+import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
 import es.unavarra.tlm.prueba.PantallaPrincipal.UsuarioRegistrado;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -188,7 +189,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, Navigation_drawer.class);
+        startActivity(intent);
+    }
 
     public void registro(View view){
 
@@ -205,7 +211,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         finish();
 
     }
-
 
     public void logout(View view) {
         LoginManager.getInstance().logOut();

@@ -25,7 +25,13 @@ public class Registrarse extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrarse);
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public static boolean esMailValido(CharSequence objetivo) {
@@ -67,26 +73,6 @@ public class Registrarse extends AppCompatActivity {
             }
 
         }
-        //new ClasePeticionRest.GuardarUsuario(getApplicationContext(),nombre,apellidos,email,pass,ubicacion,metodo).onPostExecute(result);
-
-        //Log.d("resultado", String.valueOf(result));
-
-
-        //Añadimos a SharedPreferences -> SE HACE EN LA CLASE REST
-        /*SharedPreferences info = getSharedPreferences("Config", 0);
-        SharedPreferences.Editor editor = info.edit();
-        editor.putString("metodo",metodo);
-        editor.putBoolean("sesion", true);
-        editor.putString("nombre",nombre);
-        editor.putString("apellidos",apellidos);
-        editor.putString("email",email);
-
-        editor.commit();*/
-
-        //Iniciamos la sesion -> SE HACE EN LA CLASE REST
-        /*Intent intent = new Intent(this, UsuarioRegistrado.class);
-        startActivity(intent);
-        finish();*/
 
     }
 }

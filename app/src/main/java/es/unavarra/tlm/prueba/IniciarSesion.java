@@ -1,6 +1,7 @@
 package es.unavarra.tlm.prueba;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,13 @@ public class IniciarSesion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciar_sesion);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public static boolean esMailValido(CharSequence objetivo) {
@@ -32,7 +40,7 @@ public class IniciarSesion extends AppCompatActivity {
         String metodo = "email";
 
         if (esMailValido(email)){
-            new ClasePeticionRest.HacerLogin(IniciarSesion.this,metodo,email,pass).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            new ClasePeticionRest.HacerLogin(IniciarSesion.this, metodo, email, pass).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
             Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo),Toast.LENGTH_LONG);
             toastMailMalo.show();
