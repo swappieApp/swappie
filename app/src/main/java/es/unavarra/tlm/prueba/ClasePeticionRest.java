@@ -354,10 +354,9 @@ public class ClasePeticionRest {
         ArrayList<KeyValue> parametros = new ArrayList<>();
         Activity activity;
 
-        public GuardarMatch(Activity activity, int idUsuario1, int idUsuario2, boolean chatEmpezado) {
+        public GuardarMatch(Activity activity, int idUsuario1, int idUsuario2) {
             parametros.add(new KeyValue("id_usuario1", idUsuario1+""));
             parametros.add(new KeyValue("id_objeto", idUsuario2+""));
-            parametros.add(new KeyValue("chat_empezado", chatEmpezado+""));
             this.activity = activity;
         }
 
@@ -490,7 +489,7 @@ public class ClasePeticionRest {
             super.onPostExecute(result);
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
                 if (result.get(1).getValue().equals("true")){
-                    new GuardarMatch(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue()), true).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                    new GuardarMatch(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
                     new CrearChat(activity, Integer.parseInt(parametros.get(0).getValue()), Integer.parseInt(parametros.get(1).getValue())).executeOnExecutor(THREAD_POOL_EXECUTOR);
                     //mostrarToast(activity, "MATCH!");
 
