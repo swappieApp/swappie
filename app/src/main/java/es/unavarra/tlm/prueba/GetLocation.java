@@ -8,14 +8,19 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Fermin on 03/11/2017.
  */
 
 public class GetLocation {
+
+
+
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             //Manifest.permission.ACCESS_FINE_LOCATION,
@@ -25,9 +30,12 @@ public class GetLocation {
 
     public static String getCoords(Activity activity) {
 
+
         verifyStoragePermissions(activity);
 
         LocationManager lm = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
+
+
         try {
 
             //Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
@@ -52,10 +60,13 @@ public class GetLocation {
 
     private static final LocationListener locationListener = new LocationListener() {
         public void onLocationChanged(Location location) {
-            Double longitude = location.getLongitude();
-            Double latitude = location.getLatitude();
-
-            coords = longitude+", "+latitude;
+            try {
+                Double longitude = location.getLongitude();
+                Double latitude = location.getLatitude();
+                coords = longitude+", "+latitude;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         }
 
@@ -71,7 +82,7 @@ public class GetLocation {
 
         @Override
         public void onProviderDisabled(String provider) {
-
+            System.out.println("ubicacion deshabilitada");
         }
     };
 
