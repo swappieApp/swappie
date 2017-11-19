@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_alignParentBottom="false"
     android:layout_marginBottom="5dp"
-    tools:context="es.unavarra.tlm.dscr_17_15.Pantallas.PantallaUsuarioLogueado">
+    tools:context="es.unavarra.tlm.prueba.ListadoObjetos">
 
     <LinearLayout
         android:layout_width="match_parent"

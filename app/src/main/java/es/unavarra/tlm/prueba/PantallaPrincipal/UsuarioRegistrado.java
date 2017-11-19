@@ -39,6 +39,7 @@ import android.widget.Toast;
 
 import es.unavarra.tlm.prueba.Camara;
 import es.unavarra.tlm.prueba.ClasePeticionRest;
+import es.unavarra.tlm.prueba.ListadoObjetos;
 import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.Tutorial;
 
@@ -314,6 +315,9 @@ public class UsuarioRegistrado extends AppCompatActivity
 
             sendEmail();
 
+        } else if (id ==R.id.nav_mis_objetos){
+            Intent intent = new Intent(this, ListadoObjetos.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

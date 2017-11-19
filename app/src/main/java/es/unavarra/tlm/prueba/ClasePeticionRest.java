@@ -938,10 +938,12 @@ public class ClasePeticionRest {
         public CogerInfoObjetos(Activity activity, int idUsuario) {
             this.activity = activity;
             parametros.add(new KeyValue("id_usuario", idUsuario+""));
+            Log.d("productos","Entro al constructor de CogerInfoObjetos");
         }
 
         @Override
         protected ArrayList<KeyValue> doInBackground(String... strings) {
+            Log.d("productos","Entro al doInBackground de CogerInfoObjetos");
             ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
             return respuesta;
         }
@@ -949,11 +951,14 @@ public class ClasePeticionRest {
         @Override
         protected void onPostExecute(ArrayList<KeyValue> result) {
             super.onPostExecute(result);
+            Log.d("productos","Entro al onPostExecute de CogerInfoObjetos");
+
             if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
 
                 Gson gson = new Gson();
                 Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
                 for (int x = 0; x < objetos.length; x++){
+                    Log.d("productos","llamo a cargar lista objetos");
                     new CargarListaObjetos(objetos[x], activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }
 
@@ -1159,6 +1164,7 @@ public class ClasePeticionRest {
             super();
             this.objeto = objeto;
             this.activity = activity;
+            Log.d("productos","entro al constructor de cargarlistaobjetos");
         }
 
         @Override
@@ -1182,8 +1188,13 @@ public class ClasePeticionRest {
 
             ListView listaObjetos = (ListView) activity.findViewById(R.id.ListViewMisObjetos);
 
+            for (int i=0;i<productos.size();i++){
+                Log.d("productos",productos.get(i).getDescription());
+            }
+
             AdapterListadoObjetos adapterListadoObjetos = new AdapterListadoObjetos(activity, productos);
             listaObjetos.setAdapter(adapterListadoObjetos);
+
             adapterListadoObjetos.notifyDataSetChanged();
         }
 

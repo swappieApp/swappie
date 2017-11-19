@@ -100,4 +100,8 @@
     <string name="nointernet">There is no internet connection or it is limited. Make sure Wi-Fi or cellular data
     is turned on, then try again.</string>
 
+    <!-- Strings related to the object list -->
+    <string name="mis_objetos">My objects</string>
+    <string name="borrar_objeto">Delete objects</string>
+
 </resources>
