@@ -62,23 +62,23 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Registrarse"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Camara"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".IniciarSesion"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-
-        <activity android:name=".chat.ChatListActivity"
+        <activity
+            android:name=".chat.ChatListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".chat.ChatActivity"
+        <activity
+            android:name=".chat.ChatActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
@@ -91,7 +91,8 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".PantallaPrincipal.Splash"></activity>
+        <activity android:name=".PantallaPrincipal.Splash" />
+        <activity android:name=".ListadoObjetos"></activity>
     </application>
 
 </manifest>

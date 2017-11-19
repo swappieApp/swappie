@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -926,6 +927,80 @@ public class ClasePeticionRest {
 
     }
 
+    public static class CogerInfoObjetos extends AsyncTask<String, String, ArrayList<KeyValue>> {
+
+        String funcionAPI = "coger_info_objetos";
+
+        ArrayList<KeyValue> parametros = new ArrayList<>();
+        Activity activity;
+        RelativeLayout rel;
+
+        public CogerInfoObjetos(Activity activity, int idUsuario) {
+            this.activity = activity;
+            parametros.add(new KeyValue("id_usuario", idUsuario+""));
+        }
+
+        @Override
+        protected ArrayList<KeyValue> doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            return respuesta;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<KeyValue> result) {
+            super.onPostExecute(result);
+            if (result.get(0).getKey().equals("ok") && result.get(0).getValue().equals("true")){
+
+                Gson gson = new Gson();
+                Objeto[] objetos = gson.fromJson(result.get(1).getValue(), Objeto[].class);
+                for (int x = 0; x < objetos.length; x++){
+                    new CargarListaObjetos(objetos[x], activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
+                }
+
+            }else if (result.get(1).getKey().equals("error")){
+                // mostrarToast(activity, "JSON: " + result.get(1).getValue());
+            }
+
+        }
+
+    }
+
+    public static class BorrarObjeto extends AsyncTask<String, String, String> {
+
+        String funcionAPI = "borrar_objeto";
+
+        ArrayList<KeyValue> parametros = new ArrayList<>();
+        Activity activity;
+
+
+        public BorrarObjeto(Activity activity, Producto producto) {
+            this.activity = activity;
+            parametros.add(new KeyValue("id_objeto", producto.getId()+""));
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            ArrayList<KeyValue> respuesta = peticionRest(parametros, funcionAPI, "get");
+            if (respuesta.get(0).getKey().equals("ok") && respuesta.get(0).getValue().equals("true")){
+                return "true";
+            }else if (respuesta.get(1).getKey().equals("error")){
+                return respuesta.get(1).getValue();
+            }
+            return "";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            if (result.equals("true")){
+                SharedPreferences settings = activity.getSharedPreferences("Config", 0);
+                new CogerInfoObjetos(activity, settings.getInt("id", 0)).executeOnExecutor(THREAD_POOL_EXECUTOR);
+            }else{
+                mostrarToast(activity, "Error al borrar el objeto: " + result);
+            }
+        }
+
+    }
 
 
 
@@ -1071,6 +1146,45 @@ public class ClasePeticionRest {
             pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
             adaptadorProductos.notifyDataSetChanged();
 
+        }
+
+    }
+
+    public static class CargarListaObjetos extends AsyncTask<String, String, ArrayList<Producto>>{
+
+        Objeto objeto;
+        Activity activity;
+
+        public CargarListaObjetos(Objeto objeto, Activity activity){
+            super();
+            this.objeto = objeto;
+            this.activity = activity;
+        }
+
+        @Override
+        protected ArrayList<Producto> doInBackground(String... strings) {
+
+            ArrayList<Producto> productos = ListadoObjetos.productos;
+            Bitmap b = downloadBitmap(objeto.getId());
+            productos.add(new Producto(b, objeto.getDescripcion(), "", Integer.parseInt(objeto.getId())));
+
+            return productos;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Producto> productos) {
+            super.onPostExecute(productos);
+
+            ListView listaObjetos = (ListView) activity.findViewById(R.id.ListViewMisObjetos);
+
+            AdapterListadoObjetos adapterListadoObjetos = new AdapterListadoObjetos(activity, productos);
+            listaObjetos.setAdapter(adapterListadoObjetos);
+            adapterListadoObjetos.notifyDataSetChanged();
         }
 
     }

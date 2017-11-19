@@ -95,4 +95,9 @@
     <string name="nohaychat">Todavía no tienes ningún chat</string>
     <string name="nointernet">Parece que no tienes conexión a internet o la calidad es mala</string>
 
+    <!-- Strings related to the object list -->
+    <string name="mis_objetos">Mis objetos</string>
+    <string name="borrar_objeto">Borrar objeto</string>
+
+
 </resources>
