@@ -5,11 +5,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.ClasePeticionRest;
 import es.unavarra.tlm.prueba.MainActivity;
+import es.unavarra.tlm.prueba.R;
 import es.unavarra.tlm.prueba.model.Producto;
 import link.fls.swipestack.SwipeStack;
 
@@ -32,6 +34,12 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     public void onViewSwipedToLeft(int position) {
         int idObjeto = productos.get(position).getId();
 
+        TextView description = activity.findViewById(R.id.DescripcionCarta);
+
+        if (productos.get(position + 1) != null){
+            description.setText(productos.get(position + 1).getDescription());
+        }
+
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
@@ -45,6 +53,12 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
     @Override
     public void onViewSwipedToRight(int position) {
         int idObjeto = productos.get(position).getId();
+
+        TextView description = activity.findViewById(R.id.DescripcionCarta);
+
+        if (productos.get(position + 1) != null){
+            description.setText(productos.get(position + 1).getDescription());
+        }
 
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);

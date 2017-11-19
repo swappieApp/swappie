@@ -1158,6 +1158,9 @@ public class ClasePeticionRest {
             pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
             adaptadorProductos.notifyDataSetChanged();
 
+            TextView textView = activity.findViewById(R.id.DescripcionCarta);
+            textView.setText(productos.get(0).getDescription());
+
         }
 
     }
@@ -1245,6 +1248,9 @@ public class ClasePeticionRest {
             pilaCartas.setAdapter(adaptadorProductos);
             pilaCartas.setListener(new SwipeStackCardListener(activity, productos));
             adaptadorProductos.notifyDataSetChanged();
+
+            TextView textView = activity.findViewById(R.id.DescripcionCarta);
+            textView.setText(productos.get(0).getDescription());
 
         }
 
