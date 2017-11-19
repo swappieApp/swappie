@@ -66,7 +66,7 @@ public class AdapterListadoObjetos extends BaseAdapter {
         Producto producto = getItem(i);
 
         auxProducto.descripcionProducto.setText(producto.getDescription());
-        //auxProducto.delete.setImageResource(R.drawable.trash);
+        auxProducto.miniatura.setImageBitmap(producto.getBitmap());
         auxProducto.delete.setOnClickListener(new BorrarObjeto(activity, producto));
 
         return view;
@@ -74,11 +74,12 @@ public class AdapterListadoObjetos extends BaseAdapter {
 
     private class AuxProducto {
         TextView descripcionProducto;
-        ImageView delete;
+        ImageView delete, miniatura;
 
         public AuxProducto(View view) {
             descripcionProducto = view.findViewById(R.id.DescripcionListadoObjetos);
             delete = view.findViewById(R.id.BotonBorrarObjeto);
+            miniatura = view.findViewById(R.id.ImagenMiniaturaObjeto);
         }
     }
 }

@@ -961,6 +961,13 @@ public class ClasePeticionRest {
                     Log.d("productos","llamo a cargar lista objetos");
                     new CargarListaObjetos(objetos[x], activity).executeOnExecutor(THREAD_POOL_EXECUTOR);
                 }
+                if (objetos.length == 0){
+                    ListView listaObjetos = (ListView) activity.findViewById(R.id.ListViewMisObjetos);
+                    ListadoObjetos.productos.clear();
+                    AdapterListadoObjetos adapterListadoObjetos = new AdapterListadoObjetos(activity, ListadoObjetos.productos);
+                    listaObjetos.setAdapter(adapterListadoObjetos);
+                    adapterListadoObjetos.notifyDataSetChanged();
+                }
 
             }else if (result.get(1).getKey().equals("error")){
                 // mostrarToast(activity, "JSON: " + result.get(1).getValue());
