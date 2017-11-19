@@ -41,6 +41,7 @@ import java.util.ArrayList;
 
 import es.unavarra.tlm.prueba.PantallaPrincipal.AdaptadorProductos;
 import es.unavarra.tlm.prueba.chat.ChatActivity;
+import es.unavarra.tlm.prueba.chat.ChatListActivity;
 import es.unavarra.tlm.prueba.model.Producto;
 import es.unavarra.tlm.prueba.PantallaPrincipal.Navigation_drawer;
 import es.unavarra.tlm.prueba.PantallaPrincipal.SwipeStackCardListener;
@@ -292,7 +293,7 @@ public class ClasePeticionRest {
                 editor.commit();
 
             }else{
-                mostrarToast(activity, "Creado usuario Nº "+result);
+                //mostrarToast(activity, "Creado usuario Nº "+result);
                 Intent intent = new Intent(activity, UsuarioRegistrado.class);
                 activity.startActivity(intent);
                 (activity).finish();
@@ -526,8 +527,9 @@ public class ClasePeticionRest {
 
         private View.OnClickListener button_chat_click_listener = new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(activity, ChatActivity.class);
+                Intent intent = new Intent(activity, ChatListActivity.class);
                 activity.startActivity(intent);
+                popUpWindow.dismiss();
             }
         };
 
@@ -839,7 +841,7 @@ public class ClasePeticionRest {
                     new ClasePeticionRest.GuardarUsuario(this.activity,this.nombre,this.apellidos,this.email,this.password,this.ubicacion,this.metodoLogin).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
                 }
-                mostrarToast(activity, "ERROR: " + result.get(1).getValue());
+                //mostrarToast(activity, "ERROR: " + result.get(1).getValue());
             }
         }
 
@@ -908,7 +910,7 @@ public class ClasePeticionRest {
 
 
                 }else{
-                    mostrarToast(activity, "ERROR: " + result.get(1).getValue());
+                    //mostrarToast(activity, "ERROR: " + result.get(1).getValue());
                 }
             }
         }
