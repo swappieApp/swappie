@@ -3,6 +3,7 @@ package es.unavarra.tlm.prueba;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -44,6 +45,13 @@ public class GetLocation {
             lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 10, locationListener);
             Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
+            if (location==null) {
+                location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+                activity.startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS), 0);
+                lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 10, locationListener);
+                location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            }
 
             Double longitude = location.getLongitude();
             Double latitude = location.getLatitude();
