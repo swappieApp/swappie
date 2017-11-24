@@ -44,7 +44,7 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
             new ClasePeticionRest.CogerObjetoAleatorioSwipe(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }
 
-        if (productos.get(position + 1) != null){
+        if (productos.size() > position + 1){
             description.setText(productos.get(position + 1).getDescription());
         }else{
             description.setText("");
