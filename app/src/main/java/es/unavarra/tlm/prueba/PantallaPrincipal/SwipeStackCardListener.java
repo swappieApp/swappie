@@ -44,14 +44,17 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
             new ClasePeticionRest.CogerObjetoAleatorioSwipe(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }
 
-        if (productos.get(position + 1) != null){
+        if (productos.size() > position + 1){
             description.setText(productos.get(position + 1).getDescription());
         }else{
             description.setText("");
             activity.findViewById(R.id.pila_cartas).setVisibility(View.GONE);
+            activity.findViewById(R.id.gif).setVisibility(View.VISIBLE);
             ((ImageView)activity.findViewById(R.id.imagen_swappie)).setImageResource(R.drawable.sorry);
             activity.findViewById(R.id.imagen_swappie).setVisibility(View.VISIBLE);
             activity.findViewById(R.id.no_imagenes).setVisibility(View.VISIBLE);
+            activity.findViewById(R.id.gif).setVisibility(View.GONE);
+            Log.d("etiqueta90","es nulo");
         }
 
     }
@@ -76,9 +79,11 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
         }else{
             description.setText("");
             activity.findViewById(R.id.pila_cartas).setVisibility(View.GONE);
+            activity.findViewById(R.id.gif).setVisibility(View.VISIBLE);
             ((ImageView)activity.findViewById(R.id.imagen_swappie)).setImageResource(R.drawable.sorry);
             activity.findViewById(R.id.imagen_swappie).setVisibility(View.VISIBLE);
             activity.findViewById(R.id.no_imagenes).setVisibility(View.VISIBLE);
+            activity.findViewById(R.id.gif).setVisibility(View.GONE);
         }
 
     }
