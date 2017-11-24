@@ -31,7 +31,7 @@
                 android:layout_width="@dimen/img_width_height"
                 android:layout_height="@dimen/img_width_height"
                 android:layout_marginTop="60dp"
-                android:src="@drawable/swappie" />
+                android:src="@drawable/byta" />
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gif"

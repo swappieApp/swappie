@@ -3,8 +3,8 @@
 
     <string name="facebook_app_id">1588980934457495</string>
 
-    <string name="app_name">Swappie</string>
-    <string name="app">Swappie</string>
+    <string name="app_name">Byta</string>
+    <string name="app">Byta</string>
 
     <string name="nombre">First name</string>
     <string name="apellidos">Last name</string>
@@ -45,12 +45,12 @@
     <string name="slide_2_title">2. SWIPE </string>
     <string name="slide_2_desc">Swipe to the right if you like something, and to the left if you don\'t.</string>
     <string name="slide_3_title">3. MATCH</string>
-    <string name="slide_3_desc">If you like something of someone who also likes something of you, Swappie will tell you that a match has been made and will open up a simple messaging function.</string>
+    <string name="slide_3_desc">If you like something of someone who also likes something of you, Byta will tell you that a match has been made and will open up a simple messaging function.</string>
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
     <string name="title_activity_navigation_drawer">Navigation_drawer</string>
 
-    <string name="tutorial">How to use Swappie</string>
+    <string name="tutorial">How to use Byta</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

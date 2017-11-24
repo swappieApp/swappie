@@ -2,8 +2,8 @@
 
     <string name="facebook_app_id">1588980934457495</string>
 
-    <string name="app_name">Swappie</string>
-    <string name="app">Swappie</string>
+    <string name="app_name">Byta</string>
+    <string name="app">Byta</string>
 
     <string name="nombre">Nombre</string>
     <string name="apellidos">Apellidos</string>
@@ -51,7 +51,7 @@
     <string name="play_again">Play Again</string>
     <string name="title_activity_navigation_drawer">Navigation_drawer</string>
 
-    <string name="tutorial">¿Cómo funciona Swappie?</string>
+    <string name="tutorial">¿Cómo funciona Byta?</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
