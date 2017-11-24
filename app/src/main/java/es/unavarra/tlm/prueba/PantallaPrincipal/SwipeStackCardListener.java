@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -36,18 +38,22 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
         TextView description = activity.findViewById(R.id.DescripcionCarta);
 
-        if (productos.get(position + 1) != null){
-            description.setText(productos.get(position + 1).getDescription());
-        }
-
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, false).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
             new ClasePeticionRest.CogerObjetoAleatorioSwipe(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }
 
-        String descripcion = productos.get(position).getDescription();
-        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto + " DECISION: false ID_USUARIO: " + this.idUsuario);
+        if (productos.get(position + 1) != null){
+            description.setText(productos.get(position + 1).getDescription());
+        }else{
+            description.setText("");
+            activity.findViewById(R.id.pila_cartas).setVisibility(View.GONE);
+            ((ImageView)activity.findViewById(R.id.imagen_swappie)).setImageResource(R.drawable.sorry);
+            activity.findViewById(R.id.imagen_swappie).setVisibility(View.VISIBLE);
+            activity.findViewById(R.id.no_imagenes).setVisibility(View.VISIBLE);
+        }
+
     }
 
     @Override
@@ -69,6 +75,10 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
             description.setText(productos.get(position + 1).getDescription());
         }else{
             description.setText("");
+            activity.findViewById(R.id.pila_cartas).setVisibility(View.GONE);
+            ((ImageView)activity.findViewById(R.id.imagen_swappie)).setImageResource(R.drawable.sorry);
+            activity.findViewById(R.id.imagen_swappie).setVisibility(View.VISIBLE);
+            activity.findViewById(R.id.no_imagenes).setVisibility(View.VISIBLE);
         }
 
     }
