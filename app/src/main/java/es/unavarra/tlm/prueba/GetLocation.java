@@ -39,19 +39,15 @@ public class GetLocation {
 
         try {
 
-            //Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-
-
             lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 10, locationListener);
             Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
             if (location==null) {
-                location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-
+                Toast.makeText(activity, "Por favor, activa la ubicación", Toast.LENGTH_LONG).show();
                 activity.startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS), 0);
-                lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 10, locationListener);
-                location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+                return null;
             }
+            lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 10, locationListener);
 
             Double longitude = location.getLongitude();
             Double latitude = location.getLatitude();

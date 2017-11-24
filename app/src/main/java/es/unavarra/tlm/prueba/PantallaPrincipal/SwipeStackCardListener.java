@@ -56,10 +56,6 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
 
         TextView description = activity.findViewById(R.id.DescripcionCarta);
 
-        if (productos.get(position + 1) != null){
-            description.setText(productos.get(position + 1).getDescription());
-        }
-
         if (this.idUsuario != 0) {
             new ClasePeticionRest.GuardarSwipe(activity, this.idUsuario, idObjeto, true).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }else{
@@ -69,8 +65,12 @@ public class SwipeStackCardListener implements SwipeStack.SwipeStackListener{
             activity.finish();
         }
 
-        String descripcion = productos.get(position).getDescription();
-        Log.d("etiqueta", "SWIPE ->> Descripción: " + descripcion + "  ID: " + idObjeto + " DECISION: true ID_USUARIO: " + this.idUsuario);
+        if (productos.size() > position + 1){
+            description.setText(productos.get(position + 1).getDescription());
+        }else{
+            description.setText("");
+        }
+
     }
 
     @Override

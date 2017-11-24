@@ -54,24 +54,23 @@ public class Registrarse extends AppCompatActivity {
         String ubicacion = location.getCoords(this);
         String metodo = "email";
 
-
-        if (esMailValido(email)&&!pass.equals("")){
-            if (pass.equals(pass2)){
-                new ClasePeticionRest.GuardarUsuario(Registrarse.this,nombre,apellidos,email,pass,ubicacion,metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-            }else{
-                Toast toastPassMal = Toast.makeText(getApplicationContext(), getString(R.string.toastPassMal),Toast.LENGTH_LONG);
-                toastPassMal.show();
+        if (ubicacion != null){
+            if (esMailValido(email) && !pass.equals("")) {
+                if (pass.equals(pass2)) {
+                    new ClasePeticionRest.GuardarUsuario(Registrarse.this, nombre, apellidos, email, pass, ubicacion, metodo).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                } else {
+                    Toast toastPassMal = Toast.makeText(getApplicationContext(), getString(R.string.toastPassMal), Toast.LENGTH_LONG);
+                    toastPassMal.show();
+                }
+            } else {
+                if (pass.equals("")) {
+                    Toast toastMailMalo = Toast.makeText(getApplicationContext(), "El campo contraseña no puede estar vacío", Toast.LENGTH_LONG);
+                    toastMailMalo.show();
+                } else {
+                    Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo), Toast.LENGTH_LONG);
+                    toastMailMalo.show();
+                }
             }
-
-        }else{
-            if (pass.equals("")){
-                Toast toastMailMalo = Toast.makeText(getApplicationContext(), "El campo contraseña no puede estar vacío",Toast.LENGTH_LONG);
-                toastMailMalo.show();
-            }else{
-                Toast toastMailMalo = Toast.makeText(getApplicationContext(), getString(R.string.toastEmailMalo),Toast.LENGTH_LONG);
-                toastMailMalo.show();
-            }
-
         }
 
     }
